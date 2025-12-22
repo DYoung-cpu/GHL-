@@ -1,0 +1,198 @@
+{
+  "Sign in with Google": {
+    "x": 227,
+    "y": 19
+  },
+  "Settings": {
+    "x": 84,
+    "y": 1037
+  },
+  "IMG": {
+    "x": 101,
+    "y": 28
+  },
+  "Sign Out Everywhere": {
+    "x": 1559,
+    "y": 604
+  },
+  "Sign-out": {
+    "x": 1024,
+    "y": 595
+  },
+  "david@lendwisemtg.com": {
+    "x": 144,
+    "y": 31
+  },
+  "Click here to switch": {
+    "x": 122,
+    "y": 93
+  },
+  "Mission Control - David Young": {
+    "x": 383,
+    "y": 300
+  },
+  "Woodland Hills, California": {
+    "x": 128,
+    "y": 106
+  },
+  "Automation": {
+    "x": 83,
+    "y": 564
+  },
+  "Workflows": {
+    "x": 396,
+    "y": 54
+  },
+  "Marketing Workflows": {
+    "x": 301,
+    "y": 355
+  },
+  "1. New Lead Nurture (Fast 5) - Claim Off": {
+    "x": 404,
+    "y": 294
+  },
+  "Enrollment History": {
+    "x": 958,
+    "y": 88
+  },
+  "Execution Logs": {
+    "x": 1151,
+    "y": 79
+  },
+  "svg": {
+    "x": 48,
+    "y": 35
+  },
+  "Dashboard": {
+    "x": 81,
+    "y": 231
+  },
+  "Calendars": {
+    "x": 99,
+    "y": 316
+  },
+  "Conversations": {
+    "x": 115,
+    "y": 264
+  },
+  "Contacts": {
+    "x": 81,
+    "y": 354
+  },
+  "Opportunities": {
+    "x": 97,
+    "y": 394
+  },
+  "AI Agents": {
+    "x": 65,
+    "y": 484
+  },
+  "Remind Me Later": {
+    "x": 868,
+    "y": 703
+  },
+  "Marketing": {
+    "x": 71,
+    "y": 528
+  },
+  "Emails": {
+    "x": 493,
+    "y": 66
+  },
+  "Snippets": {
+    "x": 569,
+    "y": 69
+  },
+  "Countdown Timers": {
+    "x": 677,
+    "y": 68
+  },
+  "Create Workflow": {
+    "x": 1509,
+    "y": 51
+  },
+  "Start from Scratch": {
+    "x": 1466,
+    "y": 101
+  },
+  "Back to Workflows": {
+    "x": 64,
+    "y": 30
+  },
+  "Delete Workflow": {
+    "x": 1547,
+    "y": 450
+  },
+  "Delete": {
+    "x": 896,
+    "y": 574
+  },
+  "Awareness ": {
+    "x": 219,
+    "y": 430
+  },
+  "path": {
+    "x": 1008,
+    "y": 24
+  },
+  "Test Workflow": {
+    "x": 1662,
+    "y": 95
+  },
+  "DIV": {
+    "x": 1512,
+    "y": 264
+  },
+  "(310) 954-7772": {
+    "x": 1507,
+    "y": 349
+  },
+  "Run Test": {
+    "x": 1442,
+    "y": 331
+  },
+  "Create Folder": {
+    "x": 1369,
+    "y": 61
+  },
+  "Folder Name": {
+    "x": 807,
+    "y": 512
+  },
+  "Create": {
+    "x": 1076,
+    "y": 576
+  },
+  "Test": {
+    "x": 268,
+    "y": 424
+  },
+  "Continue": {
+    "x": 511,
+    "y": 342
+  },
+  "Birthday Reminder": {
+    "x": 1540,
+    "y": 415
+  },
+  "Save Trigger": {
+    "x": 1834,
+    "y": 1044
+  },
+  "Contact Changed": {
+    "x": 1511,
+    "y": 591
+  },
+  "Birthday reminder": {
+    "x": 1274,
+    "y": 418
+  },
+  "INPUT": {
+    "x": 1278,
+    "y": 357
+  },
+  "Runs when a Contact's DND flag is update": {
+    "x": 1189,
+    "y": 581
+  }
+}

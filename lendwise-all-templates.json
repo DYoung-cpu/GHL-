@@ -1,0 +1,314 @@
+[
+  {
+    "dateAdded": "2025-12-10T01:44:39.111Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "30 Day Check-In",
+    "template": {
+      "attachments": [],
+      "body": "Hi {{contact.first_name}}! It's been a month since closing. How's the new home? Any questions about your mortgage? I'm here if you need anything! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "fcWuq01mmsnJtv7bBzsk"
+  },
+  {
+    "dateAdded": "2025-12-10T02:18:17.335Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "30 Day Check-In",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">It's been about a month since you closed on your new home. How are you settling in?</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I wanted to check in and make sure:</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">You received info from your loan servicer</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Your first payment went through smoothly</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- You don't have any questions about your loan</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Also, I'm here if you need:</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Recommendations for contractors, landscapers, etc.</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Help understanding your escrow account</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Anything else - just ask!</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Enjoy your new home!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "How's the New Home? 30-Day Check-In"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "Ycm6On0AHHmDdTxYjAKK"
+  },
+  {
+    "dateAdded": "2025-12-10T02:28:54.770Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "4th of July",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Happy Independence Day!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I hope you're enjoying the holiday with family, friends, fireworks, and BBQ.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Stay safe and enjoy the celebration!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p>",
+      "subject": "Happy 4th of July!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "FQYAVYgf2df5Qn1UpbHr"
+  },
+  {
+    "dateAdded": "2025-12-10T01:42:59.176Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Additional Docs Needed",
+    "template": {
+      "attachments": [],
+      "body": "Hi {{contact.first_name}}, I need a few more docs for your file: [ITEMS]. Can you send ASAP? Will keep things moving fast! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "idRwT9kochldxf0asK1o"
+  },
+  {
+    "dateAdded": "2025-12-10T01:47:15.986Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "After Hours Response",
+    "template": {
+      "attachments": [],
+      "body": "Hi {{contact.first_name}}! Got your message. I'm offline for the night but will reply first thing tomorrow morning. Talk soon! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "m65USE0m1J7He0q7urjM"
+  },
+  {
+    "dateAdded": "2025-12-10T02:23:48.692Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Anniversary of Close",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Can you believe it's been a year since you closed on your home at {{custom.property_address}}?</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Happy Home Anniversary!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I hope this past year has been filled with wonderful memories in your new space.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Quick Check-In:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">How's the home treating you?</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Any questions about your mortgage?</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Thinking about refinancing or buying an investment property?</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Fun Fact:**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">In your first year as a homeowner, you've:</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Built equity through appreciation and payments</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Enjoyed tax deductions (hopefully!)</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Made the home truly yours</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">If there's anything I can help with - mortgage questions, contractor referrals, or just a friendly check-in - I'm always here.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Cheers to many more years in your home!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "Happy Home Anniversary, {{contact.first_name}}!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "opaVJsL2g7lFaka2p7EZ"
+  },
+  {
+    "dateAdded": "2025-12-10T01:42:36.338Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Application Received",
+    "template": {
+      "attachments": [],
+      "body": "Got your application, {{contact.first_name}}! I'm reviewing everything now. I'll reach out if I need anything. Exciting times ahead! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "2OFA38GHhYUR1Mzes97d"
+  },
+  {
+    "dateAdded": "2025-12-10T02:09:52.145Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Application Started Confirmation",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Thank you for submitting your loan application! This is an exciting step.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Your Application Details:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Property: {{custom.property_address}}</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Loan Amount: ${{custom.loan_amount}}</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Loan Type: {{custom.loan_type}}</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**What Happens Now:**</p><ol><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I'll review your application today</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">2. My processor will verify your documents</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">3. We'll order the appraisal</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">4. Your file goes to underwriting</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">5. We get your approval and close!</p></li></ol><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Timeline:**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Most loans close in 21-30 days. I'll keep you updated every step of the way.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Questions?**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I'm always available. Call, text, or email anytime.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Let's do this!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "We've Received Your Loan Application - Here's What's Next"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "tGmna4Te4N5gBb0twwdc"
+  },
+  {
+    "dateAdded": "2025-12-10T02:10:19.166Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Application Submitted Thank You",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Your loan application is now complete and submitted for processing. Thank you for getting all your documents to us so quickly!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Your File Status: IN PROCESSING**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**What's Happening Now:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Our processor is verifying all documents</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- We're ordering the appraisal</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Title work is being completed</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Your file is being prepared for underwriting</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**You Might Hear From Us If:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">We need additional documentation</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- We have questions about anything in your file</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- There are any updates you should know about</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Remember:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Don't make major purchases</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Don't change jobs without telling me first</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Don't open new credit accounts</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Sit tight - I'll be in touch soon with updates!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "Your Complete Application Has Been Submitted"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "Q1bQ7cXkwMtToDWOhb26"
+  },
+  {
+    "dateAdded": "2025-12-10T01:40:57.014Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Appointment Confirmation",
+    "template": {
+      "attachments": [],
+      "body": "Hi {{contact.first_name}}! Your call with David Young is confirmed for [DATE] at [TIME]. I'll call you at this number. Talk soon! - David, Lendwise Mortgage"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "8t0MW8eCxivpHbqM7Gd2"
+  },
+  {
+    "dateAdded": "2025-12-10T01:41:19.036Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Appointment Reminder 1hr",
+    "template": {
+      "attachments": [],
+      "body": "Hi {{contact.first_name}}! Just a reminder - we're chatting in about an hour. I'll call you at this number. Looking forward to it! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "QZ6TgAGVXx9ZU0XccIHW"
+  },
+  {
+    "dateAdded": "2025-12-10T01:41:08.037Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Appointment Reminder 24hr",
+    "template": {
+      "attachments": [],
+      "body": "Reminder: Your call with David is tomorrow at [TIME]. I'll call you at this number. Questions before then? Just reply! - David, Lendwise"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "pT9LpuikyTbTcWfxHH4x"
+  },
+  {
+    "dateAdded": "2025-12-10T01:45:01.820Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Birthday",
+    "template": {
+      "attachments": [],
+      "body": "Happy Birthday {{contact.first_name}}! Wishing you an amazing day filled with celebration! - David, Lendwise Mortgage"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "G5GX0wokhfXWXjM2GMoI"
+  },
+  {
+    "dateAdded": "2025-12-10T02:28:00.408Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Birthday Greeting",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Wishing you a very Happy Birthday!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I hope your day is filled with joy, celebration, and all your favorite things.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Here's to a wonderful year ahead!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Warm regards,</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p>",
+      "subject": "Happy Birthday, {{contact.first_name}}!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "gdxKidnW7T70Ghd9oXsE"
+  },
+  {
+    "dateAdded": "2025-12-10T02:05:55.886Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Check-In - Day 14",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I wanted to check in and see if you still have questions about financing your home.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I know the mortgage process can feel overwhelming, which is why I'm here to help make it simple.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">If any of these apply to you, let's connect:</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">You're not sure if you qualify</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- You're waiting for your credit to improve</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- You're not sure how much home you can afford</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- You're waiting for rates to drop</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- You just need more information</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">No matter where you are in your journey, I'm happy to answer questions - no pressure, no obligation.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Just reply to this email or give me a call.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "Still Thinking About Buying? Let's Talk"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "yKeRoMxhetaKvHue1L1p"
+  },
+  {
+    "dateAdded": "2025-12-10T01:43:32.611Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Clear to Close",
+    "template": {
+      "attachments": [],
+      "body": "YOU'RE CLEAR TO CLOSE! All conditions cleared. Next step: schedule your closing! So excited for you! Let's chat about next steps. - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "sSOlOxQfrL5GpAwaBjuQ"
+  },
+  {
+    "dateAdded": "2025-12-10T02:13:09.443Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Clear to Close Celebration",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I have the BEST news:</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">YOU ARE CLEAR TO CLOSE!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">All conditions have been satisfied. The underwriter has given final approval. You are officially ready to close on your new home!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**What Happens Now:**</p><ol><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Final closing documents are being prepared</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">2. Title company will reach out to schedule closing</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">3. You'll receive your Closing Disclosure (review carefully!)</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">4. Wire your closing funds (I'll provide instructions)</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">5. CLOSE AND GET YOUR KEYS!</p></li></ol><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Your Closing Date:** [TO BE SCHEDULED]</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Estimated Cash to Close:** $[AMOUNT]</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I am so proud of you for making it through this process. You did it!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">I'll see you at the closing table!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "YOU'RE CLEAR TO CLOSE! Time to Celebrate!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "E5x9NwCuqdyKWcCCwhT6"
+  },
+  {
+    "dateAdded": "2025-12-10T01:44:17.016Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Congrats",
+    "template": {
+      "attachments": [],
+      "body": "CONGRATULATIONS {{contact.first_name}}! You did it! Welcome to homeownership! Enjoy your new home and reach out anytime. So proud of you! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "0SjTXdoVBFZu0zFKPvUe"
+  },
+  {
+    "dateAdded": "2025-12-10T02:17:17.412Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Day Congrats",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">{{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">YOU DID IT!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Congratulations on closing on your new home at {{custom.property_address}}!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">This is such a huge milestone, and I'm honored to have been part of your journey.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**What's Next:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Your first payment is due: [DATE]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Payment goes to: [SERVICER NAME]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Payment amount: $[AMOUNT]</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">You'll receive a \"goodbye letter\" from us and a \"hello letter\" from your loan servicer within the next few weeks.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Keep These Documents Safe:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Your Closing Disclosure</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Your Note and Deed of Trust</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Title insurance policy</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Homeowner's insurance policy</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Enjoy your new home! And please don't hesitate to reach out if you ever have questions - I'm always here for you.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Welcome home!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "CONGRATULATIONS, HOMEOWNER!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "l7nc5pN3NaBi22xvHOq0"
+  },
+  {
+    "dateAdded": "2025-12-10T02:26:48.295Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Notification to Realtor",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi [REALTOR NAME],</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Great news - [CLIENT NAME] closed today!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Congratulations on another successful transaction. It was a pleasure working with you and your client.</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Closed Details:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Property: [ADDRESS]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Loan Amount: $[AMOUNT]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Rate: [RATE]%</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Thank you for the opportunity to work together. I hope we can do it again soon!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "We Did It! [CLIENT NAME] Closed!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "Dx77yvuFeziiNyHWRN7I"
+  },
+  {
+    "dateAdded": "2025-12-10T02:16:12.937Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Prep Checklist",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Your closing is in 3 days! Here's your checklist to make sure everything goes smoothly:</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**BEFORE CLOSING:**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Review your Closing Disclosure (sent separately)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Compare final numbers to your Loan Estimate</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Wire closing funds or get a cashier's check</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Schedule your final walkthrough</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Set up utilities for your new address</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Get homeowner's insurance (if not already done)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**BRING TO CLOSING:**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Valid photo ID (driver's license or passport)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Cashier's check or wire confirmation</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Personal checkbook (for small adjustments)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Any documents requested by title company</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**QUESTIONS TO ASK AT CLOSING:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">When do I get the keys?</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- When is my first payment due?</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Where do I send my payments?</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Call me if you have ANY questions before closing!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Dav</p>",
+      "subject": "Closing Day Checklist - Make Sure You're Ready!"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "HwU021AUfTiwqlwxhCVQ"
+  },
+  {
+    "dateAdded": "2025-12-10T01:44:05.811Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Reminder 1 Day",
+    "template": {
+      "attachments": [],
+      "body": "TOMORROW IS THE BIG DAY! Bring your ID and be ready for lots of signing. You're about to be a homeowner! See you there! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "Y8EEtnzx0qOpTZ4Wg9Je"
+  },
+  {
+    "dateAdded": "2025-12-10T01:43:54.848Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Reminder 3 Days",
+    "template": {
+      "attachments": [],
+      "body": "3 days until closing! Make sure to do your final walkthrough and wire your funds (call to verify wire instructions!). Questions? Text me! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "RupDYmoJQ11xzCE6B95F"
+  },
+  {
+    "dateAdded": "2025-12-10T01:43:43.723Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Scheduled",
+    "template": {
+      "attachments": [],
+      "body": "Your closing is set! [DATE] at [TIME] at [LOCATION]. I'll send full details via email. We're in the home stretch! - David"
+    },
+    "type": "sms",
+    "urlAttachments": [],
+    "id": "a5RBOYww2kHSQEJmLR1w"
+  },
+  {
+    "dateAdded": "2025-12-10T02:15:38.877Z",
+    "locationId": "e6yMsslzphNw8bgqRgtV",
+    "name": "Closing Scheduled Details",
+    "template": {
+      "attachments": [],
+      "html": "<p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Hi {{contact.first_name}},</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Your closing is officially scheduled!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**CLOSING DETAILS:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Date: [CLOSING DATE]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Time: [TIME]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Location: [ADDRESS]</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Title Company: [NAME]</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**What to Bring:**</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Government-issued photo ID (for both borrowers)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Cashier's check or wire confirmation for closing funds</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">[ ] Any documents requested by the title company</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Cash to Close:** $[AMOUNT]</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(Wire instructions attached - call me to verify before sending!)</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">**Important Reminders:**</p><ul><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Do a final walkthrough before closing</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Bring your checkbook for minor adjustments</p></li><li class=\"custom-list\"><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">- Plan for 1-2 hours at the closing table</p></li></ul><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">You're almost there! I'm so excited for you!</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\"></p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">David Young</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">Lendwise Mortgage</p><p class=\"custom-newline\" style=\"line-height: 1.5;padding-left: 0px!important;\">(310) 954-7772</p>",
+      "subject": "Your Closing is Scheduled! Here Are the Details"
+    },
+    "type": "email",
+    "urlAttachments": [],
+    "id": "kzKb0VtxQ0PJZuvfMQ3y"
+  }
+]

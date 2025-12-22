@@ -1,0 +1,726 @@
+{
+  "company": {
+    "name": "LENDWISE MORTGAGE",
+    "phone": "(310) 954-7772",
+    "email": "David@lendwisemtg.com",
+    "agent": "David Young",
+    "nmls": "YOUR_NMLS_NUMBER",
+    "address": "21800 Oxnard St #220, Woodland Hills, CA"
+  },
+  "forms": {
+    "quick_contact": {
+      "id": "form-quick-contact",
+      "name": "Quick Contact Form",
+      "description": "Simple lead capture form for website and landing pages",
+      "submit_button": "Get Your Free Quote",
+      "success_message": "Thanks! David will contact you within 24 hours.",
+      "fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Your first name"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Your last name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "your@email.com"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "phone",
+          "required": true,
+          "placeholder": "(555) 123-4567"
+        },
+        {
+          "name": "loan_purpose",
+          "label": "What can we help you with?",
+          "type": "dropdown",
+          "required": true,
+          "options": [
+            "Purchase a Home",
+            "Refinance Current Mortgage",
+            "Cash-Out Refinance",
+            "Home Equity Loan",
+            "Just Exploring Options"
+          ]
+        }
+      ],
+      "tags_to_add": ["New Lead", "Website"],
+      "pipeline_stage": "New Lead"
+    },
+
+    "pre_qualification": {
+      "id": "form-pre-qual",
+      "name": "Pre-Qualification Application",
+      "description": "Detailed form to gather information for pre-qualification",
+      "submit_button": "Submit Pre-Qualification Request",
+      "success_message": "Your pre-qualification request has been received! David will review your information and contact you within 24-48 hours.",
+      "sections": [
+        {
+          "title": "Personal Information",
+          "fields": [
+            {
+              "name": "first_name",
+              "label": "First Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "last_name",
+              "label": "Last Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Email Address",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Phone Number",
+              "type": "phone",
+              "required": true
+            },
+            {
+              "name": "date_of_birth",
+              "label": "Date of Birth",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "marital_status",
+              "label": "Marital Status",
+              "type": "dropdown",
+              "required": false,
+              "options": ["Single", "Married", "Separated", "Divorced", "Widowed"]
+            },
+            {
+              "name": "dependents",
+              "label": "Number of Dependents",
+              "type": "number",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Current Address",
+          "fields": [
+            {
+              "name": "current_address",
+              "label": "Street Address",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "current_city",
+              "label": "City",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "current_state",
+              "label": "State",
+              "type": "dropdown",
+              "required": true,
+              "options": ["CA", "AZ", "NV", "OR", "WA", "Other"]
+            },
+            {
+              "name": "current_zip",
+              "label": "ZIP Code",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "housing_status",
+              "label": "Current Housing Status",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Own", "Rent", "Living with Family", "Other"]
+            },
+            {
+              "name": "years_at_address",
+              "label": "Years at Current Address",
+              "type": "number",
+              "required": false
+            },
+            {
+              "name": "monthly_payment",
+              "label": "Current Monthly Payment",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            }
+          ]
+        },
+        {
+          "title": "Employment Information",
+          "fields": [
+            {
+              "name": "employment_status",
+              "label": "Employment Status",
+              "type": "dropdown",
+              "required": true,
+              "options": ["W-2 Employee", "Self-Employed", "Retired", "Other"]
+            },
+            {
+              "name": "employer_name",
+              "label": "Employer Name",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "job_title",
+              "label": "Job Title",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "years_employed",
+              "label": "Years at Current Job",
+              "type": "number",
+              "required": false
+            },
+            {
+              "name": "gross_monthly_income",
+              "label": "Gross Monthly Income",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "additional_income",
+              "label": "Additional Monthly Income (if any)",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "income_source",
+              "label": "Additional Income Source",
+              "type": "text",
+              "required": false,
+              "placeholder": "Rental income, side business, etc."
+            }
+          ]
+        },
+        {
+          "title": "Loan Information",
+          "fields": [
+            {
+              "name": "loan_purpose",
+              "label": "Loan Purpose",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Purchase", "Refinance", "Cash-Out Refinance", "Home Equity"]
+            },
+            {
+              "name": "property_type",
+              "label": "Property Type",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Single Family", "Condo", "Townhouse", "Multi-Family (2-4 units)", "Manufactured Home"]
+            },
+            {
+              "name": "property_use",
+              "label": "Property Use",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Primary Residence", "Second Home", "Investment Property"]
+            },
+            {
+              "name": "purchase_price",
+              "label": "Purchase Price / Home Value",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "down_payment",
+              "label": "Down Payment Amount",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "loan_amount",
+              "label": "Desired Loan Amount",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            }
+          ]
+        },
+        {
+          "title": "Financial Information",
+          "fields": [
+            {
+              "name": "credit_score_range",
+              "label": "Estimated Credit Score",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Excellent (740+)", "Good (700-739)", "Fair (660-699)", "Below 660", "Not Sure"]
+            },
+            {
+              "name": "bankruptcy_history",
+              "label": "Any bankruptcy in the last 7 years?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["No", "Yes"]
+            },
+            {
+              "name": "foreclosure_history",
+              "label": "Any foreclosure in the last 7 years?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["No", "Yes"]
+            },
+            {
+              "name": "assets_checking",
+              "label": "Checking Account Balance",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "assets_savings",
+              "label": "Savings Account Balance",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "assets_retirement",
+              "label": "Retirement Account Balance",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            }
+          ]
+        },
+        {
+          "title": "Additional Information",
+          "fields": [
+            {
+              "name": "referral_source",
+              "label": "How did you hear about us?",
+              "type": "dropdown",
+              "required": false,
+              "options": ["Realtor Referral", "Friend/Family Referral", "Google Search", "Zillow", "Social Media", "Other"]
+            },
+            {
+              "name": "realtor_name",
+              "label": "Realtor Name (if applicable)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "timeline",
+              "label": "When are you looking to close?",
+              "type": "dropdown",
+              "required": false,
+              "options": ["ASAP", "Within 30 days", "1-3 months", "3-6 months", "Just exploring"]
+            },
+            {
+              "name": "notes",
+              "label": "Anything else you'd like us to know?",
+              "type": "textarea",
+              "required": false,
+              "placeholder": "Questions, concerns, or additional information..."
+            },
+            {
+              "name": "consent",
+              "label": "I consent to be contacted by Lendwise Mortgage regarding my loan inquiry.",
+              "type": "checkbox",
+              "required": true
+            }
+          ]
+        }
+      ],
+      "tags_to_add": ["Pre-Qual Request", "Website Lead"],
+      "pipeline_stage": "Pre-Qualification"
+    },
+
+    "realtor_referral": {
+      "id": "form-realtor-referral",
+      "name": "Realtor Partner Referral Form",
+      "description": "Form for real estate agents to submit client referrals",
+      "submit_button": "Submit Referral",
+      "success_message": "Thank you for the referral! David will reach out to your client within 2 hours during business hours.",
+      "sections": [
+        {
+          "title": "Your Information (Realtor)",
+          "fields": [
+            {
+              "name": "realtor_name",
+              "label": "Your Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "realtor_email",
+              "label": "Your Email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "realtor_phone",
+              "label": "Your Phone",
+              "type": "phone",
+              "required": true
+            },
+            {
+              "name": "realtor_company",
+              "label": "Brokerage Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "realtor_license",
+              "label": "Real Estate License #",
+              "type": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Client Information",
+          "fields": [
+            {
+              "name": "client_first_name",
+              "label": "Client First Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "client_last_name",
+              "label": "Client Last Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "client_email",
+              "label": "Client Email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "client_phone",
+              "label": "Client Phone",
+              "type": "phone",
+              "required": true
+            }
+          ]
+        },
+        {
+          "title": "Transaction Details",
+          "fields": [
+            {
+              "name": "transaction_type",
+              "label": "Transaction Type",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Purchase", "Refinance", "Both", "Not Sure"]
+            },
+            {
+              "name": "price_range",
+              "label": "Purchase Price Range",
+              "type": "dropdown",
+              "required": false,
+              "options": ["Under $300K", "$300K-$500K", "$500K-$750K", "$750K-$1M", "$1M-$2M", "Over $2M"]
+            },
+            {
+              "name": "property_location",
+              "label": "Property Location (City/Area)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "timeline",
+              "label": "Timeline",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Under contract now", "Active buyer - searching", "1-3 months out", "3-6 months out", "Just starting"]
+            },
+            {
+              "name": "pre_approved",
+              "label": "Already Pre-Approved?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["No", "Yes, with another lender", "Yes, expired letter"]
+            },
+            {
+              "name": "urgency",
+              "label": "How urgent is this?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["URGENT - Under contract", "High - Active buyer", "Medium - Looking", "Low - Just exploring"]
+            },
+            {
+              "name": "notes",
+              "label": "Additional Notes",
+              "type": "textarea",
+              "required": false,
+              "placeholder": "Special circumstances, challenges, or anything I should know..."
+            }
+          ]
+        }
+      ],
+      "tags_to_add": ["Realtor Referral", "Partner Lead"],
+      "pipeline_stage": "New Lead"
+    },
+
+    "refinance_analyzer": {
+      "id": "form-refi-analyzer",
+      "name": "Refinance Analysis Request",
+      "description": "Form to collect information for refinance analysis and savings calculation",
+      "submit_button": "Get My Free Refinance Analysis",
+      "success_message": "Thanks! David will analyze your current loan and send you a personalized savings report within 24 hours.",
+      "sections": [
+        {
+          "title": "Contact Information",
+          "fields": [
+            {
+              "name": "first_name",
+              "label": "First Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "last_name",
+              "label": "Last Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Email Address",
+              "type": "email",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Phone Number",
+              "type": "phone",
+              "required": true
+            }
+          ]
+        },
+        {
+          "title": "Current Loan Details",
+          "fields": [
+            {
+              "name": "current_lender",
+              "label": "Current Lender",
+              "type": "text",
+              "required": false,
+              "placeholder": "e.g., Wells Fargo, Quicken Loans"
+            },
+            {
+              "name": "current_rate",
+              "label": "Current Interest Rate",
+              "type": "text",
+              "required": true,
+              "placeholder": "e.g., 6.5%"
+            },
+            {
+              "name": "current_balance",
+              "label": "Current Loan Balance",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "current_payment",
+              "label": "Current Monthly Payment (P&I)",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "loan_type",
+              "label": "Current Loan Type",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Conventional", "FHA", "VA", "USDA", "Jumbo", "Not Sure"]
+            },
+            {
+              "name": "loan_term",
+              "label": "Original Loan Term",
+              "type": "dropdown",
+              "required": true,
+              "options": ["30-year fixed", "15-year fixed", "20-year fixed", "ARM", "Other"]
+            },
+            {
+              "name": "years_remaining",
+              "label": "Years Remaining on Loan",
+              "type": "number",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Property Information",
+          "fields": [
+            {
+              "name": "property_address",
+              "label": "Property Address",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "property_city",
+              "label": "City",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "property_state",
+              "label": "State",
+              "type": "dropdown",
+              "required": true,
+              "options": ["CA", "AZ", "NV", "OR", "WA", "Other"]
+            },
+            {
+              "name": "property_zip",
+              "label": "ZIP Code",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "estimated_value",
+              "label": "Estimated Current Value",
+              "type": "currency",
+              "required": true,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "property_type",
+              "label": "Property Type",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Single Family", "Condo", "Townhouse", "Multi-Family"]
+            }
+          ]
+        },
+        {
+          "title": "Refinance Goals",
+          "fields": [
+            {
+              "name": "refi_goal",
+              "label": "What's your main refinance goal?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Lower my monthly payment", "Lower my interest rate", "Shorten my loan term", "Cash out equity", "Remove PMI", "Consolidate debt"]
+            },
+            {
+              "name": "cash_out_amount",
+              "label": "If cash-out, how much do you need?",
+              "type": "currency",
+              "required": false,
+              "placeholder": "$0.00"
+            },
+            {
+              "name": "credit_score_range",
+              "label": "Estimated Credit Score",
+              "type": "dropdown",
+              "required": true,
+              "options": ["Excellent (740+)", "Good (700-739)", "Fair (660-699)", "Below 660", "Not Sure"]
+            },
+            {
+              "name": "timeline",
+              "label": "When would you like to refinance?",
+              "type": "dropdown",
+              "required": true,
+              "options": ["ASAP", "Within 30 days", "1-3 months", "Just checking options"]
+            }
+          ]
+        }
+      ],
+      "tags_to_add": ["Refinance Lead", "Refi Analysis"],
+      "pipeline_stage": "Pre-Qualification"
+    },
+
+    "callback_request": {
+      "id": "form-callback",
+      "name": "Request a Callback",
+      "description": "Simple form for requesting a callback from David",
+      "submit_button": "Request My Call",
+      "success_message": "Got it! David will call you at your requested time.",
+      "fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "phone",
+          "label": "Phone Number",
+          "type": "phone",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email (optional)",
+          "type": "email",
+          "required": false
+        },
+        {
+          "name": "best_time",
+          "label": "Best Time to Call",
+          "type": "dropdown",
+          "required": true,
+          "options": ["Morning (9am-12pm)", "Afternoon (12pm-5pm)", "Evening (5pm-7pm)", "Anytime"]
+        },
+        {
+          "name": "topic",
+          "label": "What would you like to discuss?",
+          "type": "dropdown",
+          "required": true,
+          "options": ["New Home Purchase", "Refinance Options", "Pre-Qualification", "Current Rates", "General Questions"]
+        },
+        {
+          "name": "notes",
+          "label": "Anything specific you'd like to discuss?",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Optional: Add any details here..."
+        }
+      ],
+      "tags_to_add": ["Callback Request"],
+      "pipeline_stage": "New Lead"
+    }
+  },
+
+  "form_styling": {
+    "theme": "professional",
+    "primary_color": "#1E3A5F",
+    "accent_color": "#2980B9",
+    "background": "#FFFFFF",
+    "text_color": "#333333",
+    "border_radius": "8px",
+    "font_family": "Inter, Arial, sans-serif"
+  },
+
+  "compliance_footer": "NMLS #[YOUR_NMLS] | Equal Housing Lender | Lendwise Mortgage is not affiliated with or acting on behalf of the FHA, VA, USDA, or any government agency. Information provided is for educational purposes only and does not constitute financial advice."
+}

@@ -1,0 +1,395 @@
+{
+  "company": {
+    "name": "LENDWISE MORTGAGE",
+    "address": "21800 Oxnard St #220, Woodland Hills, CA",
+    "phone": "(310) 954-7772",
+    "email": "David@lendwisemtg.com",
+    "website": "lendwisemtg.com",
+    "nmls": "NMLS# [YOUR_NMLS]",
+    "agent": "David Young"
+  },
+  "templates": {
+    "new_lead_sequence": [
+      {
+        "id": "welcome-1",
+        "name": "Welcome Email - Immediate",
+        "subject": "Welcome to Lendwise Mortgage - Let's Find Your Perfect Loan",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nThank you for reaching out to Lendwise Mortgage! I'm David Young, and I'm excited to help you on your journey to homeownership.\n\nWhether you're buying your first home, refinancing, or investing in property, I'm here to make the mortgage process as smooth and stress-free as possible.\n\nHere's what happens next:\n1. I'll review your information\n2. We'll schedule a quick discovery call\n3. I'll provide personalized loan options\n\nIn the meantime, feel free to reply to this email with any questions.\n\nLooking forward to working with you!\n\nBest regards,\nDavid Young\nLendwise Mortgage\n(310) 954-7772\nDavid@lendwisemtg.com"
+      },
+      {
+        "id": "welcome-2",
+        "name": "Introduction Follow-up - Day 1",
+        "subject": "Quick Question About Your Home Goals, {{contact.first_name}}",
+        "delay": "1 day",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to follow up on my welcome email and ask a few quick questions to better understand your needs:\n\n- Are you looking to purchase or refinance?\n- What's your target timeline?\n- Do you have a specific area or property in mind?\n\nThe more I know about your goals, the better I can tailor my recommendations.\n\nJust hit reply - I read every response personally.\n\nBest,\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "welcome-3",
+        "name": "What to Expect - Day 2",
+        "subject": "What to Expect Working with Lendwise Mortgage",
+        "delay": "2 days",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to share what makes working with Lendwise Mortgage different:\n\n**Our Process:**\n1. Discovery Call (15 min) - We learn your goals\n2. Pre-Qualification (24-48 hrs) - Get your buying power number\n3. Loan Shopping - We find the best rates from multiple lenders\n4. Application & Processing - We handle the heavy lifting\n5. Closing - Celebrate your new home!\n\n**What You Get:**\n- Direct access to me throughout the process\n- Competitive rates from multiple lenders\n- Clear communication - no surprises\n- Fast closings (many in under 30 days)\n\nReady to get started? Reply to this email or call me at (310) 954-7772.\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "welcome-4",
+        "name": "FAQ: Down Payment Myths - Day 3",
+        "subject": "The Truth About Down Payments (It's Less Than You Think)",
+        "delay": "3 days",
+        "body": "Hi {{contact.first_name}},\n\nOne of the biggest myths I hear is that you need 20% down to buy a home. That's simply not true!\n\n**Down Payment Reality Check:**\n- FHA loans: As low as 3.5% down\n- Conventional loans: As low as 3% down\n- VA loans: 0% down for veterans\n- USDA loans: 0% down for rural areas\n\n**Plus, there are down payment assistance programs** that could help cover some or all of your down payment!\n\nI've helped many first-time buyers get into homes with far less cash than they expected.\n\nWant to know what options are available to you? Let's chat:\n- Reply to this email\n- Call me: (310) 954-7772\n- Book a call: [CALENDAR_LINK]\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "welcome-5",
+        "name": "FAQ: Credit Score Requirements - Day 5",
+        "subject": "What Credit Score Do You Really Need?",
+        "delay": "5 days",
+        "body": "Hi {{contact.first_name}},\n\nAnother question I get all the time: \"What credit score do I need to get a mortgage?\"\n\nHere's the truth:\n\n**Minimum Credit Scores by Loan Type:**\n- FHA: 580 (3.5% down) or 500 (10% down)\n- Conventional: 620+\n- VA: No minimum (but lenders typically want 620+)\n- USDA: 640+\n\n**But here's what matters more:**\nYour complete financial picture. Credit score is just one factor. I've helped clients with scores in the low 600s get great loans because other factors were strong.\n\nNot sure where you stand? I can do a free credit review and give you honest feedback about your options.\n\nNo obligation, no pressure - just straight answers.\n\nReply or call: (310) 954-7772\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "welcome-6",
+        "name": "Value Proposition - Day 7",
+        "subject": "Why Lendwise? Let Me Show You",
+        "delay": "7 days",
+        "body": "Hi {{contact.first_name}},\n\nYou might be wondering: with so many lenders out there, why work with Lendwise Mortgage?\n\nHere's what my clients say sets us apart:\n\n**1. Access to Multiple Lenders**\nI'm not tied to one bank. I shop your loan across multiple lenders to find the best rate and terms.\n\n**2. Personal Service**\nYou work directly with me - not a call center. I answer my phone and respond to emails (usually within hours).\n\n**3. Speed**\nWe've closed loans in as fast as 14 days when needed. Average is 21-30 days.\n\n**4. Transparency**\nNo hidden fees, no surprises at closing. You'll know exactly what you're paying before you commit.\n\n**5. Experience**\nI've helped hundreds of families in the Los Angeles area achieve their homeownership dreams.\n\nReady to see what I can do for you?\n\nDavid Young\n(310) 954-7772"
+      },
+      {
+        "id": "welcome-7",
+        "name": "Social Proof/Testimonials - Day 10",
+        "subject": "Don't Just Take My Word For It...",
+        "delay": "10 days",
+        "body": "Hi {{contact.first_name}},\n\nI've told you about what I can do - but here's what matters more: what my clients say.\n\n\"David made the whole process so easy. As first-time buyers, we were nervous, but he explained everything and got us a rate lower than we expected!\"\n- Maria & Carlos, Woodland Hills\n\n\"I refinanced with David and saved $400/month. He found a program I didn't even know existed.\"\n- Jennifer, Sherman Oaks\n\n\"Fast, professional, and always available. David closed our loan in 18 days when another lender fell through.\"\n- Michael, Encino\n\n\"I've sent three friends to David. He treats everyone like family.\"\n- Sarah, Calabasas\n\nI'd love to add your success story to this list. Ready to get started?\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "welcome-8",
+        "name": "Check-In - Day 14",
+        "subject": "Still Thinking About Buying? Let's Talk",
+        "delay": "14 days",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to check in and see if you still have questions about financing your home.\n\nI know the mortgage process can feel overwhelming, which is why I'm here to help make it simple.\n\nIf any of these apply to you, let's connect:\n\n- You're not sure if you qualify\n- You're waiting for your credit to improve\n- You're not sure how much home you can afford\n- You're waiting for rates to drop\n- You just need more information\n\nNo matter where you are in your journey, I'm happy to answer questions - no pressure, no obligation.\n\nJust reply to this email or give me a call.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "welcome-9",
+        "name": "Urgency/Rates Message - Day 21",
+        "subject": "Mortgage Rate Update - What It Means For You",
+        "delay": "21 days",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to give you a quick market update:\n\nMortgage rates are constantly changing, and timing can make a real difference in your monthly payment.\n\n**Here's the math:**\nOn a $500,000 loan, a 0.5% rate difference = ~$150/month\nThat's $1,800/year, or $54,000 over the life of a 30-year loan!\n\nI'm not trying to create false urgency - but I do want you to have accurate information to make the best decision for your family.\n\nWant to know exactly what rate you'd qualify for today? I can get you an answer in 24 hours with a quick pre-qualification.\n\nNo cost, no obligation, and it won't affect your credit score for an initial review.\n\nReady? Just reply or call.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "welcome-10",
+        "name": "Final Follow-up - Day 30",
+        "subject": "One Last Thing Before I Go...",
+        "delay": "30 days",
+        "body": "Hi {{contact.first_name}},\n\nThis will be my last email for a while - I don't want to overwhelm your inbox!\n\nBut I want you to know: whenever you're ready to move forward with buying or refinancing, I'm here.\n\nMy door is always open for:\n- Quick questions about the process\n- Rate checks (free, no obligation)\n- Pre-qualification (soft credit pull available)\n- Referrals for great real estate agents\n\nSave my contact info:\nDavid Young\nLendwise Mortgage\n(310) 954-7772\nDavid@lendwisemtg.com\n\nI'll still send occasional market updates and helpful tips, but the ball is in your court now.\n\nWishing you all the best!\n\nDavid"
+      }
+    ],
+    "pre_qualification_sequence": [
+      {
+        "id": "prequal-1",
+        "name": "Pre-Qual Confirmation",
+        "subject": "Great News! Let's Get You Pre-Qualified",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nExciting news - you're taking the first step toward homeownership!\n\nI'm starting your pre-qualification process now. Here's what that means:\n\n**What is Pre-Qualification?**\nIt's an initial assessment of your borrowing power based on the information you've provided. This gives you (and sellers) confidence that you're a serious, qualified buyer.\n\n**What's Next:**\n1. I'll review your information (24-48 hours)\n2. I'll reach out with questions if needed\n3. You'll receive your pre-qualification letter\n\n**To speed things up, please send these documents:**\n- Last 2 pay stubs\n- Last 2 years of W-2s (or tax returns if self-employed)\n- Last 2 months of bank statements\n- Photo ID\n\nYou can email them directly to David@lendwisemtg.com or upload them securely: [UPLOAD_LINK]\n\nQuestions? I'm just a call or text away.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "prequal-2",
+        "name": "Documents Needed",
+        "subject": "Quick Reminder: Documents Needed for Your Pre-Qualification",
+        "delay": "2 days",
+        "body": "Hi {{contact.first_name}},\n\nJust a friendly reminder - I need a few documents to complete your pre-qualification:\n\n**Documents Needed:**\n[ ] Last 2 pay stubs\n[ ] Last 2 years of W-2s (or tax returns if self-employed)\n[ ] Last 2 months of bank statements (all pages)\n[ ] Photo ID (driver's license or passport)\n\n**Self-Employed?** I'll also need:\n[ ] Last 2 years of business tax returns\n[ ] Year-to-date profit & loss statement\n\n**Easy Ways to Send:**\n1. Reply to this email with attachments\n2. Secure upload: [UPLOAD_LINK]\n3. Fax: [FAX_NUMBER]\n\nOnce I have these, I can usually have your pre-qualification ready within 24-48 hours!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "prequal-3",
+        "name": "Document Reminder",
+        "subject": "Following Up: Your Pre-Qualification is Almost Ready",
+        "delay": "5 days",
+        "body": "Hi {{contact.first_name}},\n\nI'm excited to get your pre-qualification completed, but I'm still waiting on a few documents.\n\nI know gathering paperwork isn't anyone's favorite activity, but this is the key to unlocking your home search!\n\n**Still Needed:**\n[I'll customize this based on what's missing]\n\n**Quick Tips:**\n- Most pay stubs are available online through your employer\n- Bank statements can be downloaded from online banking\n- Don't worry about blacking out account numbers - I need to see them\n\nIs something holding you up? Sometimes I can work with alternative documentation. Let me know and I'll try to help!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "prequal-4",
+        "name": "Pre-Qual Ready Notification",
+        "subject": "Your Pre-Qualification is Ready! Here's Your Buying Power",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nGreat news - your pre-qualification is complete!\n\n**Your Pre-Qualification Amount: ${{custom.pre_approval_amount}}**\n\nThis means you're approved to shop for homes up to this price point. Your pre-qualification letter is attached to this email.\n\n**What This Means:**\n- Sellers will take your offers seriously\n- You know exactly what you can afford\n- You're ready to make an offer when you find the right home\n\n**Next Steps:**\n1. Start house hunting (need a great agent? I can refer you!)\n2. When you find a home, call me immediately\n3. We'll move quickly to full approval and closing\n\n**Important Notes:**\n- Your pre-qualification is valid for 90 days\n- Don't make major purchases or open new credit\n- Keep me updated on any income or job changes\n\nCongratulations on this exciting step!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "prequal-5",
+        "name": "Next Steps After Pre-Qual",
+        "subject": "What's Next? Your Home Buying Roadmap",
+        "delay": "3 days",
+        "body": "Hi {{contact.first_name}},\n\nNow that you're pre-qualified, here's your roadmap to homeownership:\n\n**Step 1: Find a Great Agent**\nA good buyer's agent is FREE to you (seller pays commission). Need a referral? I work with excellent agents throughout LA.\n\n**Step 2: Start Your Search**\nWith your pre-qualification in hand, you can confidently shop for homes up to ${{custom.pre_approval_amount}}.\n\n**Step 3: Make an Offer**\nWhen you find \"the one,\" your agent will help you craft a competitive offer. Your pre-qual letter strengthens your position!\n\n**Step 4: Lock Your Rate**\nOnce your offer is accepted, we'll lock in your interest rate and move to full approval.\n\n**Step 5: Close & Celebrate!**\nMost closings take 21-30 days. Then you get the keys!\n\n**Tips for a Smooth Process:**\n- Don't change jobs\n- Don't make large purchases\n- Don't open new credit accounts\n- DO keep saving for closing costs\n\nI'm here every step of the way. Let me know how I can help!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "application_process": [
+      {
+        "id": "app-1",
+        "name": "Application Started Confirmation",
+        "subject": "We've Received Your Loan Application - Here's What's Next",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nThank you for submitting your loan application! This is an exciting step.\n\n**Your Application Details:**\n- Property: {{custom.property_address}}\n- Loan Amount: ${{custom.loan_amount}}\n- Loan Type: {{custom.loan_type}}\n\n**What Happens Now:**\n1. I'll review your application today\n2. My processor will verify your documents\n3. We'll order the appraisal\n4. Your file goes to underwriting\n5. We get your approval and close!\n\n**Timeline:**\nMost loans close in 21-30 days. I'll keep you updated every step of the way.\n\n**Questions?**\nI'm always available. Call, text, or email anytime.\n\nLet's do this!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-2",
+        "name": "Application Submitted Thank You",
+        "subject": "Your Complete Application Has Been Submitted",
+        "delay": "1 day",
+        "body": "Hi {{contact.first_name}},\n\nYour loan application is now complete and submitted for processing. Thank you for getting all your documents to us so quickly!\n\n**Your File Status: IN PROCESSING**\n\n**What's Happening Now:**\n- Our processor is verifying all documents\n- We're ordering the appraisal\n- Title work is being completed\n- Your file is being prepared for underwriting\n\n**You Might Hear From Us If:**\n- We need additional documentation\n- We have questions about anything in your file\n- There are any updates you should know about\n\n**Remember:**\n- Don't make major purchases\n- Don't change jobs without telling me first\n- Don't open new credit accounts\n\nSit tight - I'll be in touch soon with updates!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-3",
+        "name": "Documents Received Confirmation",
+        "subject": "Got It! Your Documents Have Been Received",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nJust confirming - I've received the documents you sent. Thank you!\n\nThese have been added to your file and our team is reviewing them now.\n\nIf we need anything else, I'll let you know right away.\n\nIn the meantime, feel free to reach out with any questions.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-4",
+        "name": "Missing Documents Request",
+        "subject": "Quick Request: We Need a Few More Documents",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nYour loan is progressing well! We just need a few more documents to keep things moving:\n\n**Documents Needed:**\n[SPECIFIC DOCUMENTS WILL BE LISTED HERE]\n\n**Why We Need These:**\n[BRIEF EXPLANATION]\n\n**Please Send By:** [DATE]\n\nThe faster we get these, the faster we can move to approval!\n\n**Easy Ways to Send:**\n- Reply to this email with attachments\n- Secure upload: [UPLOAD_LINK]\n\nQuestions? Just call or reply to this email.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-5",
+        "name": "File In Processing Update",
+        "subject": "Loan Update: Your File is In Processing",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nJust wanted to give you a quick update on your loan:\n\n**Current Status: PROCESSING**\n\n**Completed:**\n[X] Application submitted\n[X] Documents verified\n[X] Appraisal ordered\n\n**In Progress:**\n[ ] Title work\n[ ] Appraisal completion\n[ ] Underwriting submission\n\nEverything is moving along smoothly. I expect to submit your file to underwriting within the next few days.\n\nI'll update you again once we have the appraisal back and the file is in underwriting.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-6",
+        "name": "Underwriting Update",
+        "subject": "Big Update: Your Loan is Now in Underwriting!",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nGreat news - your loan has been submitted to underwriting!\n\n**Current Status: IN UNDERWRITING**\n\n**What This Means:**\nAn underwriter is now reviewing your complete file. They'll verify everything and make the final approval decision.\n\n**Timeline:**\nMost files are reviewed within 24-72 hours.\n\n**What to Expect:**\n- Approval with conditions (most common) - minor items to clear\n- Full approval - ready to close!\n- More questions (rare) - we'll handle it\n\nI'm watching your file closely and will update you as soon as I hear anything.\n\nAlmost there!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-7",
+        "name": "Conditional Approval Congrats",
+        "subject": "Congratulations! You're Conditionally Approved!",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nAMAZING NEWS - You've received CONDITIONAL APPROVAL!\n\nThis is huge. You're almost at the finish line!\n\n**What \"Conditional\" Means:**\nThe underwriter has approved your loan pending a few final items. This is completely normal - almost every loan has conditions.\n\n**Your Conditions:**\n[SPECIFIC CONDITIONS WILL BE LISTED]\n\nOnce we clear these conditions, you'll get your CLEAR TO CLOSE - and then we schedule closing!\n\n**What I Need From You:**\n[SPECIFIC ITEMS NEEDED]\n\n**Timeline:**\nIf we get the conditions cleared quickly, we could be closing within the week!\n\nLet's finish strong. Send me those items ASAP!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "app-8",
+        "name": "Clear to Close Celebration",
+        "subject": "YOU'RE CLEAR TO CLOSE! Time to Celebrate!",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nI have the BEST news:\n\nYOU ARE CLEAR TO CLOSE!\n\nAll conditions have been satisfied. The underwriter has given final approval. You are officially ready to close on your new home!\n\n**What Happens Now:**\n1. Final closing documents are being prepared\n2. Title company will reach out to schedule closing\n3. You'll receive your Closing Disclosure (review carefully!)\n4. Wire your closing funds (I'll provide instructions)\n5. CLOSE AND GET YOUR KEYS!\n\n**Your Closing Date:** [TO BE SCHEDULED]\n**Estimated Cash to Close:** $[AMOUNT]\n\nI am so proud of you for making it through this process. You did it!\n\nI'll see you at the closing table!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "rate_lock_sequence": [
+      {
+        "id": "ratelock-1",
+        "name": "Rate Lock Explanation",
+        "subject": "Understanding Rate Locks: Should You Lock Today?",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nNow that your offer is accepted, let's talk about locking your interest rate.\n\n**What is a Rate Lock?**\nA rate lock guarantees your interest rate won't change, even if market rates go up before closing.\n\n**Current Rates:**\n- 30-Year Fixed: X.XXX%\n- 15-Year Fixed: X.XXX%\n- Your Estimated Rate: X.XXX%\n\n**Lock Period Options:**\n- 30-day lock: [RATE]\n- 45-day lock: [RATE]\n- 60-day lock: [RATE]\n\n**Should You Lock?**\nIf you're happy with today's rate and want certainty, lock it.\nIf you think rates might drop, you can float (but it's a gamble).\n\n**My Recommendation:**\n[PERSONALIZED RECOMMENDATION]\n\nWant to discuss? Call me and we can decide together.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "ratelock-2",
+        "name": "Rate Lock Confirmation",
+        "subject": "Your Rate is Locked In!",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nGreat news - your interest rate is now LOCKED!\n\n**Your Locked Rate Details:**\n- Interest Rate: {{custom.interest_rate}}%\n- Lock Period: [X] days\n- Lock Expiration: [DATE]\n- Monthly Payment Estimate: $[AMOUNT]\n\nThis rate is guaranteed as long as we close by the lock expiration date.\n\n**Important:**\nIf there are any delays that push closing past the lock date, we'll need to extend or re-lock. I'll keep a close eye on our timeline to avoid this.\n\nLet me know if you have any questions about your locked rate!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "ratelock-3",
+        "name": "Rate Lock Expiring Warning",
+        "subject": "Important: Your Rate Lock Expires Soon",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to give you a heads up: your rate lock expires on [DATE] - that's [X] days away.\n\n**Current Status:**\nWe're on track to close on [CLOSING DATE], which is [before/after] your lock expiration.\n\n**If We Need More Time:**\nI can extend your rate lock. There's typically a small fee (around 0.125% for a 7-day extension), but it protects you from any rate increases.\n\n**Action Needed:**\n[SPECIFIC ACTION IF ANY]\n\nI'm monitoring this closely. If I see any issues, I'll reach out immediately.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "ratelock-4",
+        "name": "Rate Lock Extension Options",
+        "subject": "Rate Lock Extension Options",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nAs we discussed, we need to extend your rate lock. Here are your options:\n\n**Option 1: 7-Day Extension**\n- Cost: ~0.125% of loan amount ($[AMOUNT])\n- New Expiration: [DATE]\n\n**Option 2: 15-Day Extension**\n- Cost: ~0.25% of loan amount ($[AMOUNT])\n- New Expiration: [DATE]\n\n**Option 3: Re-lock at Current Rates**\n- Today's rate: X.XXX% (vs. your locked rate of X.XXX%)\n- [COMPARISON OF OPTIONS]\n\n**My Recommendation:**\n[PERSONALIZED RECOMMENDATION]\n\nPlease let me know which option you prefer, and I'll get it processed right away.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "closing_sequence": [
+      {
+        "id": "closing-1",
+        "name": "Closing Scheduled Details",
+        "subject": "Your Closing is Scheduled! Here Are the Details",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nYour closing is officially scheduled!\n\n**CLOSING DETAILS:**\n- Date: [CLOSING DATE]\n- Time: [TIME]\n- Location: [ADDRESS]\n- Title Company: [NAME]\n\n**What to Bring:**\n[ ] Government-issued photo ID (for both borrowers)\n[ ] Cashier's check or wire confirmation for closing funds\n[ ] Any documents requested by the title company\n\n**Cash to Close:** $[AMOUNT]\n(Wire instructions attached - call me to verify before sending!)\n\n**Important Reminders:**\n- Do a final walkthrough before closing\n- Bring your checkbook for minor adjustments\n- Plan for 1-2 hours at the closing table\n\nYou're almost there! I'm so excited for you!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "closing-2",
+        "name": "Closing Prep Checklist",
+        "subject": "Closing Day Checklist - Make Sure You're Ready!",
+        "delay": "-3 days",
+        "body": "Hi {{contact.first_name}},\n\nYour closing is in 3 days! Here's your checklist to make sure everything goes smoothly:\n\n**BEFORE CLOSING:**\n[ ] Review your Closing Disclosure (sent separately)\n[ ] Compare final numbers to your Loan Estimate\n[ ] Wire closing funds or get a cashier's check\n[ ] Schedule your final walkthrough\n[ ] Set up utilities for your new address\n[ ] Get homeowner's insurance (if not already done)\n\n**BRING TO CLOSING:**\n[ ] Valid photo ID (driver's license or passport)\n[ ] Cashier's check or wire confirmation\n[ ] Personal checkbook (for small adjustments)\n[ ] Any documents requested by title company\n\n**QUESTIONS TO ASK AT CLOSING:**\n- When do I get the keys?\n- When is my first payment due?\n- Where do I send my payments?\n\nCall me if you have ANY questions before closing!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "closing-3",
+        "name": "Day Before Reminder",
+        "subject": "Tomorrow's the Day! Final Reminders for Closing",
+        "delay": "-1 day",
+        "body": "Hi {{contact.first_name}},\n\nTOMORROW IS CLOSING DAY!\n\nI can only imagine how excited (and maybe nervous) you are. Here are a few final reminders:\n\n**TOMORROW'S SCHEDULE:**\n- Time: [TIME]\n- Location: [ADDRESS]\n- Expected duration: 1-2 hours\n\n**FINAL CHECKLIST:**\n[ ] Completed your final walkthrough?\n[ ] Wire sent or cashier's check ready?\n[ ] ID ready to bring?\n[ ] Phone charged (you'll want to take pictures!)\n\n**WIRE FRAUD WARNING:**\nIf you receive any last-minute changes to wire instructions, CALL ME IMMEDIATELY. Wire fraud is real - always verify by phone.\n\nI'll see you at the closing table tomorrow. This is really happening!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "closing-4",
+        "name": "Closing Day Congrats",
+        "subject": "CONGRATULATIONS, HOMEOWNER!",
+        "delay": "0 minutes",
+        "body": "{{contact.first_name}},\n\nYOU DID IT!\n\nCongratulations on closing on your new home at {{custom.property_address}}!\n\nThis is such a huge milestone, and I'm honored to have been part of your journey.\n\n**What's Next:**\n- Your first payment is due: [DATE]\n- Payment goes to: [SERVICER NAME]\n- Payment amount: $[AMOUNT]\n\nYou'll receive a \"goodbye letter\" from us and a \"hello letter\" from your loan servicer within the next few weeks.\n\n**Keep These Documents Safe:**\n- Your Closing Disclosure\n- Your Note and Deed of Trust\n- Title insurance policy\n- Homeowner's insurance policy\n\nEnjoy your new home! And please don't hesitate to reach out if you ever have questions - I'm always here for you.\n\nWelcome home!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "closing-5",
+        "name": "Post Close Thank You",
+        "subject": "Thank You for Trusting Lendwise Mortgage",
+        "delay": "3 days",
+        "body": "Hi {{contact.first_name}},\n\nNow that you've had a few days to settle in, I wanted to reach out and say THANK YOU.\n\nThank you for trusting me with one of the biggest financial decisions of your life. It truly means the world to me.\n\n**I Have a Small Favor to Ask:**\n\nIf you had a positive experience working with me, would you mind leaving a quick review?\n\n[GOOGLE REVIEW LINK]\n[ZILLOW REVIEW LINK]\n[YELP REVIEW LINK]\n\nYour review helps other families find a trustworthy loan officer, and it really helps my small business.\n\n**Also:**\nIf you know anyone who's looking to buy or refinance, I'd love to help them too. Referrals are the greatest compliment I can receive!\n\nWishing you all the best in your new home.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "post_close_nurture": [
+      {
+        "id": "nurture-1",
+        "name": "30 Day Check-In",
+        "subject": "How's the New Home? 30-Day Check-In",
+        "delay": "30 days",
+        "body": "Hi {{contact.first_name}},\n\nIt's been about a month since you closed on your new home. How are you settling in?\n\nI wanted to check in and make sure:\n- You received info from your loan servicer\n- Your first payment went through smoothly\n- You don't have any questions about your loan\n\nAlso, I'm here if you need:\n- Recommendations for contractors, landscapers, etc.\n- Help understanding your escrow account\n- Anything else - just ask!\n\nEnjoy your new home!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-2",
+        "name": "Home Maintenance Tips",
+        "subject": "Quick Home Maintenance Tips for New Homeowners",
+        "delay": "60 days",
+        "body": "Hi {{contact.first_name}},\n\nNow that you're a homeowner, I wanted to share some maintenance tips that can save you money and headaches down the road:\n\n**Monthly:**\n- Test smoke/CO detectors\n- Check HVAC filters (replace every 1-3 months)\n- Inspect for leaks under sinks\n\n**Seasonally:**\n- Clean gutters (spring and fall)\n- Check weather stripping on doors/windows\n- Service HVAC before summer/winter\n- Test irrigation system (spring)\n\n**Annually:**\n- Have roof inspected\n- Flush water heater\n- Check foundation for cracks\n- Service major appliances\n\n**Pro Tip:** Set calendar reminders for these tasks!\n\nNeed contractor recommendations? I'm happy to share my trusted network.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-3",
+        "name": "Tax Season Reminder",
+        "subject": "Tax Time! Don't Forget Your Mortgage Interest Deduction",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nTax season is here! As a homeowner, you have some valuable deductions available:\n\n**Potential Deductions:**\n- Mortgage interest paid\n- Property taxes paid\n- Points paid on your mortgage\n- Home office (if you work from home)\n\n**What You'll Need:**\n- Form 1098 from your loan servicer (shows mortgage interest paid)\n- Property tax statements\n- Closing Disclosure (for points paid in first year)\n\n**Note:** I'm not a tax professional, so please consult your CPA or tax advisor for specific guidance.\n\nHave a great tax season!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-4",
+        "name": "Spring Home Tips",
+        "subject": "Spring Home Checklist - Is Your Home Ready?",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nSpring is here! Time for some seasonal home maintenance:\n\n**Exterior:**\n[ ] Clean gutters and downspouts\n[ ] Inspect roof for winter damage\n[ ] Power wash siding, deck, and walkways\n[ ] Check irrigation system\n[ ] Touch up exterior paint\n\n**Interior:**\n[ ] Replace HVAC filters\n[ ] Test AC before it gets hot\n[ ] Deep clean after winter\n[ ] Check smoke/CO detector batteries\n\n**Landscaping:**\n[ ] Trim trees and shrubs\n[ ] Apply fertilizer to lawn\n[ ] Plant flowers and vegetables\n[ ] Check for pest issues\n\nNeed contractor recommendations? I've got a great list!\n\nEnjoy the spring weather!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-5",
+        "name": "Referral Request",
+        "subject": "Know Anyone Looking to Buy or Refinance?",
+        "delay": "90 days",
+        "body": "Hi {{contact.first_name}},\n\nI hope you're loving your new home!\n\nI have a quick favor to ask: Do you know anyone who's thinking about buying or refinancing?\n\nReferrals are the backbone of my business, and I would truly appreciate an introduction to anyone you think I could help.\n\n**Who Would Benefit:**\n- First-time homebuyers\n- People looking to move up or downsize\n- Homeowners who want to refinance to a lower rate\n- Investors looking for rental properties\n- Anyone with questions about the mortgage process\n\n**What I Promise:**\nI'll treat your referrals exactly how I treated you - with honest advice, competitive rates, and responsive service.\n\nJust reply to this email with their name and number, or have them call me directly at (310) 954-7772.\n\nThank you so much for thinking of me!\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "nurture-6",
+        "name": "Market Update",
+        "subject": "Los Angeles Real Estate Market Update",
+        "delay": "180 days",
+        "body": "Hi {{contact.first_name}},\n\nI wanted to share a quick update on the local real estate market:\n\n**Current Market Conditions:**\n[MARKET UPDATE DETAILS]\n\n**What This Means for You:**\n- Your home value has likely [increased/held steady]\n- Refinance opportunities may be available if rates drop\n- Building equity faster than expected\n\n**Why This Matters:**\nEven if you're not planning to move, understanding your home's value is important for:\n- Home equity line of credit options\n- Refinancing decisions\n- Insurance coverage amounts\n- Overall net worth tracking\n\nWant a free equity analysis? Just reply to this email and I'll run the numbers for you.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-7",
+        "name": "Anniversary of Close",
+        "subject": "Happy Home Anniversary, {{contact.first_name}}!",
+        "delay": "365 days",
+        "body": "Hi {{contact.first_name}},\n\nCan you believe it's been a year since you closed on your home at {{custom.property_address}}?\n\nHappy Home Anniversary!\n\nI hope this past year has been filled with wonderful memories in your new space.\n\n**Quick Check-In:**\n- How's the home treating you?\n- Any questions about your mortgage?\n- Thinking about refinancing or buying an investment property?\n\n**Fun Fact:**\nIn your first year as a homeowner, you've:\n- Built equity through appreciation and payments\n- Enjoyed tax deductions (hopefully!)\n- Made the home truly yours\n\nIf there's anything I can help with - mortgage questions, contractor referrals, or just a friendly check-in - I'm always here.\n\nCheers to many more years in your home!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "nurture-8",
+        "name": "Holiday Greeting",
+        "subject": "Happy Holidays from Lendwise Mortgage!",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nAs the year comes to a close, I wanted to take a moment to say THANK YOU.\n\nThank you for trusting me with your mortgage needs. It's clients like you who make this job so rewarding.\n\nI hope your holiday season is filled with warmth, joy, and time with loved ones.\n\nWishing you a wonderful holiday and a prosperous New Year!\n\nWarm regards,\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "nurture-9",
+        "name": "Refinance Check-In",
+        "subject": "Time to Review Your Mortgage? Let's Check the Numbers",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nI was reviewing my client database and wanted to reach out about your current mortgage.\n\n**Your Current Loan:**\n- Original Rate: {{custom.interest_rate}}%\n- Loan Amount: ${{custom.loan_amount}}\n\n**Current Rates:**\n- 30-Year Fixed: X.XXX%\n- 15-Year Fixed: X.XXX%\n\n**Refinancing Could Make Sense If:**\n- You can lower your rate by 0.5% or more\n- You want to drop PMI\n- You want to switch from ARM to fixed\n- You want to tap home equity\n- You want a shorter term to pay off faster\n\nWant me to run the numbers? I can show you exactly:\n- Your new payment\n- Your break-even point\n- Your total savings\n\nNo obligation - just reply or call me at (310) 954-7772.\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "nurture-10",
+        "name": "Home Value Update",
+        "subject": "How Much is Your Home Worth Now? Let's Find Out",
+        "delay": "0 minutes",
+        "body": "Hi {{contact.first_name}},\n\nI was thinking about you and wondered: do you know how much your home is worth now?\n\nHome values in {{custom.city}} have [increased significantly / held steady] over the past year.\n\n**Why This Matters:**\n1. **Refinancing options** - More equity = better loan options\n2. **HELOC opportunities** - Access your equity if needed\n3. **PMI removal** - You might be able to drop PMI early\n4. **Net worth tracking** - Your home is likely your biggest asset\n\n**Free Offer:**\nI'd be happy to run a free equity analysis for you. Just reply to this email with \"Equity Check\" and I'll send you a detailed report.\n\nNo obligation, no sales pitch - just good information.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "referral_partner_sequence": [
+      {
+        "id": "referral-1",
+        "name": "New Realtor Introduction",
+        "subject": "Let's Help More Clients Together",
+        "delay": "0 minutes",
+        "body": "Hi [REALTOR NAME],\n\nI'm David Young, a mortgage loan officer with Lendwise Mortgage here in Woodland Hills.\n\nI'm reaching out because I believe we could help each other's clients tremendously.\n\n**What I Bring to the Table:**\n- Fast pre-approvals (24-48 hours)\n- Direct access (I answer my phone!)\n- Quick closings (many in under 30 days)\n- Competitive rates from multiple lenders\n- Strong communication throughout the process\n\n**My Commitment to Your Clients:**\n- Treat them like my own family\n- Keep you informed every step of the way\n- Never let financing kill a deal if I can help it\n\n**My Commitment to You:**\n- Quick loan updates so you can plan\n- Pre-qualification letters same day\n- Available evenings/weekends for your buyers\n\nI'd love to grab coffee and learn more about your business. When works for you?\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772\nDavid@lendwisemtg.com"
+      },
+      {
+        "id": "referral-2",
+        "name": "Thank You for Referral",
+        "subject": "Thank You for the Referral!",
+        "delay": "0 minutes",
+        "body": "Hi [REALTOR NAME],\n\nI just wanted to say THANK YOU for referring [CLIENT NAME] to me.\n\nI've already reached out to them and we're getting started on their pre-qualification.\n\nI'll keep you posted on their progress and let you know as soon as they're ready to start shopping!\n\nReally appreciate you thinking of me. I'll take great care of them.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "referral-3",
+        "name": "Deal Update to Realtor",
+        "subject": "Loan Update: [CLIENT NAME] - [PROPERTY ADDRESS]",
+        "delay": "0 minutes",
+        "body": "Hi [REALTOR NAME],\n\nQuick update on your client [CLIENT NAME]:\n\n**Current Status:** [STATUS]\n\n**What's Happened:**\n[BULLET POINTS OF PROGRESS]\n\n**What's Next:**\n[NEXT STEPS]\n\n**Expected Closing:** On track for [DATE]\n\n**Any Issues:** [NONE / ISSUE DETAILS]\n\nLet me know if you have any questions!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "referral-4",
+        "name": "Closing Notification to Realtor",
+        "subject": "We Did It! [CLIENT NAME] Closed!",
+        "delay": "0 minutes",
+        "body": "Hi [REALTOR NAME],\n\nGreat news - [CLIENT NAME] closed today!\n\nCongratulations on another successful transaction. It was a pleasure working with you and your client.\n\n**Closed Details:**\n- Property: [ADDRESS]\n- Loan Amount: $[AMOUNT]\n- Rate: [RATE]%\n\nThank you for the opportunity to work together. I hope we can do it again soon!\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "referral-5",
+        "name": "Quarterly Check-In with Partners",
+        "subject": "Checking In - How's Business?",
+        "delay": "90 days",
+        "body": "Hi [REALTOR NAME],\n\nI wanted to check in and see how things are going!\n\n**Quick Market Update:**\n[BRIEF MARKET INSIGHTS]\n\n**What I'm Seeing:**\n- [LOAN PROGRAM UPDATES]\n- [RATE TRENDS]\n- [BUYER ACTIVITY]\n\nI'm always here if you need:\n- Quick pre-approvals for new buyers\n- Creative financing solutions\n- Help with challenging files\n- Someone to answer your clients' mortgage questions\n\nLet's grab coffee soon! My treat.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "referral-6",
+        "name": "Co-Marketing Opportunity",
+        "subject": "Co-Marketing Idea - Let's Grow Together",
+        "delay": "0 minutes",
+        "body": "Hi [REALTOR NAME],\n\nI have an idea I'd love to run by you:\n\n**Joint First-Time Homebuyer Seminar**\n\nI've been thinking about hosting a seminar for first-time homebuyers and I think we'd make a great team:\n- You cover the home search process\n- I cover the financing side\n- We both get exposure to new clients\n\n**The Details:**\n- 60-90 minute presentation\n- Hosted at [VENUE IDEAS]\n- We split the marketing cost\n- We both get all attendee contacts\n\n**Why This Works:**\nAttendees get valuable information, and we both get to showcase our expertise.\n\nInterested? Let's chat and put something together.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      }
+    ],
+    "holiday_templates": [
+      {
+        "id": "holiday-birthday",
+        "name": "Birthday Greeting",
+        "subject": "Happy Birthday, {{contact.first_name}}!",
+        "body": "Hi {{contact.first_name}},\n\nWishing you a very Happy Birthday!\n\nI hope your day is filled with joy, celebration, and all your favorite things.\n\nHere's to a wonderful year ahead!\n\nWarm regards,\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "holiday-newyear",
+        "name": "New Year",
+        "subject": "Happy New Year from Lendwise Mortgage!",
+        "body": "Hi {{contact.first_name}},\n\nHappy New Year!\n\nAs we start a fresh new year, I wanted to wish you health, happiness, and prosperity.\n\nIf homeownership or refinancing is on your 2025 goals list, I'm here to help make it happen!\n\nWishing you all the best in the year ahead.\n\nDavid Young\nLendwise Mortgage\n(310) 954-7772"
+      },
+      {
+        "id": "holiday-valentines",
+        "name": "Valentine's Day",
+        "subject": "Happy Valentine's Day!",
+        "body": "Hi {{contact.first_name}},\n\nHappy Valentine's Day!\n\nJust a note to say I appreciate you and hope your day is filled with love.\n\nWarm regards,\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "holiday-july4th",
+        "name": "4th of July",
+        "subject": "Happy 4th of July!",
+        "body": "Hi {{contact.first_name}},\n\nHappy Independence Day!\n\nI hope you're enjoying the holiday with family, friends, fireworks, and BBQ.\n\nStay safe and enjoy the celebration!\n\nDavid Young\nLendwise Mortgage"
+      },
+      {
+        "id": "holiday-thanksgiving",
+        "name": "Thanksgiving",
+        "subject": "Happy Thanksgiving from Lendwise Mortgage",
+        "body": "Hi {{contact.first_name}},\n\nHappy Thanksgiving!\n\nAs we gather with family and friends, I wanted to take a moment to say how grateful I am to have you as a client.\n\nThank you for trusting me with your mortgage needs. It truly means the world to me.\n\nWishing you a wonderful holiday filled with good food and great company!\n\nDavid Young\nLendwise Mortgage"
+      }
+    ]
+  }
+}

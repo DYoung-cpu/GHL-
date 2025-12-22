@@ -1,0 +1,275 @@
+{
+  "version": "2.0",
+  "company": "LENDWISE MORTGAGE",
+  "created": "2024-12-13",
+  "description": "Complete Mission Control Workflow System - Loan Status Automations",
+
+  "loan_status_workflows": [
+    {
+      "id": "wf-application-completed",
+      "name": "Application Completed Automation",
+      "description": "Triggered when borrower completes their loan application",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Application Started"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_email", "template": "01-application-completed.html", "subject": "Your Application is Complete!"},
+        {"order": 2, "delay": "5 min", "action": "send_sms", "template": "sms-app-completed"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Application Started"},
+        {"order": 4, "delay": "0 min", "action": "internal_notification", "to": "david@lendwisemtg.com", "template": "alert-new-application"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "In Processing"},
+        {"type": "tag_added", "tag": "Lost"}
+      ]
+    },
+    {
+      "id": "wf-sent-to-processing",
+      "name": "Sent to Processing Automation",
+      "description": "Triggered when loan is sent to processor",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "In Processing"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_email", "template": "02-sent-to-processing.html", "subject": "Loan Update: Sent to Processing"},
+        {"order": 2, "delay": "5 min", "action": "send_sms", "template": "sms-sent-to-processing"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Processing"},
+        {"order": 4, "delay": "3 days", "condition": "!has_tag('In Underwriting')", "action": "internal_notification", "template": "alert-processing-delay"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "In Underwriting"}
+      ]
+    },
+    {
+      "id": "wf-submitted-to-underwriting",
+      "name": "Submitted to Underwriting Automation",
+      "description": "Triggered when loan is submitted to underwriting",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "In Underwriting"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_email", "template": "03-submitted-to-underwriting.html", "subject": "Loan Update: Submitted to Underwriting"},
+        {"order": 2, "delay": "5 min", "action": "send_sms", "template": "sms-submitted-to-uw"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Underwriting"},
+        {"order": 4, "delay": "7 days", "condition": "!has_tag('Conditionally Approved')", "action": "internal_notification", "template": "alert-uw-delay"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Conditionally Approved"},
+        {"type": "tag_added", "tag": "Loan Approved"}
+      ]
+    },
+    {
+      "id": "wf-conditional-approval",
+      "name": "Conditional Approval Celebration",
+      "description": "Triggered when loan receives conditional approval",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Conditionally Approved"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_sms", "template": "sms-conditional-approval"},
+        {"order": 2, "delay": "0 min", "action": "send_email", "template": "04-conditional-approval.html", "subject": "Great News: Conditional Approval!"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Conditional Approval"},
+        {"order": 4, "delay": "14 days", "condition": "!has_tag('Loan Approved')", "action": "internal_notification", "template": "alert-approval-delay"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Loan Approved"}
+      ]
+    },
+    {
+      "id": "wf-loan-approved",
+      "name": "Loan Fully Approved Celebration",
+      "description": "Triggered when all conditions satisfied and loan is fully approved",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Loan Approved"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_sms", "template": "sms-loan-approved"},
+        {"order": 2, "delay": "0 min", "action": "send_email", "template": "05-loan-approved.html", "subject": "CONGRATULATIONS! Your Loan is FULLY APPROVED!"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Approved"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Clear to Close"}
+      ]
+    },
+    {
+      "id": "wf-clear-to-close",
+      "name": "Clear to Close Celebration",
+      "description": "Triggered when loan clears to close",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Clear to Close"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_sms", "template": "sms-clear-to-close"},
+        {"order": 2, "delay": "0 min", "action": "send_email", "template": "06-clear-to-close.html", "subject": "CLEAR TO CLOSE! You're Almost Home!"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Clear to Close"},
+        {"order": 4, "delay": "21 days", "condition": "!has_tag('Closed')", "action": "internal_notification", "template": "alert-ctc-delay"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Final Docs Ready"},
+        {"type": "tag_added", "tag": "Closed"}
+      ]
+    },
+    {
+      "id": "wf-final-docs-ready",
+      "name": "Final Docs Ready Notification",
+      "description": "Triggered when final docs are prepared and sent to title",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Final Docs Ready"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_sms", "template": "sms-final-docs"},
+        {"order": 2, "delay": "0 min", "action": "send_email", "template": "07-final-docs-ready.html", "subject": "Final Documents Ready - Closing Day Approaching!"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Closed"}
+      ]
+    },
+    {
+      "id": "wf-funded",
+      "name": "Loan Funded - Congratulations",
+      "description": "Triggered when loan funds",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Closed"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_sms", "template": "sms-funded-congrats"},
+        {"order": 2, "delay": "1 hour", "action": "send_email", "template": "08-funded-congratulations.html", "subject": "CONGRATULATIONS HOMEOWNER! Your Loan Has Funded!"},
+        {"order": 3, "delay": "0 min", "action": "update_pipeline", "stage": "Funded"},
+        {"order": 4, "delay": "0 min", "action": "internal_notification", "template": "alert-funded-celebration"},
+        {"order": 5, "delay": "3 days", "action": "send_sms", "template": "sms-close-thankyou"},
+        {"order": 6, "delay": "7 days", "action": "add_tag", "tag": "Post-Close Nurture"}
+      ]
+    }
+  ],
+
+  "lo_self_alert_workflows": [
+    {
+      "id": "wf-lo-alerts",
+      "name": "LO Self-Alert System",
+      "description": "Internal alerts to keep LO informed of loan pipeline status",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Application Started"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "internal_notification", "message": "NEW APPLICATION: {{contact.first_name}} {{contact.last_name}} has started their application."},
+        {"order": 2, "delay": "3 days", "condition": "!has_tag('In Processing')", "action": "internal_notification", "message": "ALERT: {{contact.first_name}} {{contact.last_name}} - 3 days without processing."},
+        {"order": 3, "delay": "7 days", "condition": "!has_tag('In Underwriting')", "action": "internal_notification", "message": "URGENT: {{contact.first_name}} {{contact.last_name}} - 7 days without UW submission."},
+        {"order": 4, "delay": "14 days", "condition": "!has_tag('Conditionally Approved')", "action": "internal_notification", "message": "CRITICAL: {{contact.first_name}} {{contact.last_name}} - 14 days without approval."},
+        {"order": 5, "delay": "21 days", "condition": "!has_tag('Clear to Close')", "action": "internal_notification", "message": "ESCALATE: {{contact.first_name}} {{contact.last_name}} - 21 days without CTC."}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Closed"},
+        {"type": "tag_added", "tag": "Lost"}
+      ]
+    }
+  ],
+
+  "purchase_nurture_workflows": [
+    {
+      "id": "wf-purchase-nurture",
+      "name": "Purchase - Home Search Follow-Up",
+      "description": "5-step nurture sequence for leads actively looking to purchase a home",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Purchase Lead"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_email", "template": "purchase-01-welcome.html", "subject": "Welcome to Your Home Buying Journey!"},
+        {"order": 2, "delay": "0 min", "action": "send_sms", "template": "sms-lead-1"},
+        {"order": 3, "delay": "3 days", "action": "send_email", "template": "purchase-02-preapproval.html", "subject": "Get Pre-Approved: Your Key to Success"},
+        {"order": 4, "delay": "7 days", "action": "send_email", "template": "purchase-03-market-tips.html", "subject": "5 Smart Home Buying Tips"},
+        {"order": 5, "delay": "14 days", "action": "send_email", "template": "purchase-04-checkin.html", "subject": "How's Your Home Search Going?"},
+        {"order": 6, "delay": "30 days", "action": "send_email", "template": "purchase-05-still-here.html", "subject": "I'm Still Here When You're Ready"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Application Started"},
+        {"type": "tag_added", "tag": "Lost"},
+        {"type": "tag_added", "tag": "Unsubscribed"}
+      ]
+    }
+  ],
+
+  "refinance_nurture_workflows": [
+    {
+      "id": "wf-refinance-nurture",
+      "name": "Refinance Follow-Up Sequence",
+      "description": "5-step nurture sequence for leads interested in refinancing",
+      "status": "draft",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Refinance Lead"
+      },
+      "steps": [
+        {"order": 1, "delay": "0 min", "action": "send_email", "template": "refi-01-welcome.html", "subject": "Let's Explore Your Refinance Options"},
+        {"order": 2, "delay": "0 min", "action": "send_sms", "template": "sms-lead-1"},
+        {"order": 3, "delay": "3 days", "action": "send_email", "template": "refi-02-rate-analysis.html", "subject": "Your Personalized Rate Analysis"},
+        {"order": 4, "delay": "7 days", "action": "send_email", "template": "refi-03-cashout.html", "subject": "Unlock Your Home Equity"},
+        {"order": 5, "delay": "14 days", "action": "send_email", "template": "refi-04-checkin.html", "subject": "Questions About Refinancing?"},
+        {"order": 6, "delay": "30 days", "action": "send_email", "template": "refi-05-still-here.html", "subject": "I'm Watching Rates For You"}
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Application Started"},
+        {"type": "tag_added", "tag": "Lost"},
+        {"type": "tag_added", "tag": "Unsubscribed"}
+      ]
+    }
+  ],
+
+  "tags_required": [
+    "Application Started",
+    "In Processing",
+    "In Underwriting",
+    "Conditionally Approved",
+    "Loan Approved",
+    "Clear to Close",
+    "Final Docs Ready",
+    "Closed",
+    "Lost",
+    "Post-Close Nurture",
+    "Purchase Lead",
+    "Refinance Lead",
+    "Unsubscribed"
+  ],
+
+  "pipeline_stages": [
+    {"name": "New Lead", "order": 1},
+    {"name": "Application Started", "order": 2},
+    {"name": "Processing", "order": 3},
+    {"name": "Underwriting", "order": 4},
+    {"name": "Conditional Approval", "order": 5},
+    {"name": "Approved", "order": 6},
+    {"name": "Clear to Close", "order": 7},
+    {"name": "Funded", "order": 8},
+    {"name": "Lost", "order": 9}
+  ],
+
+  "custom_fields_for_progress_tracker": [
+    {"name": "application_date", "type": "date"},
+    {"name": "processing_date", "type": "date"},
+    {"name": "underwriting_date", "type": "date"},
+    {"name": "conditional_date", "type": "date"},
+    {"name": "approval_date", "type": "date"},
+    {"name": "ctc_date", "type": "date"},
+    {"name": "final_docs_date", "type": "date"},
+    {"name": "funded_date", "type": "date"}
+  ]
+}

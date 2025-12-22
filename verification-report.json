@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-12-14T15:38:21.844Z",
+  "locationId": "peE6XmGYBb1xV0iNbh6C",
+  "workflows": [],
+  "tags": [],
+  "customFieldElements": 0,
+  "apiResults": {
+    "workflowsError": "Failed to fetch (services.leadconnectorhq.com)",
+    "customFieldsError": "Failed to fetch (services.leadconnectorhq.com)",
+    "tagsError": "Failed to fetch (services.leadconnectorhq.com)",
+    "pipelinesError": "Failed to fetch (services.leadconnectorhq.com)"
+  }
+}

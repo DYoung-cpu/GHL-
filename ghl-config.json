@@ -1,0 +1,59 @@
+{
+  "locationId": "peE6XmGYBb1xV0iNbh6C",
+  "contactReviewPipelineId": "ooqrlJv5GV8yfj3mwNFr",
+  "contactReviewUnclassifiedStageId": "e3be6972-a8d5-4b1c-9b6e-e48890a92491",
+  "customFields": {
+    "contact_type": "1ms6w5sVytbkpa4HasaE",
+    "relationshipType": "I6Sd6K22kbPLym0RBMnp",
+    "relationshipTypeId": "I6Sd6K22kbPLym0RBMnp",
+    "loan_state": "5jPVqO7o4kfw16MGMWW5",
+    "engagement_state": "2F8rbpc3BEK9382kQwgV",
+    "automation_paused": "L3CLTGUF5DLSK6eknwPm"
+  },
+  "tags": {
+    "trigger_intake_gate": "vqPVAydpndTFLhnWJORT",
+    "contact_unclassified": "7KWgphjC1RKych04A7Ts",
+    "contact_review_required": "t8FusjDAytGP4G7DJQFp",
+    "contact.unclassified": "7KWgphjC1RKych04A7Ts",
+    "contact.review_required": "t8FusjDAytGP4G7DJQFp",
+    "email.engaged": "HOUmbkvTAYAAqb5Nrunm",
+    "email.clicked": "c5VrXmaTybHXwUaIrBSG",
+    "email.replied": "zHHgwYHFRkE5zEAgVH9N",
+    "email.bounced": "Yczv9a8IfCtd6V56XF9Z"
+  },
+  "pipelines": {
+    "contactReview": {
+      "id": "ooqrlJv5GV8yfj3mwNFr",
+      "stages": {
+        "unclassified": "e3be6972-a8d5-4b1c-9b6e-e48890a92491",
+        "classified": "d8a07090-109b-4aad-baf6-7f78f8293a2b"
+      }
+    },
+    "existing": {
+      "contactReview": {
+        "id": "ooqrlJv5GV8yfj3mwNFr",
+        "name": "Contact Review",
+        "stages": {
+          "Unclassified": "e3be6972-a8d5-4b1c-9b6e-e48890a92491",
+          "Classified": "d8a07090-109b-4aad-baf6-7f78f8293a2b"
+        }
+      },
+      "marketingPipeline": {
+        "id": "wczt0qg5CbtYgsm4gAne",
+        "name": "Marketing Pipeline"
+      },
+      "mortgageSalesPipeline": {
+        "id": "PTKY7pwZE6MUTCC6nrU7",
+        "name": "Mortgage Sales Pipeline"
+      },
+      "purchaseLeads": {
+        "id": "0Nm1vo0kZOwco2syIuYq",
+        "name": "Purchase Leads"
+      },
+      "refiLeads": {
+        "id": "1w5dXX3voHHBGBPCx3sV",
+        "name": "Refi Leads"
+      }
+    }
+  }
+}

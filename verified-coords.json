@@ -1,0 +1,38 @@
+{
+  "sidebar": {
+    "Launchpad": { "x": 112, "y": 200 },
+    "Dashboard": { "x": 112, "y": 236 },
+    "Conversations": { "x": 112, "y": 272 },
+    "Calendars": { "x": 112, "y": 308 },
+    "Contacts": { "x": 112, "y": 344 },
+    "Opportunities": { "x": 112, "y": 380 },
+    "Payments": { "x": 112, "y": 416 },
+    "AI Agents": { "x": 112, "y": 485 },
+    "Marketing": { "x": 112, "y": 521 },
+    "Automation": { "x": 112, "y": 557 },
+    "Sites": { "x": 112, "y": 593 },
+    "Memberships": { "x": 112, "y": 629 },
+    "Media Storage": { "x": 112, "y": 665 },
+    "Reputation": { "x": 112, "y": 701 },
+    "Reporting": { "x": 112, "y": 737 },
+    "App Marketplace": { "x": 112, "y": 773 },
+    "Settings": { "x": 112, "y": 1048 }
+  },
+  "topBar": {
+    "Ask AI": { "x": 1721, "y": 25 },
+    "View Changelog": { "x": 1763, "y": 25 },
+    "Notifications": { "x": 1805, "y": 25 },
+    "Support": { "x": 1847, "y": 25 }
+  },
+  "workflowsPage": {
+    "Workflows tab": { "x": 395, "y": 70 },
+    "Global Workflow Settings": { "x": 555, "y": 70 },
+    "Create Folder": { "x": 1366, "y": 52 },
+    "Create Workflow": { "x": 1532, "y": 52 },
+    "All Workflows": { "x": 140, "y": 107 },
+    "Marketing Workflows folder": { "x": 343, "y": 356 }
+  },
+  "login": {
+    "Google Sign In (iframe)": { "x": 960, "y": 564 }
+  }
+}

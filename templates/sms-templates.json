@@ -1,0 +1,267 @@
+{
+  "company": {
+    "name": "LENDWISE MORTGAGE",
+    "phone": "(310) 954-7772",
+    "agent": "David Young"
+  },
+  "templates": {
+    "new_lead_sms": [
+      {
+        "id": "sms-lead-1",
+        "name": "New Lead Auto-Response",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}! This is David from Lendwise Mortgage. Thanks for reaching out! When's a good time to chat about your home financing goals? - David (310) 954-7772"
+      },
+      {
+        "id": "sms-lead-2",
+        "name": "Lead Follow-Up Day 1",
+        "delay": "1 day",
+        "message": "Hey {{contact.first_name}}, just following up! I'd love to help with your mortgage questions. Quick call this week? Reply with a good time! - David, Lendwise Mortgage"
+      },
+      {
+        "id": "sms-lead-3",
+        "name": "Lead Follow-Up Day 3",
+        "delay": "3 days",
+        "message": "{{contact.first_name}}, still interested in learning about your mortgage options? I can get you pre-qualified in 24 hrs. Just reply READY when you're ready! - David"
+      },
+      {
+        "id": "sms-lead-4",
+        "name": "Lead Follow-Up Day 7",
+        "delay": "7 days",
+        "message": "Hi {{contact.first_name}}! Quick question - are you still thinking about buying/refinancing? I'm here whenever you're ready. No pressure! - David, Lendwise"
+      },
+      {
+        "id": "sms-lead-5",
+        "name": "Lead Follow-Up Day 14",
+        "delay": "14 days",
+        "message": "{{contact.first_name}}, just checking in one more time. If you have mortgage questions down the road, save my number! Happy to help whenever. - David (310) 954-7772"
+      }
+    ],
+    "appointment_sms": [
+      {
+        "id": "sms-appt-confirm",
+        "name": "Appointment Confirmation",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}! Your call with David Young is confirmed for [DATE] at [TIME]. I'll call you at this number. Talk soon! - David, Lendwise Mortgage"
+      },
+      {
+        "id": "sms-appt-reminder-24hr",
+        "name": "Appointment Reminder 24hr",
+        "delay": "-1 day",
+        "message": "Reminder: Your call with David is tomorrow at [TIME]. I'll call you at this number. Questions before then? Just reply! - David, Lendwise"
+      },
+      {
+        "id": "sms-appt-reminder-1hr",
+        "name": "Appointment Reminder 1hr",
+        "delay": "-1 hour",
+        "message": "Hi {{contact.first_name}}! Just a reminder - we're chatting in about an hour. I'll call you at this number. Looking forward to it! - David"
+      },
+      {
+        "id": "sms-appt-missed",
+        "name": "Missed Appointment",
+        "delay": "15 minutes",
+        "message": "Hey {{contact.first_name}}, I tried calling but missed you. No worries! When's a better time to connect? - David, Lendwise Mortgage"
+      },
+      {
+        "id": "sms-appt-reschedule",
+        "name": "Reschedule Request",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}, something came up and I need to reschedule our call. What times work for you tomorrow or later this week? Sorry for the change! - David"
+      }
+    ],
+    "prequal_sms": [
+      {
+        "id": "sms-prequal-start",
+        "name": "Pre-Qual Started",
+        "delay": "0 minutes",
+        "message": "{{contact.first_name}}, I'm working on your pre-qualification now! I'll reach out if I need any info. Expect to hear from me within 24-48 hrs. - David"
+      },
+      {
+        "id": "sms-prequal-docs-needed",
+        "name": "Pre-Qual Docs Needed",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}! Need a few docs to complete your pre-qual: pay stubs, W-2s, bank statements. Can you email them to David@lendwisemtg.com? - David"
+      },
+      {
+        "id": "sms-prequal-docs-reminder",
+        "name": "Pre-Qual Docs Reminder",
+        "delay": "2 days",
+        "message": "Hey {{contact.first_name}}, friendly reminder - still need those documents to finish your pre-qualification. Send when you can! - David, Lendwise"
+      },
+      {
+        "id": "sms-prequal-complete",
+        "name": "Pre-Qual Complete",
+        "delay": "0 minutes",
+        "message": "Great news {{contact.first_name}}! Your pre-qualification is done. You're approved up to $[AMOUNT]! I'll email your letter now. Time to house hunt! - David"
+      }
+    ],
+    "application_sms": [
+      {
+        "id": "sms-app-received",
+        "name": "Application Received",
+        "delay": "0 minutes",
+        "message": "Got your application, {{contact.first_name}}! I'm reviewing everything now. I'll reach out if I need anything. Exciting times ahead! - David"
+      },
+      {
+        "id": "sms-app-docs-received",
+        "name": "Documents Received",
+        "delay": "0 minutes",
+        "message": "Got your documents, {{contact.first_name}}! Thanks for getting those to me quickly. I'll add them to your file. - David"
+      },
+      {
+        "id": "sms-app-docs-needed",
+        "name": "Additional Docs Needed",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}, I need a few more docs for your file: [ITEMS]. Can you send ASAP? Will keep things moving fast! - David"
+      },
+      {
+        "id": "sms-app-submitted",
+        "name": "Submitted to Underwriting",
+        "delay": "0 minutes",
+        "message": "Update: Your file is now with the underwriter! Should hear back in 24-72 hrs. Fingers crossed! I'll text when I know more. - David"
+      },
+      {
+        "id": "sms-app-approved",
+        "name": "Conditional Approval",
+        "delay": "0 minutes",
+        "message": "GREAT NEWS {{contact.first_name}}! You're conditionally approved! Just a few small items to clear. I'll send details via email. Almost there! - David"
+      },
+      {
+        "id": "sms-app-ctc",
+        "name": "Clear to Close",
+        "delay": "0 minutes",
+        "message": "YOU'RE CLEAR TO CLOSE! All conditions cleared. Next step: schedule your closing! So excited for you! Let's chat about next steps. - David"
+      }
+    ],
+    "closing_sms": [
+      {
+        "id": "sms-close-scheduled",
+        "name": "Closing Scheduled",
+        "delay": "0 minutes",
+        "message": "Your closing is set! [DATE] at [TIME] at [LOCATION]. I'll send full details via email. We're in the home stretch! - David"
+      },
+      {
+        "id": "sms-close-reminder-3day",
+        "name": "Closing Reminder 3 Days",
+        "delay": "-3 days",
+        "message": "3 days until closing! Make sure to do your final walkthrough and wire your funds (call to verify wire instructions!). Questions? Text me! - David"
+      },
+      {
+        "id": "sms-close-reminder-1day",
+        "name": "Closing Reminder 1 Day",
+        "delay": "-1 day",
+        "message": "TOMORROW IS THE BIG DAY! Bring your ID and be ready for lots of signing. You're about to be a homeowner! See you there! - David"
+      },
+      {
+        "id": "sms-close-congrats",
+        "name": "Closing Congrats",
+        "delay": "0 minutes",
+        "message": "CONGRATULATIONS {{contact.first_name}}! You did it! Welcome to homeownership! Enjoy your new home and reach out anytime. So proud of you! - David"
+      },
+      {
+        "id": "sms-close-thankyou",
+        "name": "Post-Close Thank You",
+        "delay": "3 days",
+        "message": "Hey {{contact.first_name}}! Hope you're settling in. If you loved working with me, I'd be grateful for a Google review: [LINK]. Thank you! - David"
+      }
+    ],
+    "nurture_sms": [
+      {
+        "id": "sms-nurture-30day",
+        "name": "30 Day Check-In",
+        "delay": "30 days",
+        "message": "Hi {{contact.first_name}}! It's been a month since closing. How's the new home? Any questions about your mortgage? I'm here if you need anything! - David"
+      },
+      {
+        "id": "sms-nurture-anniversary",
+        "name": "Home Anniversary",
+        "delay": "365 days",
+        "message": "Happy Home Anniversary {{contact.first_name}}! Can you believe it's been a year? Hope you're loving your home. Cheers to many more years! - David"
+      },
+      {
+        "id": "sms-nurture-birthday",
+        "name": "Birthday",
+        "delay": "0 minutes",
+        "message": "Happy Birthday {{contact.first_name}}! Wishing you an amazing day filled with celebration! - David, Lendwise Mortgage"
+      },
+      {
+        "id": "sms-nurture-holiday",
+        "name": "Holiday Greeting",
+        "delay": "0 minutes",
+        "message": "Happy Holidays {{contact.first_name}}! Wishing you and your family a wonderful holiday season. Thank you for being a valued client! - David"
+      },
+      {
+        "id": "sms-nurture-referral",
+        "name": "Referral Request",
+        "delay": "90 days",
+        "message": "Hey {{contact.first_name}}! Know anyone looking to buy or refinance? I'd love to help them like I helped you. Referrals mean the world to me! - David"
+      }
+    ],
+    "rate_alert_sms": [
+      {
+        "id": "sms-rate-drop",
+        "name": "Rate Drop Alert",
+        "delay": "0 minutes",
+        "message": "{{contact.first_name}}, rates just dropped! Might be a good time to lock. Want me to check what you'd qualify for today? Reply YES for a quick rate check! - David"
+      },
+      {
+        "id": "sms-rate-lock-confirm",
+        "name": "Rate Lock Confirmation",
+        "delay": "0 minutes",
+        "message": "Your rate is LOCKED at {{custom.interest_rate}}%! This is guaranteed until [DATE]. One less thing to worry about. Details in your email! - David"
+      },
+      {
+        "id": "sms-rate-lock-expiring",
+        "name": "Rate Lock Expiring",
+        "delay": "0 minutes",
+        "message": "Heads up {{contact.first_name}}: Your rate lock expires in [X] days. We're on track to close on time, but let me know if you have any concerns! - David"
+      }
+    ],
+    "realtor_partner_sms": [
+      {
+        "id": "sms-realtor-thankyou",
+        "name": "Realtor Referral Thank You",
+        "delay": "0 minutes",
+        "message": "Thanks for the referral! I reached out to [CLIENT NAME] and we're getting started. I'll keep you posted on progress! - David, Lendwise"
+      },
+      {
+        "id": "sms-realtor-update",
+        "name": "Realtor Client Update",
+        "delay": "0 minutes",
+        "message": "Update on [CLIENT NAME]: [STATUS]. On track for [DATE] closing. Let me know if you need anything! - David"
+      },
+      {
+        "id": "sms-realtor-prequal-ready",
+        "name": "Realtor Pre-Qual Ready",
+        "delay": "0 minutes",
+        "message": "Good news! [CLIENT NAME] is pre-qualified for $[AMOUNT]. They're ready to start shopping! I'll send the letter now. - David"
+      },
+      {
+        "id": "sms-realtor-ctc",
+        "name": "Realtor Clear to Close",
+        "delay": "0 minutes",
+        "message": "[CLIENT NAME] is CLEAR TO CLOSE! We're ready to schedule closing. Great job on this one! - David"
+      }
+    ],
+    "quick_response_sms": [
+      {
+        "id": "sms-quick-callback",
+        "name": "Quick Callback Promise",
+        "delay": "0 minutes",
+        "message": "Got your message {{contact.first_name}}! I'll call you back within the hour. If urgent, call me direct at (310) 954-7772. - David"
+      },
+      {
+        "id": "sms-quick-question",
+        "name": "Quick Question Response",
+        "delay": "0 minutes",
+        "message": "Great question! [ANSWER]. Let me know if you have any other questions! - David, Lendwise Mortgage"
+      },
+      {
+        "id": "sms-quick-after-hours",
+        "name": "After Hours Response",
+        "delay": "0 minutes",
+        "message": "Hi {{contact.first_name}}! Got your message. I'm offline for the night but will reply first thing tomorrow morning. Talk soon! - David"
+      }
+    ]
+  }
+}

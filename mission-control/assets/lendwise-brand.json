@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "name": "LENDWISE MORTGAGE",
+    "tagline": "Smart Lending. Wise Decisions.",
+    "nmls": "2702455",
+    "dre": "02282825"
+  },
+  "colors": {
+    "primary": "#4a90e2",
+    "primary_dark": "#2c5aa0",
+    "secondary": "#27ae60",
+    "success": "#27ae60",
+    "warning": "#f39c12",
+    "danger": "#e74c3c",
+    "dark": "#333333",
+    "light": "#f5f5f5",
+    "white": "#ffffff",
+    "gray": "#999999",
+    "border": "#cccccc"
+  },
+  "fonts": {
+    "primary": "Arial, Helvetica, sans-serif",
+    "heading": "Arial, Helvetica, sans-serif"
+  },
+  "contact": {
+    "name": "David Young",
+    "title": "CMO / Partner",
+    "subtitle": "Business Development & Strategic Growth",
+    "nmls": "62043",
+    "dre": "01371572",
+    "phone": "(310) 954-7772",
+    "email": "david@lendwisemtg.com",
+    "website": "https://www.lendwisemtg.com",
+    "address": "21800 Oxnard St #220, Woodland Hills, CA 91367",
+    "apply_url": "https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?lar=dyoung&workFlowId=233348&action=login&dest=/loan-app/&siteId=1956469515",
+    "calendar_url": "https://calendar.app.google/YOUR_CALENDAR_LINK"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/profile.php?id=61572823776712",
+    "instagram": "https://www.instagram.com/lendwisemtg",
+    "google_reviews": "https://share.google/4ehnbHG80kKuSlQAR",
+    "linkedin": "https://www.linkedin.com/company/lendwise-mortgage"
+  },
+  "images": {
+    "logo": "https://i.imgur.com/JpwjXtZ.png",
+    "owl_icon": "https://i.imgur.com/kiKsFbB.gif",
+    "apply_button": "https://i.imgur.com/03hiDCk.png"
+  },
+  "legal": {
+    "equal_housing": "Equal Housing Lender",
+    "confidentiality": "This message and its contents are confidential and may contain privileged information intended only for the addressee or intended recipient.",
+    "irs_disclosure": "To ensure compliance with IRS requirements, please be advised that any U.S. federal tax advice contained in this communication is not intended or written to be used for the purpose of avoiding penalties under the Internal Revenue Code."
+  }
+}

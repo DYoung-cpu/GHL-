@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{EMAIL_TITLE}}</title>
+  <!--[if mso]>
+  <style type="text/css">
+    body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+  </style>
+  <![endif]-->
+</head>
+<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: Arial, Helvetica, sans-serif;">
+
+  <!-- Email Container -->
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5;">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+
+        <!-- Main Content Card -->
+        <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+          <!-- Header with Logo -->
+          <tr>
+            <td style="padding: 30px 40px 20px 40px; border-bottom: 3px solid #4a90e2;">
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="70" valign="middle">
+                    <img src="https://i.imgur.com/kiKsFbB.gif" width="57" height="57" alt="LENDWISE" style="display: block;">
+                  </td>
+                  <td valign="middle" style="padding-left: 15px;">
+                    <img src="https://i.imgur.com/JpwjXtZ.png" width="150" alt="LendWise Mortgage" style="display: block;">
+                  </td>
+                  <td align="right" valign="middle">
+                    <span style="color: #4a90e2; font-size: 12px; font-weight: bold;">NMLS# 2702455</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Status Badge -->
+          <tr>
+            <td style="padding: 30px 40px 0 40px;">
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <span style="color: #4a90e2; font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Loan Update</span>
+                    <h1 style="color: {{STATUS_COLOR}}; font-size: 28px; font-weight: 400; margin: 8px 0 0 0; letter-spacing: 0.5px;">{{STATUS_TITLE}}</h1>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Main Content -->
+          <tr>
+            <td style="padding: 25px 40px;">
+              {{MAIN_CONTENT}}
+            </td>
+          </tr>
+
+          <!-- Progress Tracker -->
+          <tr>
+            <td style="padding: 0 40px 30px 40px;">
+              {{PROGRESS_TRACKER}}
+            </td>
+          </tr>
+
+          <!-- CTA Button (optional) -->
+          {{CTA_SECTION}}
+
+          <!-- Signature -->
+          <tr>
+            <td style="padding: 20px 40px; border-top: 1px solid #eeeeee;">
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="70" valign="top">
+                    <img src="https://i.imgur.com/kiKsFbB.gif" width="57" height="57" alt="LENDWISE" style="display: block; border-radius: 50%;">
+                  </td>
+                  <td valign="top" style="padding-left: 15px;">
+                    <p style="margin: 0; font-size: 16px; font-weight: bold; color: #333333;">David Young</p>
+                    <p style="margin: 3px 0; font-size: 13px; color: #666666;">CMO / Partner</p>
+                    <p style="margin: 3px 0; font-size: 12px; color: #888888;">NMLS: 62043 | DRE: 01371572</p>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+                      <tr>
+                        <td style="padding-right: 15px;">
+                          <a href="tel:+13109547772" style="color: #4a90e2; text-decoration: none; font-size: 13px;">310-954-7772</a>
+                        </td>
+                        <td>
+                          <a href="mailto:david@lendwisemtg.com" style="color: #4a90e2; text-decoration: none; font-size: 13px;">david@lendwisemtg.com</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="margin-top: 12px;">
+                      <tr>
+                        <td style="padding-right: 8px;">
+                          <a href="https://lendwisemtg.mymortgage-online.com/borrower-app/registration/?lar=dyoung&workFlowId=233348&action=login&dest=/loan-app/&siteId=1956469515" style="background-color: #4a90e2; color: #ffffff; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: bold;">Apply Now</a>
+                        </td>
+                        <td>
+                          <a href="https://www.lendwisemtg.com" style="color: #4a90e2; text-decoration: none; font-size: 12px;">lendwisemtg.com</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Social Links -->
+          <tr>
+            <td align="center" style="padding: 15px 40px; background-color: #f8f9fa;">
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding: 0 8px;">
+                    <a href="https://www.facebook.com/profile.php?id=61572823776712"><img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" width="24" height="24" alt="Facebook" style="display: block;"></a>
+                  </td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://www.instagram.com/lendwisemtg"><img src="https://cdn-icons-png.flaticon.com/32/2111/2111463.png" width="24" height="24" alt="Instagram" style="display: block;"></a>
+                  </td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://share.google/4ehnbHG80kKuSlQAR"><img src="https://cdn-icons-png.flaticon.com/32/2991/2991148.png" width="24" height="24" alt="Google" style="display: block;"></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 20px 40px; background-color: #333333; border-radius: 0 0 8px 8px;">
+              <p style="margin: 0 0 10px 0; font-size: 11px; color: #999999; line-height: 1.5;">
+                <strong>LendWise Mortgage</strong> | NMLS# 2702455 | DRE# 02282825<br>
+                21800 Oxnard St #220, Woodland Hills, CA 91367
+              </p>
+              <p style="margin: 0 0 10px 0; font-size: 10px; color: #777777; line-height: 1.4;">
+                Equal Housing Lender. This message is confidential and intended only for the addressee. If you received this in error, please notify us immediately.
+              </p>
+              <p style="margin: 0; font-size: 10px; color: #666666;">
+                <a href="{{OPTOUT_LINK}}" style="color: #4a90e2;">Unsubscribe</a> | <a href="https://www.lendwisemtg.com/privacy" style="color: #4a90e2;">Privacy Policy</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

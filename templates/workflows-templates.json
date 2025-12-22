@@ -1,0 +1,738 @@
+{
+  "company": {
+    "name": "LENDWISE MORTGAGE",
+    "phone": "(310) 954-7772",
+    "email": "David@lendwisemtg.com",
+    "agent": "David Young"
+  },
+  "workflows": [
+    {
+      "id": "wf-new-lead-nurture",
+      "name": "New Lead Nurture Sequence",
+      "description": "Automated follow-up sequence for new leads",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "New Lead"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-lead-1",
+          "description": "Immediate SMS response"
+        },
+        {
+          "order": 2,
+          "delay": "5 minutes",
+          "action": "send_email",
+          "template": "email-lead-welcome-1",
+          "description": "Welcome email with rate info"
+        },
+        {
+          "order": 3,
+          "delay": "1 day",
+          "action": "send_sms",
+          "template": "sms-lead-2",
+          "description": "Day 1 follow-up SMS"
+        },
+        {
+          "order": 4,
+          "delay": "2 days",
+          "action": "send_email",
+          "template": "email-lead-follow1",
+          "description": "Day 2 follow-up email"
+        },
+        {
+          "order": 5,
+          "delay": "3 days",
+          "action": "send_sms",
+          "template": "sms-lead-3",
+          "description": "Day 3 SMS - pre-qual offer"
+        },
+        {
+          "order": 6,
+          "delay": "5 days",
+          "action": "send_email",
+          "template": "email-lead-follow2",
+          "description": "Day 5 email with value content"
+        },
+        {
+          "order": 7,
+          "delay": "7 days",
+          "action": "send_sms",
+          "template": "sms-lead-4",
+          "description": "Day 7 check-in SMS"
+        },
+        {
+          "order": 8,
+          "delay": "10 days",
+          "action": "send_email",
+          "template": "email-lead-follow3",
+          "description": "Day 10 final active follow-up"
+        },
+        {
+          "order": 9,
+          "delay": "14 days",
+          "action": "send_sms",
+          "template": "sms-lead-5",
+          "description": "Day 14 last SMS"
+        },
+        {
+          "order": 10,
+          "delay": "14 days",
+          "action": "add_tag",
+          "tag": "Long-Term Nurture",
+          "description": "Move to long-term nurture"
+        },
+        {
+          "order": 11,
+          "delay": "14 days",
+          "action": "internal_notification",
+          "message": "Lead {{contact.first_name}} {{contact.last_name}} completed initial nurture sequence without converting. Consider manual outreach.",
+          "description": "Notify David for manual follow-up"
+        }
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Appointment Scheduled"},
+        {"type": "tag_added", "tag": "Pre-Qual Started"},
+        {"type": "tag_added", "tag": "Do Not Contact"},
+        {"type": "replied", "action": "pause_and_notify"}
+      ]
+    },
+
+    {
+      "id": "wf-appointment-reminders",
+      "name": "Appointment Reminder Sequence",
+      "description": "Automated reminders before scheduled appointments",
+      "status": "active",
+      "trigger": {
+        "type": "appointment_booked",
+        "calendar": "any"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-appt-confirm",
+          "description": "Immediate booking confirmation SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-appt-confirm",
+          "description": "Confirmation email with calendar invite"
+        },
+        {
+          "order": 3,
+          "delay": "-1 day",
+          "relative_to": "appointment",
+          "action": "send_sms",
+          "template": "sms-appt-reminder-24hr",
+          "description": "24-hour reminder SMS"
+        },
+        {
+          "order": 4,
+          "delay": "-1 day",
+          "relative_to": "appointment",
+          "action": "send_email",
+          "template": "email-appt-reminder-24hr",
+          "description": "24-hour reminder email"
+        },
+        {
+          "order": 5,
+          "delay": "-1 hour",
+          "relative_to": "appointment",
+          "action": "send_sms",
+          "template": "sms-appt-reminder-1hr",
+          "description": "1-hour reminder SMS"
+        }
+      ],
+      "exit_conditions": [
+        {"type": "appointment_cancelled", "action": "stop"},
+        {"type": "appointment_rescheduled", "action": "restart"}
+      ]
+    },
+
+    {
+      "id": "wf-missed-appointment",
+      "name": "Missed Appointment Follow-Up",
+      "description": "Follow-up when appointment is marked as no-show",
+      "status": "active",
+      "trigger": {
+        "type": "appointment_status_changed",
+        "status": "no_show"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "15 minutes",
+          "action": "send_sms",
+          "template": "sms-appt-missed",
+          "description": "Missed appointment SMS"
+        },
+        {
+          "order": 2,
+          "delay": "1 hour",
+          "action": "send_email",
+          "template": "email-appt-missed",
+          "description": "Reschedule offer email"
+        },
+        {
+          "order": 3,
+          "delay": "1 day",
+          "action": "send_sms",
+          "template": "sms-lead-2",
+          "description": "Follow-up SMS next day"
+        },
+        {
+          "order": 4,
+          "delay": "3 days",
+          "action": "internal_notification",
+          "message": "{{contact.first_name}} {{contact.last_name}} missed their appointment and hasn't rescheduled. Manual outreach recommended.",
+          "description": "Notify for manual follow-up"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-pre-qual-process",
+      "name": "Pre-Qualification Process Workflow",
+      "description": "Automated communications during pre-qualification",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Pre-Qual Started"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-prequal-start",
+          "description": "Pre-qual started notification"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-prequal-started",
+          "description": "Pre-qual welcome email with checklist"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Pre-Qualification",
+          "description": "Move to Pre-Qual stage"
+        },
+        {
+          "order": 4,
+          "delay": "2 days",
+          "action": "conditional",
+          "condition": "!has_tag('Documents Received')",
+          "then_action": "send_sms",
+          "then_template": "sms-prequal-docs-reminder",
+          "description": "Doc reminder if not received"
+        },
+        {
+          "order": 5,
+          "delay": "4 days",
+          "action": "conditional",
+          "condition": "!has_tag('Documents Received')",
+          "then_action": "send_email",
+          "then_template": "email-prequal-doc-reminder",
+          "description": "Email doc reminder"
+        }
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Pre-Qual Complete"},
+        {"type": "tag_added", "tag": "Application Started"}
+      ]
+    },
+
+    {
+      "id": "wf-pre-qual-complete",
+      "name": "Pre-Qualification Complete Notification",
+      "description": "Celebrate and next steps when pre-qual is done",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Pre-Qual Complete"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-prequal-complete",
+          "description": "Pre-qual complete SMS"
+        },
+        {
+          "order": 2,
+          "delay": "5 minutes",
+          "action": "send_email",
+          "template": "email-prequal-approved",
+          "description": "Pre-qual letter email"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Pre-Approved",
+          "description": "Move to Pre-Approved stage"
+        },
+        {
+          "order": 4,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-prequal-next-steps",
+          "description": "Next steps email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-application-process",
+      "name": "Application Process Updates",
+      "description": "Keep borrowers informed during application",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Application Started"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-app-received",
+          "description": "Application received SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-app-received",
+          "description": "Application received email"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Application",
+          "description": "Move to Application stage"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-underwriting-updates",
+      "name": "Underwriting Status Updates",
+      "description": "Automated updates during underwriting",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "In Underwriting"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-app-submitted",
+          "description": "Submitted to UW notification"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-app-submitted",
+          "description": "UW submission email"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Underwriting",
+          "description": "Move to Underwriting stage"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-conditional-approval",
+      "name": "Conditional Approval Celebration",
+      "description": "Notify when conditionally approved",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Conditionally Approved"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-app-approved",
+          "description": "Conditional approval SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-app-approved",
+          "description": "Conditional approval email with conditions list"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-clear-to-close",
+      "name": "Clear to Close Celebration",
+      "description": "Big celebration when CTC achieved",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Clear to Close"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-app-ctc",
+          "description": "CTC celebration SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-app-ctc",
+          "description": "CTC email with next steps"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Clear to Close",
+          "description": "Move to CTC stage"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-closing-sequence",
+      "name": "Closing Countdown Sequence",
+      "description": "Reminders and prep for closing day",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Closing Scheduled"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-close-scheduled",
+          "description": "Closing scheduled SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-close-scheduled",
+          "description": "Closing details email"
+        },
+        {
+          "order": 3,
+          "delay": "-3 days",
+          "relative_to": "custom_field:closing_date",
+          "action": "send_sms",
+          "template": "sms-close-reminder-3day",
+          "description": "3-day closing reminder SMS"
+        },
+        {
+          "order": 4,
+          "delay": "-3 days",
+          "relative_to": "custom_field:closing_date",
+          "action": "send_email",
+          "template": "email-close-reminder-3day",
+          "description": "3-day closing prep email"
+        },
+        {
+          "order": 5,
+          "delay": "-1 day",
+          "relative_to": "custom_field:closing_date",
+          "action": "send_sms",
+          "template": "sms-close-reminder-1day",
+          "description": "Day before closing SMS"
+        },
+        {
+          "order": 6,
+          "delay": "-1 day",
+          "relative_to": "custom_field:closing_date",
+          "action": "send_email",
+          "template": "email-close-reminder-1day",
+          "description": "Day before closing email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-post-close-nurture",
+      "name": "Post-Close Nurture & Referral Sequence",
+      "description": "Long-term client nurturing after closing",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Closed"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-close-congrats",
+          "description": "Closing day congratulations SMS"
+        },
+        {
+          "order": 2,
+          "delay": "1 hour",
+          "action": "send_email",
+          "template": "email-close-congrats",
+          "description": "Congratulations email"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Closed Won",
+          "description": "Move to Closed Won"
+        },
+        {
+          "order": 4,
+          "delay": "3 days",
+          "action": "send_sms",
+          "template": "sms-close-thankyou",
+          "description": "Thank you + review request SMS"
+        },
+        {
+          "order": 5,
+          "delay": "7 days",
+          "action": "send_email",
+          "template": "email-post-close-welcome",
+          "description": "Welcome home email with tips"
+        },
+        {
+          "order": 6,
+          "delay": "30 days",
+          "action": "send_sms",
+          "template": "sms-nurture-30day",
+          "description": "30-day check-in SMS"
+        },
+        {
+          "order": 7,
+          "delay": "30 days",
+          "action": "send_email",
+          "template": "email-post-close-30day",
+          "description": "30-day check-in email"
+        },
+        {
+          "order": 8,
+          "delay": "90 days",
+          "action": "send_sms",
+          "template": "sms-nurture-referral",
+          "description": "Referral request SMS"
+        },
+        {
+          "order": 9,
+          "delay": "90 days",
+          "action": "send_email",
+          "template": "email-referral-ask",
+          "description": "Referral request email"
+        },
+        {
+          "order": 10,
+          "delay": "180 days",
+          "action": "send_email",
+          "template": "email-nurture-6month",
+          "description": "6-month check-in"
+        },
+        {
+          "order": 11,
+          "delay": "365 days",
+          "action": "send_sms",
+          "template": "sms-nurture-anniversary",
+          "description": "Home anniversary SMS"
+        },
+        {
+          "order": 12,
+          "delay": "365 days",
+          "action": "send_email",
+          "template": "email-nurture-anniversary",
+          "description": "Home anniversary email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-realtor-updates",
+      "name": "Realtor Partner Updates",
+      "description": "Keep referring realtors informed on their client's progress",
+      "status": "active",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Realtor Referral"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms_to_referrer",
+          "template": "sms-realtor-thankyou",
+          "description": "Thank realtor for referral"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email_to_referrer",
+          "template": "email-realtor-thankyou",
+          "description": "Realtor thank you email"
+        }
+      ],
+      "milestone_triggers": [
+        {
+          "trigger": {"type": "tag_added", "tag": "Pre-Qual Complete"},
+          "action": "send_sms_to_referrer",
+          "template": "sms-realtor-prequal-ready",
+          "description": "Notify realtor of pre-qual"
+        },
+        {
+          "trigger": {"type": "tag_added", "tag": "Clear to Close"},
+          "action": "send_sms_to_referrer",
+          "template": "sms-realtor-ctc",
+          "description": "Notify realtor of CTC"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-rate-drop-alert",
+      "name": "Rate Drop Alert Campaign",
+      "description": "Notify contacts when rates drop significantly",
+      "status": "manual",
+      "trigger": {
+        "type": "manual_trigger",
+        "filter": "tag:Long-Term Nurture OR tag:Past Client"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-rate-drop",
+          "description": "Rate drop alert SMS"
+        },
+        {
+          "order": 2,
+          "delay": "1 hour",
+          "action": "send_email",
+          "template": "email-rate-drop",
+          "description": "Rate drop email with details"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-birthday",
+      "name": "Birthday Wishes",
+      "description": "Automated birthday messages",
+      "status": "active",
+      "trigger": {
+        "type": "birthday",
+        "field": "date_of_birth"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "9:00 AM",
+          "action": "send_sms",
+          "template": "sms-nurture-birthday",
+          "description": "Birthday SMS"
+        },
+        {
+          "order": 2,
+          "delay": "9:00 AM",
+          "action": "send_email",
+          "template": "email-birthday",
+          "description": "Birthday email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-stale-lead-reengagement",
+      "name": "Stale Lead Re-engagement",
+      "description": "Re-engage leads that haven't responded",
+      "status": "active",
+      "trigger": {
+        "type": "no_activity",
+        "days": 30,
+        "filter": "stage:New Lead OR stage:Pre-Qualification"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-reengagement",
+          "description": "Re-engagement email"
+        },
+        {
+          "order": 2,
+          "delay": "3 days",
+          "action": "send_sms",
+          "template": "sms-lead-5",
+          "description": "Final check-in SMS"
+        },
+        {
+          "order": 3,
+          "delay": "7 days",
+          "action": "conditional",
+          "condition": "no_response",
+          "then_action": "add_tag",
+          "then_tag": "Cold Lead",
+          "description": "Mark as cold if no response"
+        }
+      ]
+    }
+  ],
+
+  "workflow_notes": {
+    "implementation_order": [
+      "1. wf-new-lead-nurture - Critical for lead response",
+      "2. wf-appointment-reminders - Reduces no-shows",
+      "3. wf-pre-qual-process - Streamlines pre-qual",
+      "4. wf-post-close-nurture - Builds referral pipeline",
+      "5. Remaining workflows in order listed"
+    ],
+    "testing_recommendations": [
+      "Create test contact to run through each workflow",
+      "Verify SMS and email delivery",
+      "Test exit conditions to ensure proper workflow stopping",
+      "Check pipeline stage updates are working"
+    ],
+    "customization_needed": [
+      "Replace [YOUR_NMLS] placeholders",
+      "Add Google review link to post-close templates",
+      "Connect actual email and SMS templates by ID",
+      "Set up actual calendar booking links",
+      "Configure custom field references for dates"
+    ]
+  }
+}

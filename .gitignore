@@ -1,0 +1,28 @@
+# Environment variables (contains API keys)
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Screenshots (large files)
+screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Auth state files (contain session data)
+bntouch-auth.json
+*-auth.json
+
+# Logs
+*.log
+
+# Playwright browser data (large cache files)
+.playwright-data/

@@ -1,0 +1,2128 @@
+[
+  {
+    "name": "CE: Application Purchase Home Search Follow Up - Client",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297763",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297763",
+    "steps": "",
+    "length": "CE: Application Purchase Home Search Follow Up - Client\nThis campaign will provide potential borrowers who have completed an application with home buying tips to keep you top of mind.",
+    "triggers": "66 days",
+    "status": "Spanish (15)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521509&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521509"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521510&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521510"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521511&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521511"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521512&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521512"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521513&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521513"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521514&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521514"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521515&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521515"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521516&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521516"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521517&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521517"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521518&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521518"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521519&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521519"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521520&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521520"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521521&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521521"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521522&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521522"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521523&campaign=297763",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297763&edit_letter=2521523"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Application Purchase Home Search Follow Up - Self Alerts",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297764",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297764",
+    "steps": "",
+    "length": "CE: Application Purchase Home Search Follow Up - Self Alerts\nThis campaigns contains self alerts to keep you notified where potential borrowers are on the \"Application Purchase Home Search Follow Up - Clients\" campaign.",
+    "triggers": "65 days",
+    "status": "Spanish (5)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521524&campaign=297764",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297764&edit_letter=2521524"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521525&campaign=297764",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297764&edit_letter=2521525"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521526&campaign=297764",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297764&edit_letter=2521526"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521527&campaign=297764",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297764&edit_letter=2521527"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521528&campaign=297764",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297764&edit_letter=2521528"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Application Refinance Follow Up - Client",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297767",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297767",
+    "steps": "",
+    "length": "CE: Application Refinance Follow Up - Client\nThis campaign will provide potential borrowers who have completed an application with refinance tips to keep you top of mind.",
+    "triggers": "66 days",
+    "status": "Spanish (14)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521552&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521552"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521553&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521553"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521554&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521554"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521555&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521555"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521556&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521556"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521557&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521557"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521558&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521558"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521559&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521559"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521560&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521560"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521561&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521561"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521562&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521562"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521563&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521563"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521564&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521564"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521565&campaign=297767",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297767&edit_letter=2521565"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Application Refinance Follow Up - Self Alerts",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297768",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297768",
+    "steps": "",
+    "length": "CE: Application Refinance Follow Up - Self Alerts\nThis campaign will keep you updated on where your potential borrowers are at in the \"Application Refinance Follow Up - Clients\" campaign.",
+    "triggers": "65 days",
+    "status": "Spanish (5)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521566&campaign=297768",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297768&edit_letter=2521566"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521567&campaign=297768",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297768&edit_letter=2521567"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521568&campaign=297768",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297768&edit_letter=2521568"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521569&campaign=297768",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297768&edit_letter=2521569"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521570&campaign=297768",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297768&edit_letter=2521570"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: Application Purchase Found Home Follow up - Client",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297765",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297765",
+    "steps": "",
+    "length": "CE: BNTouch: Application Purchase Found Home Follow up - Client\nThis campaign will provide potential borrowers who've found a home with purchasing tips to keep you top of mind, and nudge them towards completing their digital 1003 application.",
+    "triggers": "66 days",
+    "status": "Spanish (18)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521529&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521529"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521530&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521530"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521531&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521531"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521532&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521532"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521533&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521533"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521534&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521534"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521535&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521535"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521536&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521536"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521537&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521537"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521538&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521538"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521539&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521539"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521540&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521540"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521541&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521541"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521542&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521542"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521543&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521543"
+      },
+      {
+        "stepNum": "16",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521544&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521544"
+      },
+      {
+        "stepNum": "17",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521545&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521545"
+      },
+      {
+        "stepNum": "18",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521546&campaign=297765",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297765&edit_letter=2521546"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: Application Purchase Found Home Follow up - Self Alerts",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297766",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297766",
+    "steps": "",
+    "length": "CE: BNTouch: Application Purchase Found Home Follow up - Self Alerts\nThis campaign will alert you where your potential borrower is in the \"Application Purchase Found Home Follow Up - Client\" campaign",
+    "triggers": "65 days",
+    "status": "Spanish (5)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521547&campaign=297766",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297766&edit_letter=2521547"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521548&campaign=297766",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297766&edit_letter=2521548"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521549&campaign=297766",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297766&edit_letter=2521549"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521550&campaign=297766",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297766&edit_letter=2521550"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521551&campaign=297766",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297766&edit_letter=2521551"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Prospect (Pre-Application) Purchase Follow Up - Client",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297759",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297759",
+    "steps": "",
+    "length": "CE: Prospect (Pre-Application) Purchase Follow Up - Client\nThis campaign will provide potential borrowers with purchasing tips to keep you top of mind, and nudge them towards completing their digital 1003 application.",
+    "triggers": "66 days",
+    "status": "Spanish (18)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521463&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521463"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521464&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521464"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521465&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521465"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521466&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521466"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521467&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521467"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521468&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521468"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521469&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521469"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521470&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521470"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521471&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521471"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521472&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521472"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521473&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521473"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521474&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521474"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521475&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521475"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521476&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521476"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521477&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521477"
+      },
+      {
+        "stepNum": "16",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521478&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521478"
+      },
+      {
+        "stepNum": "17",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521479&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521479"
+      },
+      {
+        "stepNum": "18",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521480&campaign=297759",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297759&edit_letter=2521480"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Prospect (Pre-Application) Purchase Follow Up - Self Alerts",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297760",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297760",
+    "steps": "",
+    "length": "CE: Prospect (Pre-Application) Purchase Follow Up - Self Alerts\nThis campaign will update you on where potential borrowers are in the \"Prospect (Pre-Application) Purchase Follow Up - Client\" campaign.",
+    "triggers": "65 days",
+    "status": "Spanish (5)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521481&campaign=297760",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297760&edit_letter=2521481"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521482&campaign=297760",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297760&edit_letter=2521482"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521483&campaign=297760",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297760&edit_letter=2521483"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521484&campaign=297760",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297760&edit_letter=2521484"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521485&campaign=297760",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297760&edit_letter=2521485"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Prospect (Pre-Application) Refinance Follow Up - Client",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297761",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297761",
+    "steps": "",
+    "length": "CE: Prospect (Pre-Application) Refinance Follow Up - Client\nThis campaign will provide potential borrowers with refinance tips to keep you top of mind, and nudge them towards completing their digital 1003 application.",
+    "triggers": "66 days",
+    "status": "Spanish (18)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521486&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521486"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521487&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521487"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521488&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521488"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521489&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521489"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521490&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521490"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521491&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521491"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521492&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521492"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521493&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521493"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521494&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521494"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521495&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521495"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521496&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521496"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521497&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521497"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521498&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521498"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521499&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521499"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521500&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521500"
+      },
+      {
+        "stepNum": "16",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521501&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521501"
+      },
+      {
+        "stepNum": "17",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521502&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521502"
+      },
+      {
+        "stepNum": "18",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521503&campaign=297761",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297761&edit_letter=2521503"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: Prospect (Pre-Application) Refinance Follow Up - Self Alerts",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297762",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297762",
+    "steps": "",
+    "length": "CE: Prospect (Pre-Application) Refinance Follow Up - Self Alerts\nThis campaign will update you on where potential borrowers are in the \"Prospect (Pre-Application) Refinance Follow Up - Clients\" campaign.",
+    "triggers": "65 days",
+    "status": "Spanish (5)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521504&campaign=297762",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297762&edit_letter=2521504"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521505&campaign=297762",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297762&edit_letter=2521505"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521506&campaign=297762",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297762&edit_letter=2521506"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521507&campaign=297762",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297762&edit_letter=2521507"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521508&campaign=297762",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297762&edit_letter=2521508"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Application Completed v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297769",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297769",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Application Completed v2\nThis campaign will notify your borrowers/agents that their application is officially completed.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521571&campaign=297769",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297769&edit_letter=2521571"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521572&campaign=297769",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297769&edit_letter=2521572"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521573&campaign=297769",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297769&edit_letter=2521573"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521574&campaign=297769",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297769&edit_letter=2521574"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Cleared to Close v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297774",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297774",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Cleared to Close v2\nThis campaign will notify your borrowers (and also partners) that their loan is Clear to Close.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521591&campaign=297774",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297774&edit_letter=2521591"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521592&campaign=297774",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297774&edit_letter=2521592"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521593&campaign=297774",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297774&edit_letter=2521593"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521594&campaign=297774",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297774&edit_letter=2521594"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Final Docs Ready v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297775",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297775",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Final Docs Ready v2\nThis campaign will notify your borrowers (and agents) when their final documents are ready",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521595&campaign=297775",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297775&edit_letter=2521595"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521596&campaign=297775",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297775&edit_letter=2521596"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521597&campaign=297775",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297775&edit_letter=2521597"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521598&campaign=297775",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297775&edit_letter=2521598"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Loan Approved v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297773",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297773",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Loan Approved v2\nEmail going to clients, self, colleagues letting them know the status of their file. This campaign will notify and congratulate your borrower (and any appropriate partners) when their loan has been approved.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521587&campaign=297773",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297773&edit_letter=2521587"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521588&campaign=297773",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297773&edit_letter=2521588"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521589&campaign=297773",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297773&edit_letter=2521589"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521590&campaign=297773",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297773&edit_letter=2521590"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Loan Approved With Conditions v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297772",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297772",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Loan Approved With Conditions v2\nThis campaign will notify your borrower (and loan partners) that their loan is conditionally approved.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521583&campaign=297772",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297772&edit_letter=2521583"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521584&campaign=297772",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297772&edit_letter=2521584"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521585&campaign=297772",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297772&edit_letter=2521585"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521586&campaign=297772",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297772&edit_letter=2521586"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Loan Submitted to Processing v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297770",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297770",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Loan Submitted to Processing v2\nThis campaign will notify your borrower (and appropriate partners) that their loan has been submitted into processing.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521575&campaign=297770",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297770&edit_letter=2521575"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521576&campaign=297770",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297770&edit_letter=2521576"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521577&campaign=297770",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297770&edit_letter=2521577"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521578&campaign=297770",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297770&edit_letter=2521578"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: In-Processing - Loan Submitted to Underwriting v2",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297771",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297771",
+    "steps": "",
+    "length": "CE: BNTouch: In-Processing - Loan Submitted to Underwriting v2\nThis campaign will let your borrower (and the appropriate partners) know that their loan is in underwriting.",
+    "triggers": "1 days",
+    "status": "Spanish (4)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521579&campaign=297771",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297771&edit_letter=2521579"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521580&campaign=297771",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297771&edit_letter=2521580"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521581&campaign=297771",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297771&edit_letter=2521581"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521582&campaign=297771",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297771&edit_letter=2521582"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: Post Funded Follow-Up",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297776",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297776",
+    "steps": "",
+    "length": "CE: BNTouch: Post Funded Follow-Up\nThis campaign keeps you top of mind with clients once their loan is funded.",
+    "triggers": "1081 days",
+    "status": "Spanish (21)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521600&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521600"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521601&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521601"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "P",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521602&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521602"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521603&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521603"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521599&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521599"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521604&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521604"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521605&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521605"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521606&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521606"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521607&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521607"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521608&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521608"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521609&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521609"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521610&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521610"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521611&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521611"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521612&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521612"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521613&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521613"
+      },
+      {
+        "stepNum": "16",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521614&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521614"
+      },
+      {
+        "stepNum": "17",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521615&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521615"
+      },
+      {
+        "stepNum": "18",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521616&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521616"
+      },
+      {
+        "stepNum": "19",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521617&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521617"
+      },
+      {
+        "stepNum": "20",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521618&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521618"
+      },
+      {
+        "stepNum": "21",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521619&campaign=297776",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297776&edit_letter=2521619"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  },
+  {
+    "name": "CE: BNTouch: Previously Funded Follow-Up",
+    "showUrl": "https://www.bntouchmortgage.net/account5/campaign?show=297777",
+    "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?edit=297777",
+    "steps": "",
+    "length": "CE: BNTouch: Previously Funded Follow-Up\nThis is a follow-up campaign for your funded clients who funded their loan with you in the past year before you started using BNTouch.",
+    "triggers": "1081 days",
+    "status": "Spanish (18)",
+    "stepsDetail": [
+      {
+        "stepNum": "1",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521621&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521621"
+      },
+      {
+        "stepNum": "2",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521620&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521620"
+      },
+      {
+        "stepNum": "3",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521622&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521622"
+      },
+      {
+        "stepNum": "4",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521623&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521623"
+      },
+      {
+        "stepNum": "5",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521624&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521624"
+      },
+      {
+        "stepNum": "6",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521625&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521625"
+      },
+      {
+        "stepNum": "7",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521626&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521626"
+      },
+      {
+        "stepNum": "8",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521627&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521627"
+      },
+      {
+        "stepNum": "9",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521628&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521628"
+      },
+      {
+        "stepNum": "10",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521629&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521629"
+      },
+      {
+        "stepNum": "11",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521630&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521630"
+      },
+      {
+        "stepNum": "12",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521631&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521631"
+      },
+      {
+        "stepNum": "13",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521632&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521632"
+      },
+      {
+        "stepNum": "14",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521633&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521633"
+      },
+      {
+        "stepNum": "15",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521634&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521634"
+      },
+      {
+        "stepNum": "16",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521635&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521635"
+      },
+      {
+        "stepNum": "17",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "C",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521636&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521636"
+      },
+      {
+        "stepNum": "18",
+        "subject": "",
+        "method": "",
+        "delay": "A",
+        "recipient": "M",
+        "previewUrl": "https://www.bntouchmortgage.net/account5/preview/html/index.php?id=2521637&campaign=297777",
+        "editUrl": "https://www.bntouchmortgage.net/account5/campaign/?show=297777&edit_letter=2521637"
+      },
+      {
+        "stepNum": "",
+        "subject": "1",
+        "method": "All Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      },
+      {
+        "stepNum": "",
+        "subject": "2",
+        "method": "Deleted Documents",
+        "delay": "Default Folder",
+        "recipient": "",
+        "previewUrl": "",
+        "editUrl": ""
+      }
+    ]
+  }
+]

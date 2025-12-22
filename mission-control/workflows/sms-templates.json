@@ -1,0 +1,162 @@
+{
+  "loan_status_sms": [
+    {
+      "id": "sms-app-completed",
+      "name": "Application Completed",
+      "trigger": "Application Started",
+      "body": "Hi {{contact.first_name}}! Great news - your mortgage application with LENDWISE is complete! I'll keep you updated as we move through processing. Questions? Just reply! - David, NMLS# 62043"
+    },
+    {
+      "id": "sms-sent-to-processing",
+      "name": "Sent to Processing",
+      "trigger": "In Processing",
+      "body": "{{contact.first_name}}, your loan file has been sent to processing! This is a big milestone. I'll update you as we progress toward underwriting. - David, LENDWISE 310-954-7772"
+    },
+    {
+      "id": "sms-submitted-to-uw",
+      "name": "Submitted to Underwriting",
+      "trigger": "In Underwriting",
+      "body": "Hi {{contact.first_name}}! Your loan has been submitted to underwriting for review. This is exciting! I'll let you know as soon as we get a decision. - David, LENDWISE"
+    },
+    {
+      "id": "sms-conditional-approval",
+      "name": "Conditional Approval",
+      "trigger": "Conditionally Approved",
+      "body": "{{contact.first_name}} - GREAT NEWS! Your loan is CONDITIONALLY APPROVED! Just a few items to clear. I'll be in touch with details. We're getting close! - David, LENDWISE"
+    },
+    {
+      "id": "sms-loan-approved",
+      "name": "Loan Fully Approved",
+      "trigger": "Loan Approved",
+      "body": "{{contact.first_name}} - YOUR LOAN IS FULLY APPROVED! All conditions cleared! We're moving to closing. I'll be in touch with next steps. CONGRATS! - David, LENDWISE"
+    },
+    {
+      "id": "sms-clear-to-close",
+      "name": "Clear to Close",
+      "trigger": "Clear to Close",
+      "body": "{{contact.first_name}} - CLEARED TO CLOSE! You're almost home! I'll send final cash-to-close and coordinate your signing. Get ready for keys! - David, LENDWISE"
+    },
+    {
+      "id": "sms-final-docs",
+      "name": "Final Docs Ready",
+      "trigger": "Final Docs Ready",
+      "body": "{{contact.first_name}}, your final loan docs are ready & heading to title! I'll contact you about closing details. IMPORTANT: Verify wire instructions by phone! - David, LENDWISE"
+    },
+    {
+      "id": "sms-funded-congrats",
+      "name": "Funded - Congratulations",
+      "trigger": "Closed",
+      "body": "{{contact.first_name}} - CONGRATULATIONS HOMEOWNER! Your loan has FUNDED! Welcome to your new home! It was an honor helping you. I'm always here for you. - David, LENDWISE"
+    }
+  ],
+  "lead_nurture_sms": [
+    {
+      "id": "sms-lead-1",
+      "name": "New Lead Immediate",
+      "delay": "0 min",
+      "body": "Hi {{contact.first_name}}! This is David Young from LENDWISE Mortgage. I received your inquiry and would love to help with your home financing needs. When's a good time to chat? - David 310-954-7772"
+    },
+    {
+      "id": "sms-lead-2",
+      "name": "Day 1 Follow-Up",
+      "delay": "1 day",
+      "body": "Hi {{contact.first_name}}, just checking in! Have you had a chance to think about your mortgage needs? I'm here to answer any questions. Current rates are very competitive! - David, LENDWISE"
+    },
+    {
+      "id": "sms-lead-3",
+      "name": "Day 3 Pre-Qual Offer",
+      "delay": "3 days",
+      "body": "{{contact.first_name}}, did you know a pre-qualification takes just 15 mins? It's free and gives you a clear picture of your buying power. Want me to get you started? - David, LENDWISE"
+    },
+    {
+      "id": "sms-lead-4",
+      "name": "Day 7 Check-In",
+      "delay": "7 days",
+      "body": "Hi {{contact.first_name}}! Still thinking about your home loan? I'm here whenever you're ready. No pressure, just let me know how I can help! - David Young, LENDWISE 310-954-7772"
+    },
+    {
+      "id": "sms-lead-5",
+      "name": "Day 14 Final",
+      "delay": "14 days",
+      "body": "{{contact.first_name}}, I don't want to bother you - but I'm here whenever you need mortgage help! Feel free to reach out anytime. - David, LENDWISE Mortgage"
+    }
+  ],
+  "appointment_sms": [
+    {
+      "id": "sms-appt-confirm",
+      "name": "Appointment Confirmation",
+      "body": "Hi {{contact.first_name}}! Your call with David Young at LENDWISE Mortgage is confirmed for {{appointment.start_time}}. Looking forward to speaking with you!"
+    },
+    {
+      "id": "sms-appt-reminder-24hr",
+      "name": "24-Hour Reminder",
+      "body": "{{contact.first_name}}, reminder: Your call with David at LENDWISE is tomorrow at {{appointment.start_time}}. Reply YES to confirm or call 310-954-7772 to reschedule."
+    },
+    {
+      "id": "sms-appt-reminder-1hr",
+      "name": "1-Hour Reminder",
+      "body": "{{contact.first_name}}, your call with David is in 1 hour! I'll be calling you at {{contact.phone}}. Talk soon! - LENDWISE Mortgage"
+    },
+    {
+      "id": "sms-appt-missed",
+      "name": "Missed Appointment",
+      "body": "{{contact.first_name}}, I missed you earlier! No worries - let me know a good time to reschedule. Just reply here or call 310-954-7772. - David, LENDWISE"
+    }
+  ],
+  "post_close_sms": [
+    {
+      "id": "sms-close-congrats",
+      "name": "Closing Day Congrats",
+      "body": "{{contact.first_name}} - CONGRATULATIONS! You're officially a homeowner! What an amazing journey. Thank you for trusting LENDWISE. Enjoy your new home! - David"
+    },
+    {
+      "id": "sms-close-thankyou",
+      "name": "Day 3 Thank You",
+      "body": "{{contact.first_name}}, hope you're settling in! If you had a great experience, would you consider leaving us a Google review? It helps others find their dream home! - David, LENDWISE"
+    },
+    {
+      "id": "sms-nurture-30day",
+      "name": "30-Day Check-In",
+      "body": "Hi {{contact.first_name}}! How's the new home? Just checking in to see if you have any questions about your mortgage. I'm always here to help! - David, LENDWISE"
+    },
+    {
+      "id": "sms-nurture-referral",
+      "name": "Referral Request",
+      "body": "{{contact.first_name}}, know anyone looking to buy or refinance? I'd love to help them like I helped you! Just have them mention your name. Thanks! - David, LENDWISE"
+    },
+    {
+      "id": "sms-nurture-anniversary",
+      "name": "Home Anniversary",
+      "body": "{{contact.first_name}}, happy HOME-iversary! Can you believe it's been a year? Hope you're loving your home. I'm always here for any mortgage needs! - David, LENDWISE"
+    },
+    {
+      "id": "sms-nurture-birthday",
+      "name": "Birthday Wishes",
+      "body": "Happy Birthday {{contact.first_name}}! Wishing you an amazing day filled with joy. Cheers from your friends at LENDWISE Mortgage! - David"
+    }
+  ],
+  "prequal_sms": [
+    {
+      "id": "sms-prequal-start",
+      "name": "Pre-Qual Started",
+      "body": "{{contact.first_name}}, exciting news - your pre-qualification is in progress! I'll review your info and be in touch soon with your buying power! - David, LENDWISE"
+    },
+    {
+      "id": "sms-prequal-complete",
+      "name": "Pre-Qual Complete",
+      "body": "{{contact.first_name}} - You're PRE-QUALIFIED! Check your email for your letter. You're ready to start house hunting! Questions? Call me! - David, LENDWISE 310-954-7772"
+    },
+    {
+      "id": "sms-prequal-docs-reminder",
+      "name": "Documents Reminder",
+      "body": "Hi {{contact.first_name}}, friendly reminder: I still need a few documents to complete your pre-qual. Please check your email and upload when ready! - David, LENDWISE"
+    }
+  ],
+  "rate_drop_sms": [
+    {
+      "id": "sms-rate-drop",
+      "name": "Rate Drop Alert",
+      "body": "{{contact.first_name}}, RATES JUST DROPPED! This could be a great time to refinance or buy. Want me to run the numbers for you? Reply YES or call 310-954-7772! - David, LENDWISE"
+    }
+  ]
+}

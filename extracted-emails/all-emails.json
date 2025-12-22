@@ -1,0 +1,23 @@
+[
+  {
+    "campaign": "Happy Thanksgiving",
+    "url": "/account5/preview/html/index.php?id=2521806&campaign=297792",
+    "fullHtml": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"><html style=\"height: 100vh\"><head>\n        <title>Preview</title>\n    </head>\n    <body style=\"height: 100vh; overflow: hidden; padding: 0; margin: 0\">\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652964\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n</body></html>",
+    "bodyHtml": "\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652964\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n",
+    "type": "direct-preview"
+  },
+  {
+    "campaign": "Borrower Birthdays",
+    "url": "/account5/preview/html/index.php?id=2521638&campaign=297778",
+    "fullHtml": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"><html style=\"height: 100vh\"><head>\n        <title>Preview</title>\n    </head>\n    <body style=\"height: 100vh; overflow: hidden; padding: 0; margin: 0\">\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652968\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n</body></html>",
+    "bodyHtml": "\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652968\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n",
+    "type": "direct-preview"
+  },
+  {
+    "campaign": "BNTouch Newsletter",
+    "url": "/account5/preview/html/index.php?id=2521425&campaign=297753",
+    "fullHtml": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"><html style=\"height: 100vh\"><head>\n        <title>Preview</title>\n    </head>\n    <body style=\"height: 100vh; overflow: hidden; padding: 0; margin: 0\">\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652971\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n</body></html>",
+    "bodyHtml": "\n        <iframe id=\"frame\" src=\"https://www.bntouchmortgage.net/account/temp/user_38009/letter.html?ts=1765652971\" width=\"100%\" height=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\"></iframe>\n    \n\n\n\n",
+    "type": "direct-preview"
+  }
+]

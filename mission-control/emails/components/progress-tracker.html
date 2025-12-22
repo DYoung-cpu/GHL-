@@ -1,0 +1,228 @@
+<!--
+  LENDWISE MORTGAGE - Loan Progress Tracker Component
+
+  Usage: Copy this HTML and set STEP_X_STATUS to either:
+  - "complete" (green checkmark)
+  - "current" (blue highlight, bold)
+  - "pending" (gray circle)
+
+  Also set STEP_X_DATE to the completion date or leave empty for pending
+-->
+
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 20px;">
+  <tr>
+    <td colspan="3" style="padding-bottom: 15px;">
+      <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="font-size: 18px; font-weight: bold; color: #333333;">
+            Your Loan Progress
+          </td>
+          <td align="right">
+            <span style="background-color: #4a90e2; color: #ffffff; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: bold;">{{PROGRESS_PERCENT}}% Complete</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Step 1: Application Completed -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP1_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP1_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">1</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">1</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP1_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP1_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Application Completed
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP1_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 2: Sent to Processing -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP2_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP2_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">2</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">2</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP2_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP2_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Sent to Processing
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP2_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 3: Submitted to Underwriting -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP3_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP3_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">3</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">3</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP3_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP3_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Submitted to Underwriting
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP3_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 4: Conditional Approval -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP4_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP4_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">4</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">4</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP4_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP4_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Conditional Approval
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP4_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 5: Loan Approved -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP5_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP5_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">5</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">5</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP5_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP5_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Loan Approved
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP5_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 6: Clear to Close -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP6_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP6_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">6</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">6</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP6_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP6_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Clear to Close
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP6_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 7: Final Docs Ready -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee;">
+      {{#if STEP7_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP7_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">7</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">7</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; border-bottom: 1px solid #eeeeee; {{#if STEP7_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP7_COMPLETE}}color: #333333;{{else}}color: #999999;{{/if}}">
+      Final Docs Ready
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; border-bottom: 1px solid #eeeeee; font-size: 13px; color: #666666;">
+      {{STEP7_DATE}}
+    </td>
+  </tr>
+
+  <!-- Step 8: Funded -->
+  <tr>
+    <td width="36" valign="middle" style="padding: 12px 0;">
+      {{#if STEP8_COMPLETE}}
+      <div style="width: 28px; height: 28px; background-color: #27ae60; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 14px; font-weight: bold;">&#10003;</span>
+      </div>
+      {{else if STEP8_CURRENT}}
+      <div style="width: 28px; height: 28px; background-color: #4a90e2; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #ffffff; font-size: 12px; font-weight: bold;">8</span>
+      </div>
+      {{else}}
+      <div style="width: 28px; height: 28px; background-color: #e0e0e0; border-radius: 50%; text-align: center; line-height: 28px;">
+        <span style="color: #999999; font-size: 12px;">8</span>
+      </div>
+      {{/if}}
+    </td>
+    <td valign="middle" style="padding: 12px 10px; {{#if STEP8_CURRENT}}font-weight: bold; color: #4a90e2;{{else if STEP8_COMPLETE}}color: #27ae60; font-weight: bold;{{else}}color: #999999;{{/if}}">
+      {{#if STEP8_COMPLETE}}FUNDED!{{else}}Funded{{/if}}
+    </td>
+    <td align="right" valign="middle" style="padding: 12px 0; font-size: 13px; color: #666666;">
+      {{STEP8_DATE}}
+    </td>
+  </tr>
+
+</table>

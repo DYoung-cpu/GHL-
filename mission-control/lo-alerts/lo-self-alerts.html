@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LO Alert - LENDWISE</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: Arial, Helvetica, sans-serif;">
+
+<!--
+  ========================================
+  LO SELF-ALERT EMAIL TEMPLATES
+  ========================================
+  These are internal notification emails sent to the Loan Officer (David)
+  to track borrower progress through the loan pipeline.
+
+  Variables:
+  - {{contact.first_name}} {{contact.last_name}}
+  - {{contact.email}}
+  - {{contact.phone}}
+  - {{custom.loan_amount}}
+  - {{custom.property_address}}
+  ========================================
+-->
+
+<!-- TEMPLATE 1: New Application Started Alert -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5; display: none;" id="alert-new-application">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #4a90e2;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #4a90e2; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">NEW APPLICATION</span>
+                  <h2 style="color: #333333; font-size: 20px; margin: 15px 0 10px 0;">Application Started</h2>
+                </td>
+                <td align="right" valign="top">
+                  <img src="https://i.imgur.com/kiKsFbB.gif" width="40" height="40" alt="LENDWISE">
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong> has started their loan application.
+            </p>
+            <table role="presentation" width="100%" style="background-color: #f8f9fa; border-radius: 6px; margin: 15px 0;">
+              <tr>
+                <td style="padding: 15px;">
+                  <p style="font-size: 13px; color: #666666; margin: 0 0 8px 0;"><strong>Contact:</strong> {{contact.email}} | {{contact.phone}}</p>
+                  <p style="font-size: 13px; color: #666666; margin: 0 0 8px 0;"><strong>Loan Amount:</strong> {{custom.loan_amount}}</p>
+                  <p style="font-size: 13px; color: #666666; margin: 0;"><strong>Property:</strong> {{custom.property_address}}</p>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Action:</strong> Review application and follow up within 24 hours.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- TEMPLATE 2: Processing Delay Alert (3 Days) -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5; display: none;" id="alert-processing-delay">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #f39c12;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #f39c12; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">ATTENTION NEEDED</span>
+                  <h2 style="color: #333333; font-size: 20px; margin: 15px 0 10px 0;">Processing Delay - 3 Days</h2>
+                </td>
+                <td align="right" valign="top">
+                  <span style="font-size: 32px;">&#9888;</span>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong>'s application has been pending processing for 3 days.
+            </p>
+            <div style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 12px; border-radius: 6px; margin: 15px 0;">
+              <p style="font-size: 13px; color: #856404; margin: 0;">
+                File has not moved to processing. Check for missing documents or blockers.
+              </p>
+            </div>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Action:</strong> Contact borrower or processor to resolve delays.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- TEMPLATE 3: Underwriting Delay Alert (7 Days) -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5; display: none;" id="alert-uw-delay">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #e67e22;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #e67e22; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">URGENT</span>
+                  <h2 style="color: #333333; font-size: 20px; margin: 15px 0 10px 0;">Underwriting Delay - 7 Days</h2>
+                </td>
+                <td align="right" valign="top">
+                  <span style="font-size: 32px;">&#128680;</span>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong> has been in processing for 7 days without UW submission.
+            </p>
+            <div style="background-color: #ffeaa7; border: 1px solid #e67e22; padding: 12px; border-radius: 6px; margin: 15px 0;">
+              <p style="font-size: 13px; color: #7f5b00; margin: 0;">
+                Processing taking longer than expected. Investigate cause and update borrower.
+              </p>
+            </div>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Action:</strong> Call processor, identify blockers, update borrower on timeline.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- TEMPLATE 4: Approval Delay Alert (14 Days) -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5; display: none;" id="alert-approval-delay">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #e74c3c;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #e74c3c; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">CRITICAL</span>
+                  <h2 style="color: #333333; font-size: 20px; margin: 15px 0 10px 0;">No Approval - 14 Days in UW</h2>
+                </td>
+                <td align="right" valign="top">
+                  <span style="font-size: 32px;">&#128308;</span>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong> has been in underwriting for 14 days without approval.
+            </p>
+            <div style="background-color: #f8d7da; border: 1px solid #dc3545; padding: 12px; border-radius: 6px; margin: 15px 0;">
+              <p style="font-size: 13px; color: #721c24; margin: 0;">
+                Extended underwriting time. May indicate issues or pending conditions.
+              </p>
+            </div>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Action:</strong> Escalate with underwriting, provide borrower status update.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- TEMPLATE 5: CTC Delay Alert (21 Days) -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5; display: none;" id="alert-ctc-delay">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #9b59b6;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #9b59b6; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">ESCALATE NOW</span>
+                  <h2 style="color: #333333; font-size: 20px; margin: 15px 0 10px 0;">No CTC - 21 Days Post Approval</h2>
+                </td>
+                <td align="right" valign="top">
+                  <span style="font-size: 32px;">&#128276;</span>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong> was conditionally approved 21 days ago but has not reached CTC.
+            </p>
+            <div style="background-color: #e8daef; border: 1px solid #9b59b6; padding: 12px; border-radius: 6px; margin: 15px 0;">
+              <p style="font-size: 13px; color: #5b2c6f; margin: 0;">
+                Outstanding conditions blocking CTC. Closing date may be at risk.
+              </p>
+            </div>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Action:</strong> Review conditions list, contact borrower for outstanding items, escalate if needed.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- TEMPLATE 6: Milestone Celebration - Funded -->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f5f5f5;" id="alert-funded-celebration">
+  <tr>
+    <td align="center" style="padding: 20px 10px;">
+      <table role="presentation" width="550" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 8px; border-left: 5px solid #27ae60;">
+        <tr>
+          <td style="padding: 25px;">
+            <table role="presentation" width="100%">
+              <tr>
+                <td>
+                  <span style="background-color: #27ae60; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: bold;">CELEBRATION!</span>
+                  <h2 style="color: #27ae60; font-size: 20px; margin: 15px 0 10px 0;">&#127881; Loan Funded! &#127881;</h2>
+                </td>
+                <td align="right" valign="top">
+                  <span style="font-size: 32px;">&#127968;</span>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 14px; color: #333333; margin: 0 0 15px 0;">
+              <strong>{{contact.first_name}} {{contact.last_name}}</strong>'s loan has funded! They're officially a homeowner!
+            </p>
+            <div style="background-color: #d4edda; border: 1px solid #28a745; padding: 12px; border-radius: 6px; margin: 15px 0;">
+              <p style="font-size: 13px; color: #155724; margin: 0;">
+                <strong>Loan Amount:</strong> {{custom.loan_amount}}<br>
+                <strong>Property:</strong> {{custom.property_address}}
+              </p>
+            </div>
+            <p style="font-size: 13px; color: #888888; margin: 15px 0 0 0;">
+              <strong>Next Steps:</strong> Send congratulations gift, request Google review, add to post-close nurture.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

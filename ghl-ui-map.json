@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "text": "",
+      "x": 34,
+      "y": 29,
+      "tag": "A"
+    },
+    {
+      "text": "Your email address",
+      "x": 960,
+      "y": 302,
+      "tag": "INPUT"
+    },
+    {
+      "text": "The password you picked",
+      "x": 960,
+      "y": 384,
+      "tag": "INPUT"
+    },
+    {
+      "text": "Forgot password?",
+      "x": 960,
+      "y": 417,
+      "tag": "A"
+    },
+    {
+      "text": "Sign in",
+      "x": 960,
+      "y": 465,
+      "tag": "BUTTON"
+    },
+    {
+      "text": "Terms and Conditions",
+      "x": 1040,
+      "y": 623,
+      "tag": "A"
+    }
+  ],
+  "timestamp": "2025-12-13T13:55:49.499Z"
+}

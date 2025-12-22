@@ -1,0 +1,828 @@
+{
+  "company": {
+    "name": "LENDWISE MORTGAGE",
+    "phone": "(310) 954-7772",
+    "email": "David@lendwisemtg.com",
+    "agent": "David Young"
+  },
+  "missing_workflows": [
+    {
+      "id": "wf-sent-to-processing",
+      "name": "Sent to Processing Notification",
+      "description": "Notify borrower when loan file is sent to processor",
+      "status": "draft",
+      "priority": "P0",
+      "source": "BNTouch: In-Processing - Loan Submitted to Processing v2",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "In Processing"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-processing-started",
+          "subject": "Loan Update: Your File is Now in Processing",
+          "description": "Confirmation that loan is with processor"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-processing-started",
+          "description": "SMS notification of processing status"
+        },
+        {
+          "order": 3,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-processing-update",
+          "subject": "Processing Update: What to Expect",
+          "description": "Timeline expectations and next steps"
+        },
+        {
+          "order": 4,
+          "delay": "7 days",
+          "action": "internal_notification",
+          "message": "{{contact.first_name}} {{contact.last_name}} has been in processing for 7 days. Check status.",
+          "description": "Self-alert: Check processing status"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-loan-fully-approved",
+      "name": "Loan Fully Approved Celebration",
+      "description": "Celebrate when all conditions are satisfied and loan is fully approved",
+      "status": "draft",
+      "priority": "P0",
+      "source": "BNTouch: In-Processing - Loan Approved v2",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Loan Approved"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-loan-approved",
+          "description": "Celebration SMS - fully approved!"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-loan-approved",
+          "subject": "Congratulations! Your Loan is FULLY APPROVED!",
+          "description": "Full approval email with next steps"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "update_pipeline_stage",
+          "stage": "Approved",
+          "description": "Move to Approved stage"
+        },
+        {
+          "order": 4,
+          "delay": "1 day",
+          "action": "send_email",
+          "template": "email-pre-closing-prep",
+          "subject": "Getting Ready for Closing",
+          "description": "Closing preparation checklist"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-final-docs-ready",
+      "name": "Final Docs Ready Notification",
+      "description": "Notify when final loan documents are ready and sent to title",
+      "status": "draft",
+      "priority": "P0",
+      "source": "BNTouch: In-Processing - Final Docs Ready v2",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Final Docs Ready"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-final-docs",
+          "description": "Final docs ready SMS"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-final-docs",
+          "subject": "Loan Update: Final Documents Ready!",
+          "description": "Final docs email with wire instructions"
+        },
+        {
+          "order": 3,
+          "delay": "1 day",
+          "action": "send_email",
+          "template": "email-wire-reminder",
+          "subject": "Important: Wire Transfer Reminder",
+          "description": "Wire transfer instructions and fraud warning"
+        },
+        {
+          "order": 4,
+          "delay": "0 minutes",
+          "action": "internal_notification",
+          "message": "Final docs sent for {{contact.first_name}} {{contact.last_name}}. Coordinate closing appointment.",
+          "description": "Self-alert: Schedule closing"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-purchase-home-search",
+      "name": "Purchase Application - Home Search Follow-Up",
+      "description": "Nurture sequence for purchase applicants still looking for a home",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: Application Purchase Home Search Follow Up - Client",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Purchase - Home Search"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-purchase-search-1",
+          "subject": "Your Pre-Approval is Ready - Let's Find Your Home!",
+          "description": "Pre-approval confirmation with home search tips"
+        },
+        {
+          "order": 2,
+          "delay": "5 days",
+          "action": "send_email",
+          "template": "email-purchase-search-2",
+          "subject": "5 Things to Know Before Making an Offer",
+          "description": "Home buying education"
+        },
+        {
+          "order": 3,
+          "delay": "10 days",
+          "action": "send_sms",
+          "template": "sms-home-search-checkin",
+          "description": "Check-in SMS on home search progress"
+        },
+        {
+          "order": 4,
+          "delay": "15 days",
+          "action": "send_email",
+          "template": "email-purchase-search-3",
+          "subject": "What to Look for During Home Showings",
+          "description": "Home viewing tips"
+        },
+        {
+          "order": 5,
+          "delay": "30 days",
+          "action": "send_email",
+          "template": "email-purchase-search-4",
+          "subject": "Market Update: Is Now the Right Time?",
+          "description": "Market conditions update"
+        },
+        {
+          "order": 6,
+          "delay": "45 days",
+          "action": "send_sms",
+          "template": "sms-home-search-status",
+          "description": "Status check SMS"
+        },
+        {
+          "order": 7,
+          "delay": "60 days",
+          "action": "send_email",
+          "template": "email-purchase-search-5",
+          "subject": "Still Looking? Your Pre-Approval Status",
+          "description": "Pre-approval validity reminder"
+        },
+        {
+          "order": 8,
+          "delay": "60 days",
+          "action": "internal_notification",
+          "message": "{{contact.first_name}} {{contact.last_name}} has been searching for 60 days. Consider calling to check in.",
+          "description": "Self-alert: 60-day check-in needed"
+        }
+      ],
+      "exit_conditions": [
+        {"type": "tag_added", "tag": "Purchase - Found Home"},
+        {"type": "tag_added", "tag": "Application Started"},
+        {"type": "tag_added", "tag": "Do Not Contact"}
+      ]
+    },
+
+    {
+      "id": "wf-purchase-found-home",
+      "name": "Purchase Application - Found Home",
+      "description": "Sequence when borrower finds a home and is ready to make an offer",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: Application Purchase Found Home Follow up - Client",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Purchase - Found Home"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-found-home-congrats",
+          "description": "Congratulations on finding a home!"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-found-home-1",
+          "subject": "Congratulations! Next Steps for Your Offer",
+          "description": "Offer preparation guidance"
+        },
+        {
+          "order": 3,
+          "delay": "1 day",
+          "action": "send_email",
+          "template": "email-found-home-2",
+          "subject": "Making a Competitive Offer",
+          "description": "Offer strategy tips"
+        },
+        {
+          "order": 4,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-found-home-3",
+          "subject": "Understanding the Escrow Process",
+          "description": "What to expect after accepted offer"
+        },
+        {
+          "order": 5,
+          "delay": "5 days",
+          "action": "send_sms",
+          "template": "sms-offer-status",
+          "description": "Check on offer status"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-refinance-follow-up",
+      "name": "Refinance Application Follow-Up",
+      "description": "Nurture sequence for refinance applicants",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: Application Refinance Follow Up - Client",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Refinance Applicant"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-refi-welcome",
+          "subject": "Your Refinance Application is Underway",
+          "description": "Refi process overview"
+        },
+        {
+          "order": 2,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-refi-benefits",
+          "subject": "How Much Can You Save by Refinancing?",
+          "description": "Savings breakdown"
+        },
+        {
+          "order": 3,
+          "delay": "7 days",
+          "action": "send_sms",
+          "template": "sms-refi-docs-reminder",
+          "description": "Document reminder SMS"
+        },
+        {
+          "order": 4,
+          "delay": "14 days",
+          "action": "send_email",
+          "template": "email-refi-timeline",
+          "subject": "Your Refinance Timeline",
+          "description": "Process timeline expectations"
+        },
+        {
+          "order": 5,
+          "delay": "30 days",
+          "action": "send_email",
+          "template": "email-refi-update",
+          "subject": "Refinance Status Update",
+          "description": "30-day check-in"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-partner-co-branded",
+      "name": "New Lead from Partner (Co-Branded)",
+      "description": "Follow-up sequence for leads referred by realtor partners",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: New Lead from Partner (Co-Branded)",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Partner Referral"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_sms",
+          "template": "sms-partner-lead-intro",
+          "description": "Immediate SMS with partner mention"
+        },
+        {
+          "order": 2,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-partner-lead-welcome",
+          "subject": "{{custom.realtor_name}} Referred You to Us!",
+          "description": "Welcome email mentioning referring partner"
+        },
+        {
+          "order": 3,
+          "delay": "0 minutes",
+          "action": "send_email_to_referrer",
+          "template": "email-partner-referral-thanks",
+          "subject": "New Referral Received: {{contact.first_name}} {{contact.last_name}}",
+          "description": "Thank partner for referral"
+        },
+        {
+          "order": 4,
+          "delay": "1 day",
+          "action": "send_sms",
+          "template": "sms-partner-lead-follow",
+          "description": "Day 1 follow-up SMS"
+        },
+        {
+          "order": 5,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-partner-lead-value",
+          "subject": "Working Together with {{custom.realtor_name}}",
+          "description": "Team approach email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-prospect-prequal-purchase",
+      "name": "Prospect Pre-Qualification (Purchase)",
+      "description": "Nurture prospects considering a home purchase who haven't started application",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: Prospect (Pre-Application) Purchase Follow Up - Client",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Prospect - Purchase"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-prospect-purchase-1",
+          "subject": "Thinking About Buying a Home?",
+          "description": "Educational intro to home buying"
+        },
+        {
+          "order": 2,
+          "delay": "5 days",
+          "action": "send_email",
+          "template": "email-prospect-purchase-2",
+          "subject": "How Much Home Can You Afford?",
+          "description": "Affordability calculator/guidance"
+        },
+        {
+          "order": 3,
+          "delay": "10 days",
+          "action": "send_sms",
+          "template": "sms-prospect-prequal-offer",
+          "description": "Offer free pre-qualification"
+        },
+        {
+          "order": 4,
+          "delay": "15 days",
+          "action": "send_email",
+          "template": "email-prospect-purchase-3",
+          "subject": "First-Time Buyer? Here's What You Need to Know",
+          "description": "First-time buyer education"
+        },
+        {
+          "order": 5,
+          "delay": "30 days",
+          "action": "send_email",
+          "template": "email-prospect-purchase-4",
+          "subject": "Current Market Conditions for Buyers",
+          "description": "Market update"
+        },
+        {
+          "order": 6,
+          "delay": "45 days",
+          "action": "send_email",
+          "template": "email-prospect-purchase-5",
+          "subject": "Ready to Take the Next Step?",
+          "description": "Call-to-action email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-prospect-prequal-refi",
+      "name": "Prospect Pre-Qualification (Refinance)",
+      "description": "Nurture prospects considering refinancing",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch: Prospect (Pre-Application) Refinance Follow Up - Client",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Prospect - Refinance"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-prospect-refi-1",
+          "subject": "Is Now the Right Time to Refinance?",
+          "description": "Refi education email"
+        },
+        {
+          "order": 2,
+          "delay": "5 days",
+          "action": "send_email",
+          "template": "email-prospect-refi-2",
+          "subject": "Calculate Your Potential Savings",
+          "description": "Savings calculator/analysis offer"
+        },
+        {
+          "order": 3,
+          "delay": "10 days",
+          "action": "send_sms",
+          "template": "sms-prospect-refi-rate",
+          "description": "Rate quote offer SMS"
+        },
+        {
+          "order": 4,
+          "delay": "20 days",
+          "action": "send_email",
+          "template": "email-prospect-refi-3",
+          "subject": "Cash-Out Refinance: Unlock Your Home's Equity",
+          "description": "Cash-out refi education"
+        },
+        {
+          "order": 5,
+          "delay": "30 days",
+          "action": "send_email",
+          "template": "email-prospect-refi-4",
+          "subject": "Refinance Options Explained",
+          "description": "Rate & term vs cash-out comparison"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-self-alert-loan-progress",
+      "name": "Self-Alert: Loan Progress Tracking",
+      "description": "Internal notifications to keep LO informed of loan milestones",
+      "status": "draft",
+      "priority": "P1",
+      "source": "BNTouch Self-Alert campaigns",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "Application Started"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "3 days",
+          "action": "conditional",
+          "condition": "!has_tag('In Processing')",
+          "then_action": "internal_notification",
+          "message": "ALERT: {{contact.first_name}} {{contact.last_name}} application started 3 days ago but not yet in processing.",
+          "description": "Processing delay alert"
+        },
+        {
+          "order": 2,
+          "delay": "7 days",
+          "action": "conditional",
+          "condition": "!has_tag('In Underwriting')",
+          "then_action": "internal_notification",
+          "message": "ALERT: {{contact.first_name}} {{contact.last_name}} has been in processing for 7 days without UW submission.",
+          "description": "Underwriting delay alert"
+        },
+        {
+          "order": 3,
+          "delay": "14 days",
+          "action": "conditional",
+          "condition": "!has_tag('Conditionally Approved')",
+          "then_action": "internal_notification",
+          "message": "ALERT: {{contact.first_name}} {{contact.last_name}} has been in underwriting for 14 days without approval.",
+          "description": "Approval delay alert"
+        },
+        {
+          "order": 4,
+          "delay": "21 days",
+          "action": "conditional",
+          "condition": "!has_tag('Clear to Close')",
+          "then_action": "internal_notification",
+          "message": "URGENT: {{contact.first_name}} {{contact.last_name}} conditionally approved 21 days ago but not yet CTC.",
+          "description": "CTC delay alert"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-previously-funded",
+      "name": "Previously Funded Client Nurture",
+      "description": "Long-term nurture for past clients (different from post-close sequence)",
+      "status": "draft",
+      "priority": "P2",
+      "source": "BNTouch: Previously Funded Follow-Up",
+      "trigger": {
+        "type": "anniversary",
+        "field": "close_date",
+        "years": 2
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 days",
+          "action": "send_email",
+          "template": "email-previously-funded-1",
+          "subject": "Checking In - How's Your Home?",
+          "description": "Year 2 check-in"
+        },
+        {
+          "order": 2,
+          "delay": "365 days",
+          "action": "send_email",
+          "template": "email-previously-funded-2",
+          "subject": "Year 3 in Your Home - Refinance Worth Considering?",
+          "description": "Year 3 refi consideration"
+        },
+        {
+          "order": 3,
+          "delay": "730 days",
+          "action": "send_email",
+          "template": "email-previously-funded-3",
+          "subject": "Home Equity Update",
+          "description": "Year 4 equity update"
+        },
+        {
+          "order": 4,
+          "delay": "1095 days",
+          "action": "send_email",
+          "template": "email-previously-funded-4",
+          "subject": "5 Years Already! Let's Catch Up",
+          "description": "Year 5 milestone"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-first-time-buyers",
+      "name": "First Time Home Buyers Education",
+      "description": "Educational series for first-time home buyers",
+      "status": "draft",
+      "priority": "P2",
+      "source": "BNTouch: First Time Home Buyers - Mortgage Process",
+      "trigger": {
+        "type": "tag_added",
+        "tag": "First Time Buyer"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-ftb-welcome",
+          "subject": "Welcome, First-Time Home Buyer!",
+          "description": "Welcome to home buying journey"
+        },
+        {
+          "order": 2,
+          "delay": "3 days",
+          "action": "send_email",
+          "template": "email-ftb-step1",
+          "subject": "Step 1: Getting Pre-Approved",
+          "description": "Pre-approval importance"
+        },
+        {
+          "order": 3,
+          "delay": "7 days",
+          "action": "send_email",
+          "template": "email-ftb-step2",
+          "subject": "Step 2: Finding the Right Home",
+          "description": "Home search guidance"
+        },
+        {
+          "order": 4,
+          "delay": "14 days",
+          "action": "send_email",
+          "template": "email-ftb-step3",
+          "subject": "Step 3: Making an Offer",
+          "description": "Offer process explained"
+        },
+        {
+          "order": 5,
+          "delay": "21 days",
+          "action": "send_email",
+          "template": "email-ftb-step4",
+          "subject": "Step 4: The Loan Process",
+          "description": "Underwriting and approval"
+        },
+        {
+          "order": 6,
+          "delay": "28 days",
+          "action": "send_email",
+          "template": "email-ftb-step5",
+          "subject": "Step 5: Closing Day!",
+          "description": "What to expect at closing"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-co-borrower-birthday",
+      "name": "Co-Borrower Birthday Wishes",
+      "description": "Birthday messages for co-borrowers (spouse, partner)",
+      "status": "draft",
+      "priority": "P2",
+      "source": "BNTouch: Co-Borrower Birthdays (12 Years)",
+      "trigger": {
+        "type": "birthday",
+        "field": "co_borrower_dob"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "9:00 AM",
+          "action": "send_sms",
+          "template": "sms-coborrower-birthday",
+          "description": "Co-borrower birthday SMS"
+        },
+        {
+          "order": 2,
+          "delay": "9:00 AM",
+          "action": "send_email",
+          "template": "email-coborrower-birthday",
+          "subject": "Happy Birthday!",
+          "description": "Co-borrower birthday email"
+        }
+      ]
+    },
+
+    {
+      "id": "wf-newsletter",
+      "name": "Monthly Newsletter",
+      "description": "Monthly mortgage market updates and tips",
+      "status": "draft",
+      "priority": "P2",
+      "source": "BNTouch: Newsletter",
+      "trigger": {
+        "type": "manual_trigger",
+        "schedule": "monthly"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "delay": "0 minutes",
+          "action": "send_email",
+          "template": "email-newsletter",
+          "subject": "LENDWISE Mortgage Monthly Update",
+          "description": "Monthly newsletter with rates, tips, and updates"
+        }
+      ]
+    }
+  ],
+
+  "new_tags_required": [
+    "In Processing",
+    "Loan Approved",
+    "Final Docs Ready",
+    "Purchase - Home Search",
+    "Purchase - Found Home",
+    "Refinance Applicant",
+    "Partner Referral",
+    "Prospect - Purchase",
+    "Prospect - Refinance",
+    "First Time Buyer"
+  ],
+
+  "new_custom_fields_required": [
+    {
+      "name": "co_borrower_dob",
+      "type": "date",
+      "description": "Co-borrower date of birth for birthday automation"
+    },
+    {
+      "name": "realtor_name",
+      "type": "text",
+      "description": "Referring realtor's name for co-branded campaigns"
+    },
+    {
+      "name": "realtor_email",
+      "type": "email",
+      "description": "Referring realtor's email for partner updates"
+    },
+    {
+      "name": "processing_start_date",
+      "type": "date",
+      "description": "Date loan entered processing"
+    },
+    {
+      "name": "underwriting_start_date",
+      "type": "date",
+      "description": "Date loan submitted to underwriting"
+    },
+    {
+      "name": "approval_date",
+      "type": "date",
+      "description": "Date of full loan approval"
+    },
+    {
+      "name": "final_docs_date",
+      "type": "date",
+      "description": "Date final docs sent to title"
+    }
+  ],
+
+  "email_templates_needed": [
+    "email-processing-started",
+    "email-processing-update",
+    "email-loan-approved",
+    "email-pre-closing-prep",
+    "email-final-docs",
+    "email-wire-reminder",
+    "email-purchase-search-1",
+    "email-purchase-search-2",
+    "email-purchase-search-3",
+    "email-purchase-search-4",
+    "email-purchase-search-5",
+    "email-found-home-1",
+    "email-found-home-2",
+    "email-found-home-3",
+    "email-refi-welcome",
+    "email-refi-benefits",
+    "email-refi-timeline",
+    "email-refi-update",
+    "email-partner-lead-welcome",
+    "email-partner-referral-thanks",
+    "email-partner-lead-value",
+    "email-prospect-purchase-1",
+    "email-prospect-purchase-2",
+    "email-prospect-purchase-3",
+    "email-prospect-purchase-4",
+    "email-prospect-purchase-5",
+    "email-prospect-refi-1",
+    "email-prospect-refi-2",
+    "email-prospect-refi-3",
+    "email-prospect-refi-4",
+    "email-previously-funded-1",
+    "email-previously-funded-2",
+    "email-previously-funded-3",
+    "email-previously-funded-4",
+    "email-ftb-welcome",
+    "email-ftb-step1",
+    "email-ftb-step2",
+    "email-ftb-step3",
+    "email-ftb-step4",
+    "email-ftb-step5",
+    "email-coborrower-birthday",
+    "email-newsletter"
+  ],
+
+  "sms_templates_needed": [
+    "sms-processing-started",
+    "sms-loan-approved",
+    "sms-final-docs",
+    "sms-home-search-checkin",
+    "sms-home-search-status",
+    "sms-found-home-congrats",
+    "sms-offer-status",
+    "sms-refi-docs-reminder",
+    "sms-partner-lead-intro",
+    "sms-partner-lead-follow",
+    "sms-prospect-prequal-offer",
+    "sms-prospect-refi-rate",
+    "sms-coborrower-birthday"
+  ]
+}
