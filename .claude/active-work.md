@@ -1,50 +1,43 @@
-# ACTIVE WORK - READ THIS FIRST
+# ACTIVE WORK - READ THIS FIRST AFTER COMPACTION
 
-## Last Updated
-2025-12-22 (Fixed stale info, uploaded first template)
+## MANDATORY FIRST ACTIONS
+1. Read `.claude/startup-summary.json` for current feature status
+2. Read this file completely
+3. Query Supabase if summary is stale
 
-## CURRENT FOCUS
-Building marketing templates and workflows for David Young's GHL account.
+## PROJECT IDENTITY
+- **Client:** David Young, LENDWISE MORTGAGE
+- **Platform:** Go High Level (GHL)
+- **Location ID:** peE6XmGYBb1xV0iNbh6C
+- **API Key:** pit-7427e736-d68a-41d8-9e9b-4b824b996926
+- **Supabase:** https://izcbxqaemlaabpmnqsmm.supabase.co
 
-## MANDATORY RULES
-1. NO ASSUMPTIONS - verify in files before answering
-2. CLEANUP - after major tasks, update this file & remove stale content
-3. Target: David Young (`peE6XmGYBb1xV0iNbh6C`)
+## ARCHITECTURE
+All workflows trigger via TAGS from Encompass:
+  Encompass milestone → API adds tag → GHL workflow triggers → Email + SMS sent
 
-## PROJECT TRUTH
-- Building: Automated mortgage CRM in GHL for LENDWISE MORTGAGE
-- Client: David Young
-- Target Account: David Young (peE6XmGYBb1xV0iNbh6C)
-- Email: david@lendwisemtg.com
+## RULES
+1. IF YOU CAN DO IT, DO IT
+2. SUPABASE IS SOURCE OF TRUTH
+3. UPDATE SUPABASE AFTER COMPLETING WORK
+4. NEVER HALLUCINATE - check database if unsure
 
-## COMPLETED TODAY (Dec 22, 2025)
-1. Uploaded "Application Received" image to GHL media library
-2. Created email template "Application Received - David Young"
-3. Fixed all stale project files (removed incorrect "Mission Control" references)
+## Last Compaction
+2025-12-23 09:57:54
 
-## WHAT'S DONE
-- 878 contacts imported
-- 1 email template: Application Received - David Young (ID: 6949542531624164bbedd3e5)
 
-## REMAINING WORK
-- More marketing templates (as images become available)
-- Workflow actions
-- 5 forms
-- Testing
-- Encompass API integration (waiting on API key)
+## KEY FILES
+| File | Purpose |
+|------|---------|
+| `.claude/startup-summary.json` | Fresh state from Supabase |
+| `.claude/snapshots/` | Session snapshots |
+| `CLAUDE.md` | All project rules and architecture |
+| `scripts/save-session.js` | Manual snapshot trigger |
 
-## GHL API PATTERNS (PROVEN)
-```
-# Upload image
-POST /medias/upload-file
--F "file=@path" -F "name=Name" -F "locationId=peE6XmGYBb1xV0iNbh6C"
+## SUPABASE TABLES
+- `features` - What's built vs pending
+- `workflows` - All GHL workflows
+- `activity_log` - Session snapshots logged here
 
-# Create email template
-POST /emails/builder
-Body: { locationId, name, subject, type: "html", html }
-```
-
-## FILES THAT MATTER
-- CLAUDE.md - Project truth + rules (auto-loaded)
-- .claude/active-work.md - This file
-- .claude/hooks/before-every-response.sh - Hook that fires every prompt
+---
+Auto-generated at compaction. Read startup-summary.json for current state.
