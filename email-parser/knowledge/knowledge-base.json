@@ -1,0 +1,281 @@
+{
+  "learned_patterns": {
+    "titles": [
+      {
+        "pattern": "Vice President of Operations",
+        "patternType": "exact",
+        "lineContext": "Vice President of Operations",
+        "learnedFrom": "test@example.com",
+        "learnedAt": "2025-12-26T13:53:41.447Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Processor",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "sara@lendwisemtg.com",
+        "learnedAt": "2025-12-27T03:21:25.303Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Loan Officer",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "philipgolden@onenationhomeloans.com",
+        "learnedAt": "2025-12-27T04:32:01.676Z",
+        "originalMissed": "Director of Sales"
+      },
+      {
+        "pattern": "Owner",
+        "patternType": "manual",
+        "learnedFrom": "marc@priorityfinancial.net",
+        "learnedAt": "2025-12-27T04:32:45.699Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Make Mortgages Great Again!",
+        "patternType": "manual",
+        "learnedFrom": "marie@expressmtgcapital.com",
+        "learnedAt": "2025-12-27T04:35:59.606Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Sr. Loan Officer",
+        "patternType": "manual",
+        "learnedFrom": "freddyrath@yahoo.com",
+        "learnedAt": "2025-12-27T04:47:44.107Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Realtor",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "kousha.forshami@gmail.com",
+        "learnedAt": "2025-12-27T04:50:43.895Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Sr. Escrow Officer",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "aileen@conceptfinehomes.com",
+        "learnedAt": "2025-12-27T17:48:00.748Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Senior Loan Coordinator",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "joestegman@ymail.com",
+        "learnedAt": "2025-12-27T21:52:08.722Z",
+        "originalMissed": "Director of Originations"
+      }
+    ],
+    "companies": [
+      {
+        "pattern": "Acme Corp",
+        "patternType": "exact",
+        "lineContext": "Acme Corp",
+        "learnedFrom": "test@example.com",
+        "learnedAt": "2025-12-26T13:53:41.447Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "LendWise mtg",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "sara@lendwisemtg.com",
+        "learnedAt": "2025-12-27T03:21:25.303Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Priority financial",
+        "patternType": "contains",
+        "lineContext": "Priority Financial Network",
+        "learnedFrom": "paulrosenthal@priorityfinancial.net",
+        "learnedAt": "2025-12-27T04:25:15.569Z",
+        "originalMissed": "SVP"
+      },
+      {
+        "pattern": "Priority Financial Network",
+        "patternType": "manual",
+        "learnedFrom": "marc@priorityfinancial.net",
+        "learnedAt": "2025-12-27T04:32:45.700Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "midamericamortgage",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "kyle.mcdonough@midamericamortgage.com",
+        "learnedAt": "2025-12-27T04:33:33.090Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Lendwise",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "jasonharris1212@comcast.net",
+        "learnedAt": "2025-12-27T04:47:19.790Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Relip",
+        "patternType": "contains",
+        "lineContext": "account. That phone number would contingent to Relip.",
+        "learnedFrom": "blake@relip.co",
+        "learnedAt": "2025-12-27T04:48:52.121Z",
+        "originalMissed": null
+      },
+      {
+        "pattern": "Fidelity National Title Company",
+        "patternType": "manual",
+        "lineContext": null,
+        "learnedFrom": "aileen@conceptfinehomes.com",
+        "learnedAt": "2025-12-27T17:48:00.748Z",
+        "originalMissed": null
+      }
+    ],
+    "phones": [
+      {
+        "pattern": "6616079831",
+        "formatted": "6616079831",
+        "learnedFrom": "sara@lendwisemtg.com",
+        "learnedAt": "2025-12-27T03:21:25.303Z"
+      },
+      {
+        "pattern": "2816870928",
+        "formatted": "281-687-0928",
+        "learnedFrom": "brian@megamortgageoftexas.com",
+        "learnedAt": "2025-12-27T04:22:09.259Z"
+      },
+      {
+        "pattern": "8184551832",
+        "formatted": "818-455-1832",
+        "learnedFrom": "philipgolden@onenationhomeloans.com",
+        "learnedAt": "2025-12-27T04:32:01.677Z"
+      },
+      {
+        "pattern": "7329672206",
+        "formatted": "7329672206",
+        "learnedFrom": "marc@priorityfinancial.net",
+        "learnedAt": "2025-12-27T04:32:45.700Z"
+      },
+      {
+        "pattern": "8084471875",
+        "formatted": "8084471875",
+        "learnedFrom": "marie@expressmtgcapital.com",
+        "learnedAt": "2025-12-27T04:35:59.607Z"
+      },
+      {
+        "pattern": "8054048056",
+        "formatted": "805-404-8056",
+        "learnedFrom": "lisayoung727@gmail.com",
+        "learnedAt": "2025-12-27T04:36:41.907Z"
+      },
+      {
+        "pattern": "3107708809",
+        "formatted": "3107708809",
+        "learnedFrom": "myoung2185@gmail.com",
+        "learnedAt": "2025-12-27T04:48:14.507Z"
+      },
+      {
+        "pattern": "3109546805",
+        "formatted": "3109546805",
+        "learnedFrom": "blake@relip.co",
+        "learnedAt": "2025-12-27T04:48:52.121Z"
+      },
+      {
+        "pattern": "3472163311",
+        "formatted": "3472163311",
+        "learnedFrom": "kousha.forshami@gmail.com",
+        "learnedAt": "2025-12-27T04:50:43.895Z"
+      },
+      {
+        "pattern": "6613734078",
+        "formatted": "6613734078",
+        "learnedFrom": "reginalee123@gmail.com",
+        "learnedAt": "2025-12-27T04:52:35.497Z"
+      }
+    ]
+  },
+  "stats": {
+    "totalCorrections": 17,
+    "titleCorrections": 9,
+    "companyCorrections": 8,
+    "phoneCorrections": 10,
+    "totalTrainingSamples": 103,
+    "byType": {
+      "family_friends": 15,
+      "client": 25,
+      "coworker": 7,
+      "loan_officer": 41,
+      "lead_aggregator": 7,
+      "accountant": 1,
+      "processor": 2,
+      "manager": 1,
+      "attorney": 2,
+      "title_escrow": 1,
+      "realtor": 1
+    }
+  },
+  "updatedAt": "2025-12-27T22:31:41.058Z",
+  "patterns": {
+    "family_friends": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "client": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "coworker": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "loan_officer": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "lead_aggregator": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "accountant": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "processor": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "manager": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "attorney": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "title_escrow": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    },
+    "realtor": {
+      "openers": [],
+      "subjects": [],
+      "signatures": []
+    }
+  },
+  "corrections": []
+}

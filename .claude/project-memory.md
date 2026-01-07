@@ -1391,3 +1391,203 @@ System of record for all GHL automations. Tracks everything built and what's pen
 - `v_feature_status` - Summary of completed vs pending by category
 - `v_next_to_build` - Prioritized list of what to build next
 - `v_workflows_with_triggers` - All workflows with their trigger tags
+
+---
+
+## EMAIL ARCHIVE SYSTEM (Dec 23, 2025) - COMPLETE
+
+### Summary
+Built a system to extract email correspondence from Google Takeout mbox files, convert to PDFs, upload to GHL Media Storage, and attach to contacts.
+
+### The Full Workflow
+
+```
+Google Takeout mbox file
+        ↓
+Parse emails for target contact (email-archive-workflow.js)
+        ↓
+Create HTML files labeled: YYYY-MM-DD_Topic_Subject.html
+        ↓
+Convert HTML to individual PDFs (upload-individual-emails.js)
+        ↓
+Upload PDFs to GHL Media Storage
+        ↓
+Create master Index PDF with clickable links (create-email-index-pdf.js)
+        ↓
+Attach Index URL to contact's custom TEXT field
+        ↓
+Add note with archive link for easy access
+```
+
+### Key Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `email-archive-workflow.js` | Main orchestrator - parses mbox, creates HTML files, generates summaries |
+| `upload-individual-emails.js` | Creates individual PDFs from HTML, uploads to GHL |
+| `create-email-index-pdf.js` | Creates master index PDF with clickable links to all emails |
+| `create-email-link-field.js` | Creates TEXT custom field and attaches index URL to contact |
+
+### GHL API Patterns Used
+
+**1. Upload file to Media Storage:**
+```javascript
+const boundary = '----FormBoundary' + Math.random().toString(36).substring(2);
+const bodyParts = [];
+bodyParts.push(`--${boundary}\r\n`);
+bodyParts.push(`Content-Disposition: form-data; name="file"; filename="${fileName}"\r\n`);
+bodyParts.push('Content-Type: application/pdf\r\n\r\n');
+
+const bodyStart = Buffer.from(bodyParts.join(''), 'utf-8');
+const bodyEnd = Buffer.from(`\r\n--${boundary}\r\nContent-Disposition: form-data; name="locationId"\r\n\r\n${LOCATION_ID}\r\n--${boundary}--\r\n`, 'utf-8');
+const fullBody = Buffer.concat([bodyStart, fileContent, bodyEnd]);
+
+// POST to https://services.leadconnectorhq.com/medias/upload-file
+```
+
+**2. Create custom field:**
+```javascript
+POST /locations/${LOCATION_ID}/customFields
+Body: {
+  name: 'Email Index Link',
+  dataType: 'TEXT',
+  model: 'contact',
+  placeholder: 'Click to view email archive'
+}
+```
+
+**3. Update contact with custom field value:**
+```javascript
+PUT /contacts/${CONTACT_ID}
+Body: {
+  customFields: [
+    { id: fieldId, value: indexUrl }
+  ]
+}
+```
+
+**4. Add note to contact:**
+```javascript
+POST /contacts/${CONTACT_ID}/notes
+Body: {
+  body: '📧 EMAIL ARCHIVE INDEX\n\nClick to view all email correspondence:\n${URL}'
+}
+```
+
+### FILE_UPLOAD vs TEXT Custom Fields
+
+**FILE_UPLOAD fields** (like `IDG4ezy2HF8qSSFbCR2s`):
+- Store files with document IDs and meta info
+- Require special upload process through forms endpoint
+- NOT easily set via API with just a URL
+- Structure: `{ uuid: { url, documentId, meta: { size, mimetype, etc } } }`
+
+**TEXT fields** (like `kysHpPJSUdfekbf55LBm`):
+- Simply store string values
+- Can hold clickable URLs
+- Easy to set via API: `{ id: fieldId, value: 'https://...' }`
+- **Recommended for storing links to uploaded files**
+
+### PDF Generation with pdfkit
+
+```javascript
+const PDFDocument = require('pdfkit');
+const doc = new PDFDocument({ margin: 50, size: 'LETTER' });
+
+// Add clickable link
+doc.fillColor('#1976d2')
+   .text(subject, {
+     link: email.url,  // Makes text clickable
+     underline: true
+   });
+
+// Pipe to file
+doc.pipe(fs.createWriteStream(outputPath));
+doc.end();
+```
+
+### Base64 Email Body Decoding
+
+Many email bodies in mbox files are base64 encoded. Detection and decode:
+
+```javascript
+function decodeBase64(str) {
+  try {
+    return Buffer.from(str, 'base64').toString('utf-8');
+  } catch {
+    return str;
+  }
+}
+
+function cleanEmailBody(body) {
+  const lines = body.split('\n').filter(l => l.trim());
+  const base64Pattern = /^[A-Za-z0-9+/=\s]+$/;
+  const base64Lines = lines.filter(l => base64Pattern.test(l.trim()) && l.trim().length > 50);
+
+  if (base64Lines.length > lines.length * 0.5 && base64Lines.length > 3) {
+    const combined = base64Lines.join('');
+    const decoded = decodeBase64(combined);
+    if (decoded && decoded.length > 50 && !decoded.includes('\ufffd')) {
+      body = decoded;
+    }
+  }
+  return body;
+}
+```
+
+### Topic Classification
+
+Emails are auto-classified by keywords in subject/body:
+
+```javascript
+const topics = {
+  'Override': ['override', 'margin', 'commission', 'comp'],
+  'Recruitment': ['recruit', 'hired', 'onboard', 'LO', 'loan officer'],
+  'Compensation': ['salary', 'bonus', 'pay', 'compensation'],
+  'Contract': ['agreement', 'contract', 'sign'],
+  'HR': ['employment', 'resignation', 'termination'],
+  'Loan': ['loan', 'borrower', 'underwriting', 'closing']
+};
+```
+
+### Files Created for Marc Shenkman
+
+| Path | Contents |
+|------|----------|
+| `email-archive/Marc_Shenkman/` | 100 HTML email files |
+| `email-archive/Marc_Shenkman_PDFs/` | 25 individual PDF files |
+| `email-archive/Marc_Shenkman_PDFs/upload-manifest.json` | URLs of all uploaded PDFs |
+| `email-archive/Marc_Shenkman_Email_Index.pdf` | Master index with clickable links |
+
+### GHL Assets Created
+
+| Asset | ID | Value |
+|-------|-----|-------|
+| Custom Field: "Email Index Link" | `kysHpPJSUdfekbf55LBm` | TEXT type |
+| Marc Shenkman Contact | `0tUVXbe1ovBoUiUSBkZM` | Has archive attached |
+| Index PDF URL | - | `https://storage.googleapis.com/msgsndr/peE6XmGYBb1xV0iNbh6C/media/6762adce-23d6-4af3-bbf2-7fd706378016.pdf` |
+
+### Expanding to Other Contacts
+
+To add email archives for other contacts (Brenda Perry, Anthony Amini, Alberto Martinez):
+
+1. **Find contact in GHL** (or create via API)
+2. **Update target email in `email-archive-workflow.js`:**
+   ```javascript
+   const TARGET_EMAILS = ['brenda.perry@priorityfinancial.net'];
+   ```
+3. **Run workflow:** `node email-archive-workflow.js`
+4. **Update paths in `upload-individual-emails.js`**
+5. **Run upload:** `node upload-individual-emails.js`
+6. **Create index:** `node create-email-index-pdf.js` (update CONTACT_ID)
+7. **Attach to contact:** `node create-email-link-field.js` (update CONTACT_ID)
+
+### Key Learnings
+
+1. **GHL FILE_UPLOAD fields require special upload process** - use TEXT fields for storing URLs instead
+2. **Media Storage URLs are permanent** - format: `https://storage.googleapis.com/msgsndr/{locationId}/media/{uuid}.pdf`
+3. **pdfkit hyperlinks work** - PDFs can have clickable links to other PDFs
+4. **Notes provide easy access** - add archive link as note for quick reference
+5. **Base64 detection is key** - many email bodies need decoding before display
+
+---

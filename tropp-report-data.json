@@ -1,0 +1,43 @@
+{
+  "total": 606131,
+  "byCategory": {
+    "Realtor": 211691,
+    "Unknown": 386006,
+    "Lender": 5437,
+    "Attorney": 1168,
+    "Title-Escrow": 557,
+    "Builder-Developer": 528,
+    "Insurance": 372,
+    "Appraiser": 372
+  },
+  "realtorsBySource": {
+    "AdRoll 3-6": 20892,
+    "AdRoll 7-10": 21065,
+    "AdRoll 11-14": 20322,
+    "AdRoll 15-18": 36235,
+    "Florida": 21816,
+    "Texas": 17831,
+    "AZ-NV": 15690,
+    "California": 57840
+  },
+  "realtorsByState": {
+    "FL": 21822,
+    "TX": 17831,
+    "NV": 5397,
+    "AZ": 10287,
+    "CA": 57840
+  },
+  "missingNames": {
+    "total": 0,
+    "byCategory": {
+      "Realtor": 0,
+      "Unknown": 0,
+      "Lender": 0,
+      "Attorney": 0,
+      "Title-Escrow": 0,
+      "Builder-Developer": 0,
+      "Insurance": 0,
+      "Appraiser": 0
+    }
+  }
+}

@@ -26,3 +26,25 @@ bntouch-auth.json
 
 # Playwright browser data (large cache files)
 .playwright-data/
+
+# Email archive data (sensitive)
+email-archive/Marc_Shenkman/*.html
+email-archive/Marc_Shenkman_PDFs/*.pdf
+email-archive/*.pdf
+
+# Keep the manifests and scripts
+!email-archive/**/*manifest*.json
+!email-archive/**/workflow-results.json
+
+# Sensitive data files (contacts, emails)
+data/*.json
+data/*.csv
+*.xlsx
+*.xls
+
+# Email parser data (sensitive)
+email-parser/data/
+
+# Raw email exports
+target-email-raw.txt
+*.mbox

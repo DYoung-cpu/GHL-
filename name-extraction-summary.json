@@ -1,0 +1,10 @@
+{
+  "totalContacts": 784442,
+  "extracted": 757265,
+  "extractedHigh": 121325,
+  "extractedMedium": 125282,
+  "extractedLow": 510658,
+  "notExtracted": 27177,
+  "percentExtracted": "96.5",
+  "percentNotExtracted": "3.5"
+}

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Review Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    h1 { color: #00d4ff; margin-bottom: 20px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: #16213e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .stat-value { font-size: 2em; color: #00d4ff; font-weight: bold; }
+    .stat-label { color: #888; font-size: 0.9em; margin-top: 5px; }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tab {
+      padding: 10px 20px;
+      background: #16213e;
+      border: none;
+      color: #888;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .tab.active { background: #00d4ff; color: #000; }
+    .tab:hover:not(.active) { background: #1f4068; }
+    .search-box {
+      width: 100%;
+      padding: 15px;
+      background: #16213e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+    .search-box:focus { outline: none; border-color: #00d4ff; }
+    .contact-list { display: flex; flex-direction: column; gap: 15px; }
+    .contact-card {
+      background: #16213e;
+      border-radius: 10px;
+      padding: 20px;
+      border-left: 4px solid #00d4ff;
+    }
+    .contact-card.issue { border-left-color: #ff6b6b; }
+    .contact-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .contact-email { font-size: 1.1em; color: #00d4ff; word-break: break-all; }
+    .contact-name { font-size: 1.3em; font-weight: bold; margin-top: 5px; }
+    .contact-badge {
+      background: #1f4068;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      color: #00d4ff;
+    }
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .detail-item { }
+    .detail-label { color: #888; font-size: 0.85em; }
+    .detail-value { color: #fff; margin-top: 3px; }
+    .detail-value.missing { color: #666; font-style: italic; }
+    .email-history {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #333;
+    }
+    .email-history h4 { color: #888; font-size: 0.9em; margin-bottom: 10px; }
+    .email-summary {
+      background: #0f0f23;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .edit-form {
+      display: none;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #333;
+    }
+    .edit-form.show { display: block; }
+    .edit-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .edit-row label { width: 100px; color: #888; }
+    .edit-row input, .edit-row select {
+      flex: 1;
+      min-width: 200px;
+      padding: 8px;
+      background: #0f0f23;
+      border: 1px solid #333;
+      border-radius: 5px;
+      color: #fff;
+    }
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin-right: 5px;
+    }
+    .btn-edit { background: #1f4068; color: #00d4ff; }
+    .btn-reprocess { background: #ff9f43; color: #000; }
+    .btn-save { background: #00d4ff; color: #000; }
+    .btn-cancel { background: #333; color: #888; }
+    .btn:hover { opacity: 0.9; }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .loading { text-align: center; padding: 50px; color: #888; }
+    .status-msg { margin-top: 10px; padding: 10px; border-radius: 5px; display: none; }
+    .status-msg.show { display: block; }
+    .status-msg.success { background: #1e4620; color: #4ade80; }
+    .status-msg.error { background: #4a1515; color: #ff6b6b; }
+
+    /* Parser section styles */
+    .parser-section {
+      background: #16213e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 2px solid #1f4068;
+    }
+    .parser-controls {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+    .btn-parse {
+      background: linear-gradient(135deg, #00d4ff, #0099cc);
+      color: #000;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-parse:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4); }
+    .btn-parse:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+    .btn-parse.running { background: linear-gradient(135deg, #ff9f43, #ee6c4d); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    .parser-status { color: #00d4ff; font-size: 1.1em; }
+    .parser-status.running { color: #ff9f43; }
+    .parser-status.done { color: #4ade80; }
+    .parser-status.error { color: #ff6b6b; }
+    .progress-container { margin-bottom: 15px; }
+    .progress-bar {
+      height: 20px;
+      background: #0f0f23;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00d4ff, #00ff88);
+      transition: width 0.3s ease;
+    }
+    .progress-text {
+      text-align: center;
+      margin-top: 5px;
+      color: #888;
+    }
+    .parser-log {
+      max-height: 200px;
+      overflow-y: auto;
+      font-family: monospace;
+      font-size: 0.85em;
+      color: #888;
+      background: #0f0f23;
+      border-radius: 5px;
+      padding: 10px;
+      display: none;
+    }
+    .parser-log.show { display: block; }
+    .parser-log .log-entry { margin-bottom: 5px; }
+    .parser-log .log-entry.success { color: #4ade80; }
+    .parser-log .log-entry.error { color: #ff6b6b; }
+    .parser-log .log-entry.info { color: #00d4ff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Email Parser Dashboard</h1>
+
+    <!-- Parser Controls -->
+    <div class="parser-section" id="parser-section">
+      <div class="parser-controls">
+        <button class="btn btn-parse" id="btn-start-parser" onclick="startParser()">
+          Start Parser
+        </button>
+        <span class="parser-status" id="parser-status">Ready</span>
+      </div>
+      <div class="progress-container" id="progress-container" style="display: none;">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+        <div class="progress-text" id="progress-text">0%</div>
+      </div>
+      <div class="parser-log" id="parser-log"></div>
+    </div>
+
+    <div class="stats" id="stats">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-total">-</div>
+        <div class="stat-label">Total Contacts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-names">-</div>
+        <div class="stat-label">With Name</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-phones">-</div>
+        <div class="stat-label">With Phone</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-companies">-</div>
+        <div class="stat-label">With Company</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-nmls">-</div>
+        <div class="stat-label">With NMLS</div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-view="all">All Contacts</button>
+      <button class="tab" data-view="issues">Low Confidence</button>
+      <button class="tab" data-view="search">Search</button>
+      <button class="tab" data-view="lenders">Lenders</button>
+      <button class="tab" data-view="brokers">Broker Partners</button>
+      <button class="tab" data-view="realtors">Realtors</button>
+      <button class="tab" data-view="vendors">Vendors</button>
+      <button class="tab" data-view="title">Title/Escrow</button>
+    </div>
+
+    <div id="pagination" style="display: none; margin-bottom: 15px;">
+      <button class="btn btn-edit" id="btn-prev" onclick="changePage(-1)">← Previous</button>
+      <span id="page-info" style="margin: 0 15px; color: #888;">Page 1</span>
+      <button class="btn btn-edit" id="btn-next" onclick="changePage(1)">Next →</button>
+      <span style="margin-left: 20px; color: #666;">Showing <span id="showing-count">0</span> contacts</span>
+    </div>
+
+    <input type="text" class="search-box" id="search" placeholder="Search by email, name, or company..." style="display: none;">
+
+    <div class="contact-list" id="contacts">
+      <div class="loading">Loading contacts...</div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    let allContacts = {};
+    let allContactsList = [];
+    let currentView = 'all';
+    let parserRunning = false;
+    let currentPage = 0;
+    const PAGE_SIZE = 50;
+
+    // Socket.IO connection for real-time updates
+    const socket = io();
+
+    socket.on('connect', () => {
+      console.log('Connected to server');
+      addLogEntry('Connected to server', 'info');
+    });
+
+    socket.on('progress', (data) => {
+      updateProgress(data);
+    });
+
+    socket.on('state', (state) => {
+      console.log('Received state:', state);
+      if (state.phase) {
+        addLogEntry('Phase: ' + state.phase, 'info');
+      }
+    });
+
+    socket.on('contact', (data) => {
+      addLogEntry('Contact: ' + data.email + ' - ' + (data.name || 'no name'), 'success');
+    });
+
+    socket.on('complete', (data) => {
+      parserRunning = false;
+      const btn = document.getElementById('btn-start-parser');
+      const status = document.getElementById('parser-status');
+      btn.disabled = false;
+      btn.classList.remove('running');
+      btn.textContent = 'Start Parser';
+      status.className = 'parser-status done';
+      status.textContent = 'Complete! ' + (data.total || 0) + ' contacts processed';
+      addLogEntry('Parsing complete!', 'success');
+      loadStats();
+      if (currentView === 'issues') loadIssues();
+    });
+
+    socket.on('error', (data) => {
+      addLogEntry('Error: ' + data.message, 'error');
+      const status = document.getElementById('parser-status');
+      status.className = 'parser-status error';
+      status.textContent = 'Error: ' + data.message;
+    });
+
+    socket.on('question', (data) => {
+      // Handle questions from orchestrator
+      const answer = prompt(data.question + '\n\nOptions:\n' + (data.options || []).join('\n'));
+      if (answer !== null) {
+        socket.emit('answer', { answer });
+      }
+    });
+
+    function updateProgress(data) {
+      const container = document.getElementById('progress-container');
+      const fill = document.getElementById('progress-fill');
+      const text = document.getElementById('progress-text');
+
+      container.style.display = 'block';
+
+      if (data.percent !== undefined) {
+        fill.style.width = data.percent + '%';
+        text.textContent = data.percent + '% - ' + (data.message || '');
+      } else if (data.current && data.total) {
+        const pct = Math.round((data.current / data.total) * 100);
+        fill.style.width = pct + '%';
+        text.textContent = pct + '% (' + data.current + '/' + data.total + ') ' + (data.message || '');
+      } else if (data.message) {
+        text.textContent = data.message;
+      }
+    }
+
+    function addLogEntry(message, type) {
+      const log = document.getElementById('parser-log');
+      log.classList.add('show');
+      const entry = document.createElement('div');
+      entry.className = 'log-entry ' + (type || '');
+      entry.textContent = new Date().toLocaleTimeString() + ' - ' + message;
+      log.appendChild(entry);
+      log.scrollTop = log.scrollHeight;
+
+      // Keep only last 50 entries
+      while (log.children.length > 50) {
+        log.removeChild(log.firstChild);
+      }
+    }
+
+    async function startParser() {
+      if (parserRunning) return;
+
+      const btn = document.getElementById('btn-start-parser');
+      const status = document.getElementById('parser-status');
+
+      parserRunning = true;
+      btn.disabled = true;
+      btn.classList.add('running');
+      btn.textContent = 'Parsing...';
+      status.className = 'parser-status running';
+      status.textContent = 'Starting...';
+
+      addLogEntry('Starting parser...', 'info');
+
+      try {
+        const res = await fetch('/api/start', { method: 'POST' });
+        const data = await res.json();
+
+        if (data.started) {
+          status.textContent = 'Running...';
+          addLogEntry('Parser started', 'success');
+        } else {
+          throw new Error('Failed to start');
+        }
+      } catch (err) {
+        parserRunning = false;
+        btn.disabled = false;
+        btn.classList.remove('running');
+        btn.textContent = 'Start Parser';
+        status.className = 'parser-status error';
+        status.textContent = 'Error: ' + err.message;
+        addLogEntry('Failed to start: ' + err.message, 'error');
+      }
+    }
+
+    async function loadStats() {
+      const res = await fetch('/api/comprehensive/stats');
+      const stats = await res.json();
+      document.getElementById('stat-total').textContent = stats.total?.toLocaleString() || '-';
+      document.getElementById('stat-names').textContent = stats.withName?.toLocaleString() || '-';
+      document.getElementById('stat-phones').textContent = stats.withPhone?.toLocaleString() || '-';
+      document.getElementById('stat-companies').textContent = stats.withCompany?.toLocaleString() || '-';
+      document.getElementById('stat-nmls').textContent = stats.withNmls?.toLocaleString() || '-';
+    }
+
+    async function loadIssues() {
+      const res = await fetch('/api/comprehensive/issues');
+      const data = await res.json();
+      renderContacts(data.contacts, true);
+    }
+
+    async function loadAllContacts() {
+      if (Object.keys(allContacts).length === 0) {
+        document.getElementById('contacts').innerHTML = '<div class="loading">Loading all contacts...</div>';
+        const res = await fetch('/api/comprehensive');
+        allContacts = await res.json();
+      }
+      // Sort by confidence (low first to review), then by name
+      allContactsList = Object.entries(allContacts)
+        .map(([email, c]) => ({ email, ...c }))
+        .sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+
+      currentPage = 0;
+      renderPage();
+    }
+
+    async function loadByRelationship(type) {
+      if (Object.keys(allContacts).length === 0) {
+        document.getElementById('contacts').innerHTML = '<div class="loading">Loading contacts...</div>';
+        const res = await fetch('/api/comprehensive');
+        allContacts = await res.json();
+      }
+      allContactsList = Object.entries(allContacts)
+        .filter(([_, c]) => c.relationship?.type === type)
+        .map(([email, c]) => ({ email, ...c }))
+        .sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+      currentPage = 0;
+      renderPage();
+    }
+
+    async function loadLowConfidence() {
+      if (Object.keys(allContacts).length === 0) {
+        document.getElementById('contacts').innerHTML = '<div class="loading">Loading contacts...</div>';
+        const res = await fetch('/api/comprehensive');
+        allContacts = await res.json();
+      }
+      allContactsList = Object.entries(allContacts)
+        .filter(([_, c]) => (c.confidence || 0) < 80)
+        .map(([email, c]) => ({ email, ...c }))
+        .sort((a, b) => (a.confidence || 0) - (b.confidence || 0));
+
+      currentPage = 0;
+      renderPage();
+    }
+
+    function renderPage() {
+      const start = currentPage * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      const pageContacts = allContactsList.slice(start, end);
+
+      const pagination = document.getElementById('pagination');
+      const pageInfo = document.getElementById('page-info');
+      const showingCount = document.getElementById('showing-count');
+      const btnPrev = document.getElementById('btn-prev');
+      const btnNext = document.getElementById('btn-next');
+
+      pagination.style.display = 'block';
+      pageInfo.textContent = 'Page ' + (currentPage + 1) + ' of ' + Math.ceil(allContactsList.length / PAGE_SIZE);
+      showingCount.textContent = allContactsList.length;
+      btnPrev.disabled = currentPage === 0;
+      btnNext.disabled = end >= allContactsList.length;
+
+      renderContacts(pageContacts, currentView === 'issues');
+    }
+
+    function changePage(delta) {
+      currentPage += delta;
+      if (currentPage < 0) currentPage = 0;
+      const maxPage = Math.ceil(allContactsList.length / PAGE_SIZE) - 1;
+      if (currentPage > maxPage) currentPage = maxPage;
+      renderPage();
+      window.scrollTo(0, 0);
+    }
+
+    async function searchContacts(query) {
+      if (!query || query.length < 2) {
+        document.getElementById('contacts').innerHTML = '<div class="loading">Type at least 2 characters to search...</div>';
+        return;
+      }
+      const res = await fetch('/api/comprehensive/search/' + encodeURIComponent(query));
+      const data = await res.json();
+      renderContacts(data.contacts, false);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function renderContacts(contacts, isIssues) {
+      const container = document.getElementById('contacts');
+
+      if (!contacts || contacts.length === 0) {
+        container.innerHTML = '<div class="loading">No contacts found</div>';
+        return;
+      }
+
+      container.innerHTML = contacts.map(c => {
+        const safeId = c.email.replace(/[@.]/g, '_');
+        return `
+        <div class="contact-card ${isIssues ? 'issue' : ''}" data-email="${escapeHtml(c.email)}">
+          <div class="contact-header">
+            <div>
+              <div class="contact-email">${escapeHtml(c.email)}</div>
+              <div class="contact-name">${escapeHtml(c.name) || '(No name)'}</div>
+            </div>
+            <div>
+              <span class="contact-badge">${escapeHtml(c.relationship?.type) || 'unknown'}</span>
+              <span class="contact-badge" style="background: ${(c.confidence || 0) >= 90 ? '#1e4620' : (c.confidence || 0) >= 80 ? '#4a4a1a' : '#4a1515'}; color: ${(c.confidence || 0) >= 90 ? '#4ade80' : (c.confidence || 0) >= 80 ? '#ffd700' : '#ff6b6b'}">${c.confidence || 0}%</span>
+              <button class="btn btn-edit" onclick="toggleEdit('${safeId}')">Edit</button>
+              <button class="btn" style="background: #ff4444; color: white;" onclick="deleteContact('${escapeHtml(c.email)}', '${safeId}')">Delete</button>
+            </div>
+          </div>
+          <div class="status-msg" id="status-${safeId}"></div>
+
+          <div class="contact-details">
+            <div class="detail-item">
+              <div class="detail-label">Phone</div>
+              <div class="detail-value ${!c.phone ? 'missing' : ''}">${escapeHtml(c.phone) || 'Not available'}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Company</div>
+              <div class="detail-value ${!c.company ? 'missing' : ''}">${escapeHtml(c.company) || 'Not available'}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Title</div>
+              <div class="detail-value ${!c.title ? 'missing' : ''}">${escapeHtml(c.title) || 'Not available'}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">NMLS</div>
+              <div class="detail-value ${!c.nmls ? 'missing' : ''}">${escapeHtml(c.nmls) || 'Not available'}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Confidence</div>
+              <div class="detail-value">${c.confidence || '-'}%</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Name Source</div>
+              <div class="detail-value">${escapeHtml(c.nameSource) || 'unknown'}</div>
+            </div>
+          </div>
+
+          ${c.emailHistory && c.emailHistory.length > 0 ? `
+            <div class="email-history">
+              <h4>Recent Email Summaries</h4>
+              ${c.emailHistory.slice(0, 3).map(eh => `
+                <div class="email-summary">${escapeHtml(eh.summary || eh.subject) || 'No summary'}</div>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          <div class="edit-form" id="edit-${safeId}">
+            <div class="edit-row">
+              <label>Name</label>
+              <input type="text" id="name-${safeId}" value="${escapeHtml(c.name) || ''}">
+            </div>
+            <div class="edit-row">
+              <label>Phone</label>
+              <input type="text" id="phone-${safeId}" value="${escapeHtml(c.phone) || ''}">
+            </div>
+            <div class="edit-row">
+              <label>Company</label>
+              <input type="text" id="company-${safeId}" value="${escapeHtml(c.company) || ''}">
+            </div>
+            <div class="edit-row">
+              <label>Title</label>
+              <input type="text" id="title-${safeId}" value="${escapeHtml(c.title) || ''}">
+            </div>
+            <div class="edit-row">
+              <label>NMLS</label>
+              <input type="text" id="nmls-${safeId}" value="${escapeHtml(c.nmls) || ''}">
+            </div>
+            <div class="edit-row">
+              <label>Relationship</label>
+              <select id="rel-${safeId}">
+                <option value="unknown" ${c.relationship?.type === 'unknown' ? 'selected' : ''}>Unknown</option>
+                <option value="lender" ${c.relationship?.type === 'lender' ? 'selected' : ''}>Lender</option>
+                <option value="broker_partner" ${c.relationship?.type === 'broker_partner' ? 'selected' : ''}>Broker Partner</option>
+                <option value="realtor" ${c.relationship?.type === 'realtor' ? 'selected' : ''}>Realtor</option>
+                <option value="client" ${c.relationship?.type === 'client' ? 'selected' : ''}>Client</option>
+                <option value="colleague" ${c.relationship?.type === 'colleague' ? 'selected' : ''}>Colleague</option>
+                <option value="vendor" ${c.relationship?.type === 'vendor' ? 'selected' : ''}>Vendor</option>
+                <option value="title_escrow" ${c.relationship?.type === 'title_escrow' ? 'selected' : ''}>Title/Escrow</option>
+                <option value="insurance" ${c.relationship?.type === 'insurance' ? 'selected' : ''}>Insurance</option>
+                <option value="personal" ${c.relationship?.type === 'personal' ? 'selected' : ''}>Personal</option>
+              </select>
+            </div>
+            <div class="edit-row">
+              <label></label>
+              <button class="btn btn-save" onclick="saveContact('${escapeHtml(c.email)}', '${safeId}')">Save</button>
+              <button class="btn btn-cancel" onclick="toggleEdit('${safeId}')">Cancel</button>
+            </div>
+          </div>
+        </div>
+      `}).join('');
+    }
+
+    function toggleEdit(safeId) {
+      const form = document.getElementById('edit-' + safeId);
+      if (form) form.classList.toggle('show');
+    }
+
+    async function reprocessContact(email, safeId) {
+      const btn = document.getElementById('reprocess-' + safeId);
+      const statusEl = document.getElementById('status-' + safeId);
+
+      btn.disabled = true;
+      btn.textContent = 'Processing...';
+      statusEl.className = 'status-msg';
+      statusEl.textContent = '';
+
+      try {
+        const res = await fetch('/api/comprehensive/' + encodeURIComponent(email) + '/reprocess', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+
+        const result = await res.json();
+
+        if (result.success) {
+          statusEl.className = 'status-msg show success';
+          statusEl.textContent = 'Re-processed! Name: ' + (result.contact?.name || 'unknown') +
+            (result.nameFromSubject ? ' (from subject)' : '') +
+            ', Emails found: ' + result.emailsFound;
+
+          // Refresh the view after a short delay
+          setTimeout(() => {
+            switchView(currentView);
+            loadStats();
+          }, 2000);
+        } else {
+          statusEl.className = 'status-msg show error';
+          statusEl.textContent = 'Error: ' + result.error;
+          btn.disabled = false;
+          btn.textContent = 'Re-process';
+        }
+      } catch (err) {
+        statusEl.className = 'status-msg show error';
+        statusEl.textContent = 'Error: ' + err.message;
+        btn.disabled = false;
+        btn.textContent = 'Re-process';
+      }
+    }
+
+    async function deleteContact(email, safeId) {
+      if (!confirm('Delete contact: ' + email + '?\n\nThis cannot be undone.')) return;
+
+      try {
+        const res = await fetch('/api/comprehensive/' + encodeURIComponent(email), {
+          method: 'DELETE'
+        });
+        const result = await res.json();
+
+        if (result.success) {
+          // Remove from local cache
+          delete allContacts[email];
+          allContactsList = allContactsList.filter(c => c.email !== email);
+          renderPage();
+          loadStats();
+        } else {
+          alert('Error deleting: ' + result.error);
+        }
+      } catch (err) {
+        alert('Error: ' + err.message);
+      }
+    }
+
+    async function saveContact(email, safeId) {
+      const updates = {
+        name: document.getElementById('name-' + safeId).value,
+        phone: document.getElementById('phone-' + safeId).value || null,
+        company: document.getElementById('company-' + safeId).value,
+        title: document.getElementById('title-' + safeId).value || null,
+        nmls: document.getElementById('nmls-' + safeId).value || null,
+        relationship: { type: document.getElementById('rel-' + safeId).value }
+      };
+
+      const res = await fetch('/api/comprehensive/' + encodeURIComponent(email), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updates)
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        alert('Saved successfully!');
+        toggleEdit(safeId);
+        switchView(currentView);
+      } else {
+        alert('Error: ' + result.error);
+      }
+    }
+
+    function switchView(view) {
+      currentView = view;
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelector('.tab[data-view="' + view + '"]').classList.add('active');
+
+      const searchBox = document.getElementById('search');
+      const pagination = document.getElementById('pagination');
+      searchBox.style.display = view === 'search' ? 'block' : 'none';
+
+      if (view === 'all') loadAllContacts();
+      else if (view === 'issues') loadLowConfidence();
+      else if (view === 'search') {
+        pagination.style.display = 'none';
+        document.getElementById('contacts').innerHTML = '<div class="loading">Type to search...</div>';
+      }
+      else if (view === 'lenders') loadByRelationship('lender');
+      else if (view === 'brokers') loadByRelationship('broker_partner');
+      else if (view === 'realtors') loadByRelationship('realtor');
+      else if (view === 'vendors') loadByRelationship('vendor');
+      else if (view === 'title') loadByRelationship('title_escrow');
+    }
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => switchView(tab.dataset.view));
+    });
+
+    let searchTimeout;
+    document.getElementById('search').addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => searchContacts(e.target.value), 300);
+    });
+
+    loadStats();
+    loadAllContacts();
+  </script>
+</body>
+</html>

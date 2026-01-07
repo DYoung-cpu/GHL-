@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-01-05T13:35:46.870Z",
+  "description": "Auto-snapshot before compaction",
+  "state": {
+    "timestamp": "2026-01-03T19:21:06.190Z",
+    "features": {
+      "completed": [
+        "Loan Status Workflows",
+        "Email Engagement Tracking",
+        "Analytics Dashboard",
+        "Email Templates Import",
+        "Past Client Import"
+      ],
+      "in_progress": [
+        "Email Deliverability"
+      ],
+      "not_started_count": 17
+    },
+    "workflows": {
+      "total": 12,
+      "published": 12
+    },
+    "encompass_mappings": 8,
+    "client": {
+      "name": "David Young",
+      "company": "LendWise Mortgage",
+      "email": "david@lendwisemtg.com"
+    },
+    "ghl": {
+      "location_id": "peE6XmGYBb1xV0iNbh6C",
+      "api_key": "pit-7427e736-d68a-41d8-9e9b-4b824b996926"
+    }
+  },
+  "session_notes": null
+}

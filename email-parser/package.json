@@ -1,0 +1,19 @@
+{
+  "name": "email-parser",
+  "version": "1.0.0",
+  "main": "index-builder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "html-to-text": "^9.0.5",
+    "socket.io": "^4.8.3"
+  }
+}
